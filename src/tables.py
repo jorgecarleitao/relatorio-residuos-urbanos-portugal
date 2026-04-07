@@ -53,7 +53,7 @@ def format_number(value: Union[str, int, float, None], decimals: Optional[int] =
 
 def generate_sistemas_analisados() -> str:
     """Generate 'Sistemas Analisados' table."""
-    filepath = DATA_DIR / 'capital_social_2024.csv'
+    filepath = DATA_DIR / 'capital_social.csv'
     data = read_csv(filepath)
     
     # Load regions mapping from CSV
@@ -69,13 +69,13 @@ def generate_sistemas_analisados() -> str:
     
     # Sort by EGF percentage descending
     sorted_data = sorted([r for r in data if r['Empresa'] in regions],
-                         key=lambda x: float(x['EGF % (acionista maioritário)']), 
+                         key=lambda x: float(x['EGF (%)']), 
                          reverse=True)
     
     for row in sorted_data:
         empresa = row['Empresa'].title()
         regiao = regions[row['Empresa']]
-        egf_percent = row['EGF % (acionista maioritário)']
+        egf_percent = row['EGF (%)']
         output.append(f'|{empresa} |{regiao} |EGF ({egf_percent}%)')
     
     output.append('|===')
@@ -84,7 +84,7 @@ def generate_sistemas_analisados() -> str:
 
 def generate_waste_collection_table() -> str:
     """Generate 'Indicadores de Escala e Operação' table."""
-    filepath = DATA_DIR / 'receção_residuos_2024.csv'
+    filepath = DATA_DIR / 'receção_residuos.csv'
     data = read_csv(filepath)
     
     # Filter valid rows and sort by population
@@ -115,7 +115,7 @@ def generate_waste_collection_table() -> str:
 
 def generate_financial_performance_table() -> str:
     """Generate 'Desempenho Financeiro Comparativo' table."""
-    filepath = DATA_DIR / 'indicadores_financeiros_2024.csv'
+    filepath = DATA_DIR / 'indicadores_financeiros.csv'
     data = read_csv(filepath)
     
     # Filter valid rows and sort by revenue
@@ -147,8 +147,8 @@ def generate_financial_performance_table() -> str:
 
 def generate_rentability_per_ton_table() -> str:
     """Generate 'Rentabilidade por Tonelada' table."""
-    waste_path = DATA_DIR / 'receção_residuos_2024.csv'
-    finance_path = DATA_DIR / 'indicadores_financeiros_2024.csv'
+    waste_path = DATA_DIR / 'receção_residuos.csv'
+    finance_path = DATA_DIR / 'indicadores_financeiros.csv'
     
     waste_data = {r['Empresa']: r for r in read_csv(waste_path)}
     finance_data = {r['Empresa']: r for r in read_csv(finance_path)}
@@ -201,8 +201,8 @@ def generate_rentability_per_ton_table() -> str:
 
 def generate_capital_social_roe_table() -> str:
     """Generate 'Retorno sobre Capital Social' table."""
-    capital_path = DATA_DIR / 'capital_social_2024.csv'
-    finance_path = DATA_DIR / 'indicadores_financeiros_2024.csv'
+    capital_path = DATA_DIR / 'capital_social.csv'
+    finance_path = DATA_DIR / 'indicadores_financeiros.csv'
     
     capital_data = {r['Empresa']: r for r in read_csv(capital_path)}
     finance_data = {r['Empresa']: r for r in read_csv(finance_path)}
@@ -251,8 +251,8 @@ def generate_capital_social_roe_table() -> str:
 
 def generate_algar_valorsul_comparison() -> str:
     """Generate ALGAR vs Valorsul comparison table."""
-    waste_path = DATA_DIR / 'receção_residuos_2024.csv'
-    finance_path = DATA_DIR / 'indicadores_financeiros_2024.csv'
+    waste_path = DATA_DIR / 'receção_residuos.csv'
+    finance_path = DATA_DIR / 'indicadores_financeiros.csv'
     
     waste_data = {r['Empresa']: r for r in read_csv(waste_path)}
     finance_data = {r['Empresa']: r for r in read_csv(finance_path)}
@@ -302,49 +302,82 @@ def generate_algar_valorsul_comparison() -> str:
     return '\n'.join(output)
 
 
-def generate_rentability_distribution_table() -> str:
-    """Generate rentability distribution summary table."""
-    filepath = DATA_DIR / 'rentability_categories.csv'
-    data = read_csv(filepath)
+def generate_revenue_streams_comparison() -> str:
+    """Generate table comparing economic value of recyclables vs energy production."""
+    # Read revenue streams data
+    revenue_df = read_csv(DATA_DIR / 'revenue_streams.csv')
     
-    output = []
-    output.append('[cols="1,1"]')
-    output.append('|===')
-    output.append('|Situação |Sistemas')
-    output.append('')
+    # Read waste collection data for total waste received
+    residuos_df = read_csv(DATA_DIR / 'receção_residuos.csv')
+    
+    # Calculate metrics
+    data = []
+    for row in revenue_df:
+        empresa = row['Empresa']
+        
+        # Revenue per ton of recyclables
+        receita_reciclaveis = float(row['Receita Recicláveis (€)'].replace(',', '.'))
+        ton_reciclaveis = float(row['Recicláveis Vendidos (ton)'].replace(',', '.'))
+        eur_por_ton_reciclavel = receita_reciclaveis / ton_reciclaveis if ton_reciclaveis > 0 else 0
+        
+        # Revenue per MWh of energy (convert GWh to MWh)
+        receita_energia = float(row['Receita Energia (€)'].replace(',', '.'))
+        energia_gwh = float(row['Energia Vendida (GWh)'].replace(',', '.'))
+        energia_mwh = energia_gwh * 1000
+        eur_por_mwh_energia = receita_energia / energia_mwh if energia_mwh > 0 else 0
+        
+        # Get total waste received to calculate revenue per ton of total waste
+        residuos_row = next((r for r in residuos_df if r['Empresa'] == empresa), None)
+        if residuos_row:
+            total_ru = float(residuos_row['Total RU Recebidos (ton)'].replace(',', '.'))
+            
+            # Revenue from recyclables per ton of total waste
+            receita_reciclaveis_por_ton_ru = receita_reciclaveis / total_ru
+            
+            # Revenue from energy per ton of total waste  
+            receita_energia_por_ton_ru = receita_energia / total_ru
+            
+            # Which is more valuable per ton of total waste?
+            ratio = receita_energia_por_ton_ru / receita_reciclaveis_por_ton_ru if receita_reciclaveis_por_ton_ru > 0 else 0
+            
+            data.append({
+                'Empresa': empresa,
+                'eur_ton_reciclavel': eur_por_ton_reciclavel,
+                'eur_mwh_energia': eur_por_mwh_energia,
+                'receita_recicl_ton_ru': receita_reciclaveis_por_ton_ru,
+                'receita_energia_ton_ru': receita_energia_por_ton_ru,
+                'ratio': ratio
+            })
+    
+    # Sort by energy revenue per ton of total RU (descending)
+    data.sort(key=lambda x: x['receita_energia_ton_ru'], reverse=True)
+    
+    # Build table
+    table = '[cols="1,>1,>1,>1,>1,>1"]\n'
+    table += '|===\n'
+    table += '|Sistema |€/ton Reciclável Vendido |€/MWh Energia |Receita Recicl. (€/ton RU) |Receita Energia (€/ton RU) |Energia/Recicl. (x)\n\n'
     
     for row in data:
-        categoria = row['Categoria']
-        descricao = row['Descrição']
-        empresas = row['Empresas'].split(',')
-        empresas_formatted = ', '.join([e.strip().title() for e in empresas])
-        situacao = f"{categoria} ({descricao})" if descricao else categoria
-        output.append(f'|{situacao} |{empresas_formatted}')
+        empresa = row['Empresa']
+        eur_ton_rec = format_number(row['eur_ton_reciclavel'], decimals=0)
+        eur_mwh = format_number(row['eur_mwh_energia'], decimals=0)
+        rec_per_ton = format_number(row['receita_recicl_ton_ru'], decimals=2)
+        ene_per_ton = format_number(row['receita_energia_ton_ru'], decimals=2)
+        
+        # Color code the ratio: green if energy > recyclables, red if < 
+        ratio_val = row['ratio']
+        if ratio_val > 1.5:
+            ratio_str = f'[green]#{format_number(ratio_val, decimals=1)}x#'
+        elif ratio_val > 0.5:
+            ratio_str = format_number(ratio_val, decimals=1) + 'x'
+        else:
+            ratio_str = f'[red]#{format_number(ratio_val, decimals=1)}x#'
+        
+        table += f'|{empresa} |{eur_ton_rec} |{eur_mwh} |{rec_per_ton} |{ene_per_ton} |{ratio_str}\n'
     
-    output.append('|===')
-    return '\n'.join(output)
-
-
-def generate_valorsul_investment_table() -> str:
-    """Generate Valorsul CAPEX vs profit table."""
-    filepath = DATA_DIR / 'valorsul_investment_history.csv'
-    data = read_csv(filepath)
+    table += '|===\n'
     
-    output = []
-    output.append('[cols="1h,1,1,1"]')
-    output.append('|===')
-    output.append('|Ano |Investimento (M€) |Resultado Líquido (M€) |CAPEX/Lucro')
-    output.append('')
-    
-    for row in data:
-        ano = row['Ano']
-        investimento = format_number(row['Investimento (M€)'], decimals=1)
-        resultado = format_number(row['Resultado Líquido (M€)'], decimals=1)
-        capex_lucro = format_number(row['CAPEX/Lucro'], decimals=1)
-        output.append(f'|{ano} |{investimento} |{resultado} |{capex_lucro}x')
-    
-    output.append('|===')
-    return '\n'.join(output)
+    return table
 
 
 def main() -> None:
@@ -360,8 +393,7 @@ def main() -> None:
         'rentability_per_ton.adoc': generate_rentability_per_ton_table(),
         'capital_social_roe.adoc': generate_capital_social_roe_table(),
         'algar_valorsul_comparison.adoc': generate_algar_valorsul_comparison(),
-        'rentability_distribution.adoc': generate_rentability_distribution_table(),
-        'valorsul_investment.adoc': generate_valorsul_investment_table(),
+        'revenue_streams_comparison.adoc': generate_revenue_streams_comparison(),
     }
     
     for filename, content in tables.items():
