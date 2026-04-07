@@ -28,15 +28,9 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 def load_data() -> Tuple[pl.DataFrame, pl.DataFrame, pl.DataFrame]:
     """Load all CSV files."""
-    capital_social = pl.read_csv(DATA_DIR / 'capital_social_2024.csv')
-    indicadores = pl.read_csv(DATA_DIR / 'indicadores_financeiros_2024.csv')
-    residuos = pl.read_csv(DATA_DIR / 'receção_residuos_2024.csv')
-    
-    # Filter out rows with N/D values
-    capital_social = capital_social.filter(pl.col('Capital Social (€)') != 'N/D')
-    indicadores = indicadores.filter(pl.col('Vendas e Serviços Prestados (€)') != 'N/D')
-    residuos = residuos.filter(pl.col('Total RU Recebidos (ton)') != 'N/D')
-    
+    capital_social = pl.read_csv(DATA_DIR / 'capital_social.csv')
+    indicadores = pl.read_csv(DATA_DIR / 'indicadores_financeiros.csv')
+    residuos = pl.read_csv(DATA_DIR / 'receção_residuos.csv')
     return capital_social, indicadores, residuos
 
 
@@ -204,6 +198,54 @@ def figure_financial_autonomy(df: pl.DataFrame) -> None:
     print(f"✓ Generated: {output_path}")
 
 
+def figure_roe_distribution(capital_df: pl.DataFrame, indicadores_df: pl.DataFrame) -> None:
+    """Generate bar chart of ROE (Return on Equity) by company with color-coded categories."""
+    fig, ax = plt.subplots(figsize=(10, 6))
+    
+    # Join datasets and calculate ROE
+    merged = capital_df.join(indicadores_df, on='Empresa', how='inner')
+    
+    # Calculate ROE = (Resultado Líquido / Capital Próprio) * 100
+    merged = merged.with_columns([
+        ((pl.col('Resultado Líquido (€)') / pl.col('Capital Próprio (€)')) * 100).alias('ROE')
+    ])
+    
+    # Sort by ROE descending
+    merged = merged.sort('ROE', descending=True)
+    
+    companies = merged['Empresa'].to_list()
+    roe_values = merged['ROE'].to_list()
+    
+    # Color coding: red for loss (<0), green for adequate (0-10%), red for excessive (>10%)
+    colors = []
+    for roe in roe_values:
+        if roe < 0:
+            colors.append('red')
+        elif roe < 10:
+            colors.append('green')
+        else:
+            colors.append('red')
+    
+    bars = ax.bar(companies, roe_values, color=colors, edgecolor='black', alpha=0.7)
+    
+    # Add threshold lines
+    ax.axhline(y=0, color='black', linestyle='-', linewidth=0.8)
+    ax.axhline(y=10, color='darkred', linestyle='--', alpha=0.5, label='10% (Limite Adequado)')
+    
+    ax.set_xlabel('Empresa')
+    ax.set_ylabel('ROE - Rentabilidade sobre Capital Próprio (%)')
+    ax.set_title('Rentabilidade sobre Capital Próprio (ROE) em 2024')
+    ax.legend(loc='upper right')
+    ax.grid(axis='y', alpha=0.3, linestyle='--')
+    plt.xticks(rotation=45, ha='right')
+    plt.tight_layout()
+    
+    output_path = OUTPUT_DIR / 'roe_distribution.svg'
+    fig.savefig(output_path, format='svg', bbox_inches='tight')
+    plt.close(fig)
+    print(f"✓ Generated: {output_path}")
+
+
 def main() -> None:
     """Generate all figures."""
     print("Loading data...")
@@ -217,6 +259,7 @@ def main() -> None:
     figure_waste_per_capita(residuos)
     figure_employees_vs_revenue(indicadores)
     figure_financial_autonomy(indicadores)
+    figure_roe_distribution(capital_social, indicadores)
     
     print(f"\n✓ All figures generated successfully!")
 

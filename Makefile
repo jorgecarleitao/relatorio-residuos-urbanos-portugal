@@ -41,8 +41,13 @@ REPORT = index.adoc
 REPORT_HTML = $(BUILD_DIR)/index.html
 REPORT_PDF = $(BUILD_DIR)/index.pdf
 
+# OCR configuration
+OCR_IMAGE = residuos-ocr:latest
+OCR_DOCKERFILE = ocr/Dockerfile.ocr
+OCR_DIR = ocr
+
 # Targets
-.PHONY: all html pdf clean help setup figures diagrams tables
+.PHONY: all html pdf clean help setup figures diagrams tables ocr-build ocr-batch download-2024 download-2025 download-all
 
 all: html
 
@@ -57,6 +62,11 @@ help:
 	@echo "  make figures    - Generate all figures"
 	@echo "  make diagrams   - Copy diagrams to build"
 	@echo "  make tables     - Generate tables from CSV data"
+	@echo "  make download-2024  - Download PDFs from fontes.csv (2024)"
+	@echo "  make download-2025  - Download PDFs from fontes.csv (2025)"
+	@echo "  make download-all   - Download PDFs for all years"
+	@echo "  make ocr-build  - Build OCR Docker image"
+	@echo "  make ocr-batch  - Process all PDFs in data/ with OCR"
 	@echo "  make clean      - Remove generated files"
 	@echo "  make help       - Show this help message"
 
@@ -104,8 +114,34 @@ $(REPORT_PDF): $(REPORT) | $(BUILD_DIR)
 $(BUILD_DIR):
 	@mkdir -p $(BUILD_DIR)
 
+# Download targets
+download-2024:
+	@chmod +x download_pdfs.sh
+	@./download_pdfs.sh 2024
+
+download-2025:
+	@chmod +x download_pdfs.sh
+	@./download_pdfs.sh 2025
+
+download-all: download-2024 download-2025
+	@echo "✓ All PDFs downloaded"
+
+# OCR targets
+.ocr-built: $(OCR_DOCKERFILE) $(OCR_DIR)/pdf2txt.sh $(OCR_DIR)/batch_ocr.sh
+	@echo "Building OCR Docker image..."
+	docker build -f $(OCR_DOCKERFILE) -t $(OCR_IMAGE) .
+	@touch .ocr-built
+	@echo "✓ OCR image built: $(OCR_IMAGE)"
+
+ocr-build: .ocr-built
+
+ocr-batch: .ocr-built download-all
+	@echo "Processing all PDFs with OCR..."
+	@chmod +x $(OCR_DIR)/batch_ocr.sh
+	@./$(OCR_DIR)/batch_ocr.sh
+
 # Clean generated files
 clean:
 	@echo "Cleaning generated files..."
-	rm -rf $(BUILD_DIR) $(VENV)
+	rm -rf $(BUILD_DIR) $(VENV) .ocr-built
 	@echo "✓ Clean complete"

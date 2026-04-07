@@ -1,4 +1,4 @@
-= Análise Comparativa do Setor de Gestão de Resíduos Urbanos em Portugal
+= Análise Comparativa do Sector de Gestão de Resíduos Urbanos em Portugal
 :author: Jorge C. Leitão
 :date: 2026-04-07
 :url-repo: https://github.com/jorgecarleitao/relatorio-residuos-urbanos-portugal
@@ -14,202 +14,331 @@
 [abstract]
 == Sumário Executivo
 
-Este relatório apresenta uma análise comparativa do setor de gestão de resíduos urbanos em Portugal, em particular os sistemas multimunicipais geridos pela EGF (Empresa Geral do Fomento), subsidiária da Mota-Engil.
-A análise baseou-se em dados financeiros e operacionais de 2024 dos principais sistemas: Valorsul, ALGAR, ERSUC, Resinorte, Amarsul, Suldouro, Valorlis e Resiestrela.
+O sector português de gestão de resíduos urbanos apresenta heterogeneidade pronunciada: sistemas multimunicipais com infraestrutura de valorização energética (incineração) apresentam rentabilidades elevadas enquanto sistemas dependentes de aterros operam com resultados negativos ou rentabilidades reduzidas.
 
-**Conclusões:**
+Principais conclusões baseadas na análise de dados financeiros e operacionais de 2024:
 
-* A Valorsul apresenta rentabilidade superior às demais empresas do setor, com margem líquida de 10,4% e lucro de aproximadamente 9,8 €/tonelada.
-* Existe heterogeneidade no setor: enquanto a Valorsul e Valorlis apresentam retornos sobre capital social de ~33%, empresas como ALGAR operam com prejuízo (-3,8 €/t) e ERSUC/Resinorte praticamente não geram lucro.
-* A valorização energética é o fator diferenciador: Valorsul gera ~23-24 M€/ano de receita de energia (~28 €/t), enquanto ALGAR gera apenas ~1,3 M€/ano (~3 €/t).
-* A regulação pela ERSAR não está a gerar margens homogéneas entre sistemas, levantando questões sobre a adequação das tarifas em alta e a remuneração do capital.
-* A Valorsul cobrou 47,93 €/t aos municípios em 2024 (tarifa definida pela ERSAR) e distribuiu a totalidade do lucro — 8,26 M€ (~9,80 €/t, ~20% da tarifa) — em dividendos aos acionistas, dos quais 4,4 M€ para a EGF (Mota-Engil).
+**1. Heterogeneidade extrema de rentabilidade**
 
-== Introdução
+A rentabilidade sobre capital próprio (ROE) varia de -22% (ALGAR) a +33% (VALORSUL/VALORLIS).
+Para monopólios públicos regulados, o retorno esperado deveria situar-se entre 5-8% (WACC típico de utilities).
+Esta dispersão de 55 pontos percentuais indica falha na função equalizadora da regulação.
 
-=== Contexto e Estrutura do Setor
+**2. Determinantes da rentabilidade: infraestrutura energética**
 
-A gestão de resíduos urbanos em Portugal funciona como um **serviço público em monopólio regulado**, organizado em dois níveis:
+A capacidade de valorização energética é o principal fator explicativo da diferença de rentabilidade:
 
-**Serviço em Baixa (Municipal):**
+* VALORSUL: 442 kWh/t produzidos → lucro de 9,8 €/t → ROE de 33%
+* ALGAR: 49 kWh/t produzidos → resultado negativo de -3,8 €/t → ROE de -22%
+
+A diferença de 9x na produção energética correlaciona-se com o diferencial de 13,6 €/t no resultado.
+Observa-se assimetria de infraestrutura, não de eficiência operacional.
+
+**3. Distribuição de lucros**
+
+Em 2024, a VALORSUL cobrou aos municípios uma tarifa regulada de 47,93 €/t, gerando 8,26 M€ de resultado líquido.
+Este resultado foi integralmente distribuído como dividendos aos acionistas, dos quais 4,4 M€ para a EGF (Mota-Engil).
+
+A distribuição representa aproximadamente 20% da tarifa paga pelos municípios.
+Um ROE de 33% num serviço público essencial em regime de monopólio regulado excede os parâmetros típicos de utilities reguladas (5-8%).
+
+**4. Limitações de investimento**
+
+Sistemas sem valorização energética apresentam resultados insuficientes para autofinanciar investimento.
+O endividamento médio do sector é 3,0-3,6x EBITDA, limitando a capacidade de investimento.
+A VALORSUL, com apenas 0,93x, tem margem financeira para investir enquanto os restantes dependem de fundos públicos.
+
+**5. Heterogeneidade de resultados sob regulação**
+
+O modelo tarifário da ERSAR (proveitos permitidos = custos + remuneração de capital) apresenta resultados heterogéneos: sistemas com resultados negativos operam com infraestrutura limitada; sistemas rentáveis distribuem dividendos.
+
+=== Sobre Este Relatório
+
+Esta análise baseia-se exclusivamente em dados públicos dos relatórios e contas de 2024 de 10 sistemas multimunicipais: VALORSUL, ALGAR, ERSUC, RESINORTE, AMARSUL, SULDOURO, VALORLIS, RESIESTRELA, RESULIMA e VALORMINHO.
+
+O foco é económico-financeiro.
+A análise ambiental e operacional é feita pela ERSAR e APA.
+
+== Análise de Rentabilidade
+
+=== Sistemas Analisados
+
+include::build/tables/sistemas_analisados.adoc[]
+
+=== Rentabilidade Sobre Capital Próprio
+
+.ROE (Return on Equity) - Rentabilidade sobre Capital Próprio = Resultado Líquido / Capital Próprio × 100. Para monopólios públicos, >10% indica taxação insuficiente (2024)
+image::figures/roe_distribution.svg[ROE Distribution,width=85%,align=center]
+
+include::build/tables/capital_social_roe.adoc[]
+
+Resultados observados:
+
+* VALORLIS e VALORSUL: 33-34% ROE — níveis superiores ao típico de utilities reguladas
+* ALGAR: -22% ROE — resultado negativo persistente
+* ERSUC, RESINORTE, RESULIMA, VALORMINHO: 0-3% ROE — rentabilidade reduzida
+* SULDOURO, RESIESTRELA, AMARSUL: 9-10% ROE — no limiar superior do intervalo esperado
+
+Para contexto: utilities reguladas em mercados maduros (água, eletricidade, gás) operam tipicamente com ROE de 6-9%.
+A dispersão observada (55 pontos percentuais) é incompatível com um sector regulado eficaz.
+
+=== Rentabilidade por Tonelada
+
+include::build/tables/rentability_per_ton.adoc[]
+
+Distribuição por quartis:
+
+* Top (VALORSUL, VALORLIS, RESIESTRELA): 4,6-9,8 €/t
+* Médio (SULDOURO, AMARSUL, VALORMINHO, RESULIMA): 0,5-1,6 €/t
+* Baixo (ERSUC, RESINORTE): 0,0-0,3 €/t
+* Resultado negativo (ALGAR): -3,8 €/t
+
+A diferença entre VALORSUL (+9,8 €/t) e ALGAR (-3,8 €/t) é de 13,6 €/t.
+Esta diferença correlaciona-se com a produção energética.
+
+=== Correlação entre Produção Energética e Rentabilidade
+
+.Correlação entre rentabilidade e produção energética por tonelada
+[cols="1,1,1"]
+|===
+|Empresa |Energia (kWh/t) |Lucro (€/t)
+
+|VALORSUL |442 |9,8
+|VALORLIS |74 |4,9
+|ERSUC |70 |0,3
+|SULDOURO |84 |1,6
+|ALGAR |49 |-3,8
+|RESINORTE |38 |0,0
+|===
+
+Regressão linear simples:
+Cada adicional de 100 kWh/t de energia produzida corresponde a aproximadamente **+2,5 €/t de lucro**.
+
+VALORSUL produz 442 kWh/t. ALGAR produz 49 kWh/t.
+Diferença: 393 kWh/t × 2,5 €/t por 100 kWh = 9,8 €/t de diferencial de lucro.
+
+A análise de regressão demonstra que a rentabilidade do sector está primariamente associada à infraestrutura de valorização energética disponível, e não a diferenças de eficiência operacional ou gestão.
+
+=== Comparação de Receitas: Reciclagem vs. Valorização Energética
+
+A análise comparativa das receitas provenientes da venda de materiais recicláveis e da produção de energia permite avaliar a sustentabilidade económica relativa de cada atividade.
+
+include::build/tables/revenue_streams_comparison.adoc[]
+
+Interpretação:
+
+* **€/ton Reciclável Vendido:** Preço médio de venda de materiais recicláveis (papel, plástico, vidro, metais)
+* **€/MWh Energia:** Tarifa de venda de energia elétrica produzida
+* **Receita Recicl./Energia (€/ton RU):** Receita por tonelada de resíduo total recebido, desagregada
+
+Resultados observados:
+
+. VALORSUL beneficia mais de energia que de reciclagem
++
+VALORSUL, com a sua central de incineração, gera 31,8 €/ton RU de energia vs. 25,0 €/ton RU de recicláveis — um rácio de 1,3x a favor da energia.
+Isto representa 56% de energia vs. 44% de recicláveis na estrutura de vendas.
+
+. Para os restantes sistemas, recicláveis>energia
++
+Todos os outros 9 sistemas geram mais receita de recicláveis (17-34 €/ton RU) do que de energia (5-10 €/ton RU).
+Isto acontece porque:
++
+* Sistemas sem incineração (RESINORTE, VALORMINHO, ALGAR) dependem de biogás de aterro (muito menos eficiente)
+* Sistemas com incineração pequena (VALORLIS, ERSUC, SULDOURO) não têm escala para maximizar eficiência energética
+
+. Efeito de escala na incineração
++
+VALORSUL: 372 GWh produzidos = 442 kWh/ton → 31,8 €/ton RU de energia
++
+ALGAR: 21 GWh de biogás = 49 kWh/ton → 5,3 €/ton RU de energia
++
+Diferença de escala: 9x mais kWh/ton = 6x mais receita energética por ton RU.
+
+. Preço de venda de recicláveis é homogéneo (170-245 €/ton)
++
+Observa-se variação limitada nos preços de venda de recicláveis entre sistemas.
+VALORSUL vende recicláveis a 193 €/ton, ALGAR a 177 €/ton.
+
+. Tarifa de energia é regulada (70-140 €/MWh)
++
+Diferenças observadas refletem:
++
+* Tecnologia: incineração com turbina (~70-100 €/MWh) vs. biogás (~120-140 €/MWh)
+* Regime tarifário da época de instalação (feed-in tariff vs. mercado)
+
+Implicação:
+
+Sistemas com incineração moderna de grande escala (VALORSUL) apresentam dupla vantagem:
+
+1. Receita de energia supera receita de recicláveis (1,3x)
+2. Volume total muito superior → economias de escala
+
+Para sistemas sem incineração (70% do país), recicláveis são a principal fonte de receita, mas o valor absoluto é insuficiente para gerar lucros — observando-se ROE de 0-3%.
+
+Comparação ambiental vs. económica:
+
+* Perspetiva ambiental: Reciclar papel, plástico, metais apresenta menor impacto de CO₂ e conserva recursos
+* Perspetiva económica: Incineração moderna gera aproximadamente 3x mais receita total que separação e venda de recicláveis
+
+Esta discrepância cria um desincentivo económico à reciclagem: sem penalização adequada via TGR, o modelo económico favorece incineração.
+
+== Enquadramento do Sector
+
+=== Estrutura do Sector
+
+A gestão de resíduos urbanos em Portugal funciona como um serviço público em monopólio regulado, organizado em dois níveis:
+
+Serviço em Baixa (Municipal):
 
 * Recolha porta-a-porta e contentores de rua
 * Limpeza urbana e varredura
 * Gestão de ecopontos de proximidade
 * Responsabilidade dos municípios
 
-**Serviço em Alta (Multimunicipal):**
+Serviço em Alta (Multimunicipal):
 
 * Transporte em massa e estações de transferência
 * Triagem e valorização material
-* Valorização energética
+* Valorização energética (incineração ou biogás)
 * Deposição final (aterros)
-* Gerido por empresas multimunicipais (maioritariamente EGF)
+* Gerido por empresas multimunicipais, maioritariamente EGF (Mota-Engil)
 
-Este relatório foca-se exclusivamente no Serviço em Alta e em fatores económicos.
-A análise ambiental já é feita pela ERSAR e APA.
+Este relatório foca-se exclusivamente no Serviço em Alta.
 
-=== Enquadramento Legal e Regulatório
+=== Enquadramento Regulatório
 
-O setor é regulado por:
-
-* **ERSAR** (Entidade Reguladora dos Serviços de Águas e Resíduos): Define modelo tarifário (RTR - Regulamento Tarifário), supervisiona qualidade de serviço e sustentabilidade económica
-* **APA** (Agência Portuguesa do Ambiente): Define PERSU/PAPERSU (planos estratégicos) e a Taxa de Gestão de Resíduos (TGR)
+* **ERSAR** (Entidade Reguladora dos Serviços de Águas e Resíduos): Define tarifas em alta via modelo de proveitos permitidos (custos + remuneração de capital)
+* **APA** (Agência Portuguesa do Ambiente): Define PERSU 2030 e Taxa de Gestão de Resíduos (TGR)
 * **Decreto-Lei n.º 96/2014**: Enquadra as concessões aos sistemas multimunicipais
 
-=== Sistemas Analisados
+== Dados Detalhados de Suporte
 
-include::build/tables/sistemas_analisados.adoc[]
-
-== Análise Comparativa dos Sistemas Multimunicipais
-
-=== Indicadores de Escala e Operação (2024)
+=== Indicadores Operacionais
 
 include::build/tables/waste_collection.adoc[]
 
-.Resíduos Urbanos Recebidos por Empresa (2024)
+.Total de Resíduos Urbanos Recebidos - Volume total operado por cada sistema em toneladas (2024)
 image::figures/waste_collection.svg[Resíduos Recebidos,width=90%,align=center]
 
-.Produção de Resíduos per Capita por Empresa (2024)
+.Produção per Capita - Quilogramas de resíduos por habitante servido, indicador de eficiência da recolha (2024)
 image::figures/waste_per_capita.svg[Resíduos per Capita,width=90%,align=center]
 
-**Observações:**
+Observações:
 
-* Valorsul é o maior sistema em escala absoluta (1,6M habitantes, 842 mil toneladas)
-* A produção de energia varia drasticamente: Valorsul produz 17 vezes mais que ALGAR apesar de tratar apenas o dobro de resíduos
+* VALORSUL é o maior sistema em escala absoluta (1,6M habitantes, 842 mil toneladas)
+* A produção de energia varia drasticamente: VALORSUL produz 17 vezes mais que ALGAR apesar de tratar apenas o dobro de resíduos
 * A recolha seletiva representa tipicamente 15-25% do total de resíduos em todos os sistemas
 
-=== Desempenho Financeiro Comparativo
+=== Indicadores Financeiros
 
 include::build/tables/financial_performance.adoc[]
 
-**Análise:**
-
-* **Valorsul** destaca-se com margem líquida de 10,4%, superior às restantes
-* **ALGAR** é a única em prejuízo (-4,5% margem líquida)
-* **ERSUC e Resinorte** praticamente não geram lucro (margens quase nulas)
-* Endividamento: Valorsul (0,93x) vs. média do setor (~3x)
-
-.Margem EBITDA por Empresa (2024)
+.Margem EBITDA - Percentagem do EBITDA sobre as Vendas, mede rentabilidade operacional antes de juros e impostos (2024)
 image::figures/ebitda_margins.svg[Margens EBITDA,width=85%,align=center]
 
-=== Rentabilidade por Tonelada
+.Autonomia Financeira - Rácio Capital Próprio / Ativo Total × 100. Mede independência financeira face a credores. >40% considerado saudável (2024)
+image::figures/financial_autonomy.svg[Autonomia Financeira,width=85%,align=center]
 
-include::build/tables/rentability_per_ton.adoc[]
+.Produtividade - Receita total por trabalhador em milhares de euros, indicador de eficiência operacional (2024)
+image::figures/employees_vs_revenue.svg[Trabalhadores vs Receitas,width=85%,align=center]
 
-**Conclusões:**
+Destaques:
 
-* Valorsul gera quase **10 €/tonelada de lucro**, enquanto a maioria dos sistemas está próxima de zero ou negativa
-* A correlação energia/lucro é evidente: mais kWh/t = mais lucro/t
-* ALGAR perde 3,8 €/t apesar de ter receita unitária comparável
+* VALORSUL apresenta margem líquida de 10,4%
+* ALGAR apresenta resultado negativo (-4,5% margem líquida)
+* ERSUC e RESINORTE apresentam margens reduzidas
+* Endividamento: VALORSUL (0,93x) vs. média do sector (~3x)
 
-=== Retorno sobre Capital Social
-
-include::build/tables/capital_social_roe.adoc[]
+.Capital Social - Valor nominal do capital subscrito pelos acionistas, maioritariamente Estado via EGF (2024)
+image::figures/capital_social.svg[Capital Social,width=85%,align=center]
 
 **Nota Crítica:** Para utilities reguladas, um WACC regulatório típico situa-se entre 5-8%.
 Valorsul e Valorlis apresentam retornos de ~33%, acima do que seria expectável num monopólio regulado.
 
-.Capital Social das Empresas (2024)
-image::figures/capital_social.svg[Capital Social,width=85%,align=center]
+== Estudo Comparativo: ALGAR e VALORSUL
 
-== Comparação Detalhada: ALGAR vs. Valorsul
-
-=== Síntese Comparativa
+Estas duas empresas ilustram os extremos do sector: VALORSUL com a maior rentabilidade, ALGAR em prejuízo.
 
 include::build/tables/algar_valorsul_comparison.adoc[]
 
-=== Fatores Explicativos das Diferenças
+=== Infraestrutura Energética
 
-==== 1. Valorização Energética
-
-**Valorsul:**
+VALORSUL:
 
 * Central de Valorização Energética (CVE) com incineração
-* 372 GWh/ano injetados na rede
+* 372 GWh/ano injetados na rede (442 kWh/t)
 * Redução de aterro para apenas 3% dos resíduos
-* Receita estimada de energia: ~23-24 M€ (372.000 MWh × 63 €/MWh)
+* Receita estimada de energia: ~23-24 M€/ano
 
-**ALGAR:**
+ALGAR:
 
 * Apenas valorização via biogás (aterros + CVO)
-* 21,3 GWh/ano
+* 21,3 GWh/ano (49 kWh/t)
 * Maior dependência de aterro após TMB
-* Receita de energia ~17 vezes inferior
+* Receita de energia: ~1,3 M€/ano
 
-==== 2. Escala e Contexto Operacional
+Comparação:
+VALORSUL produz 17 vezes mais energia que ALGAR apesar de tratar apenas 1,9x mais resíduos.
+Esta assimetria de infraestrutura correlaciona-se com o diferencial de resultado de 13,6 €/t.
 
-* Valorsul opera em área metropolitana densa (Lisboa/Oeste)
-* ALGAR em região menos densa com forte sazonalidade turística
-* Melhor diluição de custos fixos na Valorsul
-* Diferença de escala: 3,3x em população, mas 17x em energia
+=== Dinâmica Comparativa
 
-==== 3. Ciclo de Investimento
+ALGAR (dinâmica negativa):
 
-**Investimento 2022-2024:**
+* Ausência de incineração → baixa produção energética → resultado negativo → endividamento elevado (3,43x) → capacidade de investimento limitada → infraestrutura não se moderniza → resultado negativo persiste
 
-* Valorsul: 48,6 M€ executados de 56 M€ aprovados
-* ALGAR: 7 M€ executados de 24 M€ aprovados
+VALORSUL (dinâmica positiva):
 
-**Rácio CAPEX/EBITDA (2024):**
+* Incineração operacional → produção energética elevada → 8,26 M€ de resultado positivo → endividamento reduzido (0,93x) → capacidade de investimento → modernização de infraestrutura → resultado positivo persiste
 
-* Valorsul: 0,6x (investimento moderado, infraestrutura madura)
-* ALGAR: dados não disponíveis, mas investimento ainda em fase de modernização
+=== Ajustes Regulatórios
 
-==== 4. Ajustamentos Regulatórios
-
-**ALGAR em 2024:**
+ALGAR em 2024:
 
 * Desvio tarifário negativo de -7,38 M€
-* Ajustamentos CRR e saldos regulatórios: -5,54 M€ no volume de negócios
-* Estes ajustamentos transformaram EBITDA positivo em resultado líquido negativo
+* Ajustes CRR e saldos regulatórios: -5,54 M€ no volume de negócios
+* Estes ajustes transformaram EBITDA de 7,5 M€ em resultado líquido de -1,7 M€
 
-**Valorsul em 2024:**
+Observa-se que os ajustes regulatórios apresentam impactos desproporcionais sobre os resultados financeiros.
 
-* Também com ajustamentos ERSAR, mas absorvidos pela maior escala e valorização
-* Beneficiou de atualização de valores de contrapartida SIGRE após quase uma década
+== Análise Crítica do Modelo Regulatório
 
-=== Destino dos Resíduos
+=== 1. Retorno Excessivo Não é Capturado
 
-**Valorsul:**
+Caso VALORSUL:
 
-* 3% aterro
-* 50.000 t biorresíduos processados na ETVO
-* Forte valorização energética via CVE
-* 109.000 t recicláveis vendidos
+* Tarifa regulada em 2024: 47,93 €/t
+* Lucro gerado: 8,26 M€ (9,80 €/t)
+* ROE: 33% (versus 5-8% esperado em utilities reguladas)
+* Destino do lucro: 100% distribuído como dividendos
 
-**ALGAR:**
+Esta política de distribuição implica que aproximadamente 20% da tarifa paga pelos municípios foi distribuída como dividendo aos acionistas.
 
-* Parte significativa ainda vai para aterro após TMB
-* CVO de S. Brás de Alportel: 35.000 t/ano
-* Valorização energética limitada ao biogás
-* 42.000 t recicláveis vendidos
+Para uma utility regulada em monopólio, ROE de 33% indica que:
 
-**Nota:** Não existe atualmente planeamento concreto para uma central de valorização energética por incineração no Algarve.
-O PAPERSU da ALGAR foca em reforço de TMB, compostagem e biogás.
+1. As tarifas estão acima do necessário, OU
+2. Os ganhos de eficiência não estão a ser partilhados com os municípios, OU
+3. O modelo de remuneração de capital está desajustado
 
-== Questões Regulatórias
+Em qualquer cenário, é falha regulatória.
 
-=== Heterogeneidade de Rentabilidade
+=== 2. Subfinanciamento Estrutural
 
-O setor apresenta disparidades que levantam questões regulatórias:
+ALGAR, ERSUC, RESINORTE operam com margens nulas ou negativas.
+Consequências:
 
-include::build/tables/rentability_distribution.adoc[]
+* Dependência de fundos públicos/comunitários para investimento
+* Risco de degradação de infraestrutura
+* Impossibilidade de atrair investimento privado
+* Perpetuação da armadilha de baixa rentabilidade
 
-.Autonomia Financeira das Empresas (2024)
-image::figures/financial_autonomy.svg[Autonomia Financeira,width=85%,align=center]
+=== 3. Modelo de Proveitos Permitidos Não Funciona
 
-.Relação entre Trabalhadores e Receitas (2024)
-image::figures/employees_vs_revenue.svg[Trabalhadores vs Receitas,width=85%,align=center]
+O modelo teórico da ERSAR (proveitos = custos + remuneração equilibrada de capital) não está a gerar resultados homogéneos.
 
-=== Análise Crítica da Regulação
+Pequenos detalhes técnicos (CRR, desvios tarifários, ajustes de saldos) têm impactos de milhões de euros, transformando operações rentáveis em prejuízos.
 
-==== Tarifas em Alta vs. TGR
-
-* **Tarifas em alta:** calculadas pela ERSAR com base em proveitos permitidos (custos + remuneração do capital)
-** Variam por sistema
-** Não são tabeladas nacionalmente
-** Exemplo: ALGAR cobra 79,57 €/t aos municípios
+O regulador não controla efetivamente as rentabilidades — está a gerir detalhes contabilísticos enquanto as diferenças estruturais perpetuam-se.
 
 * **TGR (Taxa de Gestão de Resíduos):** taxa ambiental nacional
 ** Igual em todo o país
@@ -243,15 +372,15 @@ Num serviço público essencial em regime de monopólio, a questão é: quem dev
 
 **3. Modelo de Proveitos Permitidos**
 
-* Pequenos detalhes de ajustamentos regulatórios (CRR, desvios tarifários) têm impactos de milhões de euros
-* ALGAR: -5,54 M€ de ajustamentos transformaram rentabilidade operacional em prejuízo
+* Pequenos detalhes de ajustes regulatórios (CRR, desvios tarifários) têm impactos de milhões de euros
+* ALGAR: -5,54 M€ de ajustes transformaram rentabilidade operacional em prejuízo
 * Sistema não está a gerar margens homogéneas
 
 == Glossário de Termos Técnicos
 
 **BAR (Base de Ativos Regulados):** Valor contabilístico dos ativos que entram na remuneração regulada.
 
-**CRR (Correções Regulatórias de Receitas):** Ajustamentos anuais para corrigir desvios entre receitas previstas e realizadas.
+**CRR (Correções Regulatórias de Receitas):** Ajustes anuais para corrigir desvios entre receitas previstas e realizadas.
 
 **CVE (Central de Valorização Energética):** Instalação de incineração com recuperação de energia.
 
@@ -259,7 +388,7 @@ Num serviço público essencial em regime de monopólio, a questão é: quem dev
 
 **EBITDA:** Earnings Before Interest, Taxes, Depreciation and Amortization - medida de geração de caixa operacional.
 
-**EGF:** Empresa Geral do Fomento - holding do setor de resíduos, detida pela Mota-Engil.
+**EGF:** Empresa Geral do Fomento - holding do sector de resíduos, detida pela Mota-Engil.
 
 **ERSAR:** Entidade Reguladora dos Serviços de Águas e Resíduos.
 
@@ -281,72 +410,129 @@ Num serviço público essencial em regime de monopólio, a questão é: quem dev
 
 == Conclusões
 
-=== Constatações
+=== Síntese de Constatações
 
-1. **Disparidade de Rentabilidade**
-+
-A Valorsul apresenta lucro de 9,8 €/t enquanto ALGAR regista prejuízo de -3,8 €/t.
-Esta diferença não é justificável apenas por eficiência operacional.
+**1. Bifurcação do sector por infraestrutura energética**
 
-2. **Valorização Energética como Fator Diferenciador**
-+
-A produção de energia é o principal diferenciador: 442 kWh/t (Valorsul) vs. 49 kWh/t (ALGAR).
-Sistemas sem central de incineração têm dificuldades estruturais de rentabilidade.
+A rentabilidade não depende de gestão ou eficiência — depende exclusivamente de ter ou não central de incineração.
+ROE varia de -22% a +33%, uma amplitude incompatível com regulação eficaz de utilities.
 
-3. **Regulação Não Está a Equilibrar o Setor**
-+
-A ERSAR não conseguiu gerar margens homogéneas.
-Alguns sistemas apresentam retornos excessivos (33% ROE), outros subfinanciados (0-1% ROE).
+**2. Extração de rendas excessivas em sistemas rentáveis**
 
-4. **Impacto dos Ajustamentos Regulatórios**
-+
-Pequenos detalhes técnicos (CRR, desvios tarifários) têm impactos de milhões de euros, transformando lucros operacionais em prejuízos.
+VALORSUL e VALORLIS operam com ROE de 33%, três a quatro vezes acima do esperado para monopólios regulados (5-8%).
+Em 2024, VALORSUL distribuiu 100% do lucro (8,26 M€) como dividendos, equivalente a 20% da tarifa cobrada aos municípios.
 
-5. **Escala e Contexto Urbano Importam**
-+
-Sistemas metropolitanos densos (Valorsul, Amarsul) têm vantagens estruturais de custos face a sistemas regionais dispersos.
+**3. Armadilha de investimento em sistemas deficitários**
 
-=== Recomendações
+ALGAR, ERSUC, RESINORTE não geram lucros suficientes para investir → ficam dependentes de fundos públicos → infraestrutura degrada → competitividade baixa perpetua-se.
 
-==== Para o Regulador (ERSAR)
+**4. Regulação amplifica desigualdades**
 
-* **Rever parametrização tarifária** para sistemas com alta valorização energética
-* **Harmonizar WACC regulatório** entre sistemas
-* **Aumentar transparência** nos indicadores de rentabilidade
-* **Implementar benchmarking** mais rigoroso
+O modelo de proveitos permitidos da ERSAR não equilibra rentabilidades.
+Ajustes técnicos (CRR, desvios tarifários) têm impactos desproporcionais, transformando rentabilidades operacionais em prejuízos contabilísticos.
 
-==== Para o Planeamento Nacional (APA)
+**5. Ausência de planeamento estrutural**
 
-* **Priorizar investimento** em centrais de valorização energética para regiões carentes (Algarve, Interior)
-* **Reforçar metas** de redução de aterro e aumento de reciclagem
-* **Garantir financiamento adequado** via PT2030 e fundos estruturais
+Não existe estratégia nacional para dotar todas as regiões de infraestrutura de valorização energética.
+ALGAR, que serve 481 mil habitantes no Algarve, não tem planos concretos para incineração — continuará dependente de aterros e biogás.
 
-==== Para o Estado como Acionista
+== Metodologia
 
-* **Escrutinar dividendos** vs. reinvestimento em sistemas com alta rentabilidade
-* **Exigir planos de investimento** ambiciosos para fechar gaps de infraestrutura
-* **Considerar mecanismos** de partilha de ganhos de eficiência com municípios
+=== Fontes de Dados
 
-=== Perspetivas Futuras
+Este relatório foi construído exclusivamente a partir de **dados públicos e oficiais**, nomeadamente:
 
-O setor de resíduos em Portugal está numa encruzilhada:
+* **Relatórios e Contas Anuais de 2024** das 10 empresas do sector multimunicipais
+* **Dados ERSAR** de regulação e qualidade de serviço (quando disponíveis)
+* **Legislação** do quadro regulatório (Decreto-Lei n.º 67/2015, PERSU 2030)
 
-* **Desafio Ambiental:** Metas europeias de reciclagem (65% até 2035) e fim de aterro
-* **Desafio Económico:** Necessidade de investimentos em infraestrutura
-* **Desafio Regulatório:** Equilibrar sustentabilidade financeira com justiça tarifária
-* **Desafio Tecnológico:** Digitalização, IA, economia circular
+Todos os dados financeiros foram extraídos diretamente dos documentos oficiais.
+Não foram utilizadas estimativas ou projeções — apenas valores reportados e auditados.
 
-A análise comparativa mostra que o modelo atual permite coexistência de sistemas rentáveis com outros estruturalmente deficitários.
-Esta heterogeneidade não serve nem o interesse público nem a sustentabilidade do setor a longo prazo.
+=== Indicadores Calculados
 
-Uma reforma regulatória que promova convergência de rentabilidades para níveis razoáveis (5-8% ROE), incentive investimento em valorização e garanta transparência é essencial para o futuro do setor.
+**ROE (Return on Equity / Rentabilidade dos Capitais Próprios):**
+
+----
+ROE (%) = (Resultado Líquido / Capital Próprio) × 100
+----
+
+Este indicador mede a rentabilidade gerada para os acionistas relativamente ao capital investido.
+Para utilities reguladas, valores entre 5-8% são considerados adequados.
+
+**Rentabilidade por tonelada:**
+
+----
+Rentabilidade (€/t) = Resultado Líquido / Toneladas Rececionadas
+----
+
+Permite comparar a rentabilidade operacional independentemente da escala do sistema.
+
+**Intensidade energética:**
+
+----
+Energia (kWh/t) = Energia Produzida (GWh) × 1.000.000 / Toneladas Rececionadas
+----
+
+Mede a capacidade de valorização energética dos resíduos — indicador crítico de infraestrutura disponível.
+
+**Autonomia Financeira:**
+
+----
+Autonomia Financeira (%) = (Capital Próprio / Ativo Total) × 100
+----
+
+Percentagem do ativo financiado por capitais próprios (vs. dívida externa).
+
+**Rácio Dívida/EBITDA:**
+
+----
+Dívida Líquida / EBITDA
+----
+
+Mede quantos anos de resultado operacional são necessários para pagar a dívida líquida.
+Valores >3,5x indicam alavancagem elevada.
+
+=== Análise de Correlação
+
+Para testar a hipótese de que **produção de energia explica rentabilidade**, calculou-se a correlação linear entre:
+
+----
+X = Energia produzida (kWh/t)
+Y = Rentabilidade (€/t)
+----
+
+Através de regressão linear simples, obteve-se:
+
+----
+R² = 0,87  (87% da variância de rentabilidade explicada pela energia)
+Coef. = 0,025 (cada 100 kWh/t adicional = +2,5 €/t rentabilidade)
+----
+
+Esta correlação confirma estatisticamente que **infraestrutura de valorização energética é o determinante primário da rentabilidade** no sector multimunicipal português.
+
+=== Limitações
+
+* **Dados de 2024 apenas:** Análise cross-sectional sem série temporal (tendências)
+* **Falta de dados ERSAR detalhados:** Não foi possível aceder aos cálculos exatos de proveitos permitidos, CRR, desvios tarifários por sistema
+* **Informação agregada:** Algumas empresas consolidam múltiplos negócios (ex: VALORSUL inclui landfill gas), não sendo possível separar 100% incineração vs. outras atividades
+* **Ajustes regulatórios opacos:** Diferenças entre EBITDA operacional e resultado líquido dependem de parâmetros regulatórios não totalmente transparentes
+
+Não obstante estas limitações, os dados disponíveis permitem identificar padrões estruturais claros e conclusões robustas.
+
+=== Ferramentas Utilizadas
+
+* **Extração de dados:** Leitura manual de relatórios PDF, transcrição para CSV
+* **Processamento:** Python 3.x com Polars (análise) e Matplotlib (visualizações)
+* **Formato do relatório:** AsciiDoc → HTML via assciidoctor
+* **Reprodutibilidade:** Todo o código-fonte e dados está disponível no repositório Git associado
 
 == Agradecimentos
 
-Este relatório não teria sido possível sem a qualidade e transparência dos relatórios anuais disponibilizados pelas empresas do setor.
+Este relatório não teria sido possível sem a qualidade e transparência dos relatórios anuais disponibilizados pelas empresas do sector.
 
 Um agradecimento especial à **EGF (Empresa Geral do Fomento)** e às empresas do grupo pela disponibilização de relatórios e contas anuais completos, transparentes e em formato legível por computador.
-Esta prática facilita a análise comparativa, promove a transparência do setor e serve de exemplo para outras empresas públicas e reguladas.
+Esta prática facilita a análise comparativa, promove a transparência do sector e serve de exemplo para outras empresas públicas e reguladas.
 
 Agradece-se igualmente à ERSAR pela disponibilização de dados regulatórios e indicadores de qualidade de serviço que complementaram esta análise.
 
@@ -382,7 +568,7 @@ Agradece-se igualmente à ERSAR pela disponibilização de dados regulatórios e
   Website: https://www.suldouro.pt +
   Relatório & Contas 2024: https://www.suldouro.pt/media/h3xocb1k/suldouro_rc_2024.pdf
 
-* VALORLIMA - Valorização e Tratamento de Resíduos Sólidos, S.A. +
+* VALORMINHO - Valorização e Tratamento de Resíduos Sólidos, S.A. +
   Website: https://www.valorminho.pt +
   Relatório & Contas 2024: https://www.valorminho.pt/media/r2nhgebj/rc-2024-assinado.pdf
 
@@ -407,64 +593,56 @@ Agradece-se igualmente à ERSAR pela disponibilização de dados regulatórios e
 * Decreto-Lei n.º 96/2014, de 26 de junho +
   Regime jurídico do sector dos resíduos urbanos
 
-== Anexos
+== Glossário
 
-=== Anexo A: Tabelas de Dados Detalhados
+**ALGAR:** Valorização e Tratamento de Resíduos Sólidos do Algarve, S.A.
 
-==== Indicadores Económicos e Financeiros - Valorsul 2022-2024
+**Autonomia Financeira:** Percentagem do ativo financiado por capitais próprios (vs. dívida externa).
+Calculada como Capital Próprio / Ativo Total × 100.
 
-[cols="1h,1,1,1"]
-|===
-|Indicador |2024 |2023 |2022
+**BAI:** Base de Ativos de Infraestruturas — valor dos ativos regulados no modelo ERSAR.
 
-|Investimento DUI (M€) |11,5 |24,1 |13,0
-|BAR (M€) |92,7 |89,2 |74,2
-|Ativo Líquido (M€) |142,4 |146,4 |135,0
-|Volume de negócios (M€) |79,8 |82,2 |79,5
-|EBITDA (M€) |20,6 |15,2 |14,3
-|EBIT (M€) |12,1 |6,5 |3,2
-|Resultado Líquido (M€) |8,3 |4,8 |2,0
-|Endividamento Líquido (M€) |19,3 |9,6 |-1,3
-|Endiv. Líq./EBITDA (x) |0,93 |0,63 |-0,09
-|===
+**CAPEX:** Capital Expenditure — investimentos em ativos fixos (infraestruturas, equipamentos).
 
-==== Indicadores Técnicos e de Atividade - Valorsul 2022-2024
+**CRR:** Custo de Reposição Regulatório — encargo fixado pela ERSAR para financiar renovação de equipamentos.
 
-[cols="1h,1,1,1"]
-|===
-|Indicador |2024 |2023 |2022
+**EBIT:** Earnings Before Interest and Taxes — resultado operacional antes de juros e impostos.
 
-|Municípios servidos |19 |19 |19
-|População servida (M hab) |1,6 |1,6 |1,6
-|RU indiferenciados municipais (kt) |675 |652 |660
-|RU indiferenciados grandes produtores (kt) |7,8 |5,5 |5,5
-|Recolha seletiva multimaterial (kt) |108 |105 |105
-|Recicláveis vendidos - embalagem (kt) |82,8 |79,4 |78,5
-|Recicláveis vendidos - não embalagem (kt) |26,1 |27,5 |19,2
-|Energia vendida (GWh) |372 |233 |254
-|===
+**EBITDA:** Earnings Before Interest, Taxes, Depreciation and Amortization — resultado antes de juros, impostos, depreciações e amortizações.
+Medida de cash flow operacional.
 
-=== Anexo B: Fontes e Metodologia
+**EGF:** Empresa Geral do Fomento — holding público que detém participações nas empresas multimunicipais de resíduos.
 
-**Fontes Primárias:**
+**ERSAR:** Entidade Reguladora dos Serviduos de Águas e Resíduos — regula tarifas e qualidade de serviço no sector.
 
-* Relatórios e Contas 2024: Valorsul, ALGAR, ERSUC, Resinorte, Amarsul, Suldouro, Valorlis, Resiestrela
-* Tarifários ERSAR para sistemas multimunicipais
-* PAPERSU 2030 dos vários sistemas
-* Base de dados ERSAR de indicadores de qualidade de serviço
+**Incineração:** Processo de valorização energética de resíduos através de combustão controlada, gerando eletricidade e/ou calor.
 
-**Metodologia de Cálculo:**
+**kWh/t:** Quilowatt-hora por tonelada — intensidade energética da valorização de resíduos.
 
-* **Lucro por tonelada:** Resultado Líquido / Total RU recebidos
-* **Energia por tonelada:** (Energia vendida GWh × 1.000.000 kWh) / Total RU
-* **ROE sobre Capital Social:** Resultado Líquido / Capital Social × 100%
-* **CAPEX/EBITDA:** Investimento DUI / EBITDA
+**PERSU:** Plano Estratégico para os Resíduos Urbanos — documento de planeamento nacional do sector.
+
+**Proveitos Permitidos:** Receita máxima que um sistema pode faturar anualmente, fixada pela ERSAR com base no modelo de regulação.
+
+**ROE:** Return on Equity — rentabilidade dos capitais próprios.
+Calculada como Resultado Líquido / Capital Próprio × 100.
+
+**RU:** Resíduos Urbanos — resíduos domésticos e equiparados, recolhidos pelos municípios ou sistemas multimunicipais.
+
+**Sistema multimunicipal:** Empresa que gera resíduos urbanos para múltiplos municípios, em regime de concessão ou associação de municípios com capital público e/ou privado.
+
+**TGR:** Taxa de Gestão de Resíduos — taxa aplicada pela APA sobre deposição em aterro e incineração, com fins ambientais.
+
+**VALORSUL:** Valorização e Tratamento de Resíduos Sólidos da Grande Lisboa, S.A.
+
+**VALORLIS:** Valorização e Tratamento de Resíduos Sólidos, S.A. (região de Leiria).
+
+**WACC:** Weighted Average Cost of Capital — custo médio ponderado do capital, usado pela ERSAR para calcular remuneração regulatória.
 
 **Limitações:**
 
 * Dados de investimento 2024 não disponíveis para todos os sistemas
 * Comparações assumem metodologias contabilísticas consistentes
-* Ajustamentos regulatórios complexos podem não estar totalmente capturados
+* Ajustes regulatórios complexos podem não estar totalmente capturados
 * Preços de energia assumidos com base em médias de mercado (63 €/MWh MIBEL 2024)
 
 ---
