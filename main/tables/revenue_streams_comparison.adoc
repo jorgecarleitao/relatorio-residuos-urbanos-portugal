@@ -1,0 +1,15 @@
+[cols="1,>1,>1,>1,>1,>1"]
+|===
+|Sistema |€/ton Reciclável Vendido |€/MWh Energia |Receita Recicl. (€/ton RU) |Receita Energia (€/ton RU) |Energia/Recicl. (x)
+
+|VALORSUL |193 |72 |25,03 |31,75 |1,3x
+|VALORLIS |245 |138 |33,66 |10,13 |[red]#0,3x#
+|ERSUC |189 |132 |23,38 |9,27 |[red]#0,4x#
+|SULDOURO |188 |105 |22,99 |8,80 |[red]#0,4x#
+|RESULIMA |202 |127 |27,23 |6,99 |[red]#0,3x#
+|RESIESTRELA |222 |138 |25,58 |6,72 |[red]#0,3x#
+|ALGAR |177 |107 |17,30 |5,26 |[red]#0,3x#
+|AMARSUL |193 |125 |17,38 |5,13 |[red]#0,3x#
+|VALORMINHO |179 |128 |20,92 |4,96 |[red]#0,2x#
+|RESINORTE |171 |126 |22,55 |4,83 |[red]#0,2x#
+|===
