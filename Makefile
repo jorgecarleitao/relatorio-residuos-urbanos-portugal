@@ -39,7 +39,7 @@ REPORT = index.adoc
 
 # Output files
 REPORT_HTML = $(BUILD_DIR)/index.html
-REPORT_PDF = $(BUILD_DIR)/index.pdf
+REPORT_PDF = $(BUILD_DIR)/relatorio.pdf
 
 # OCR configuration
 OCR_IMAGE = residuos-ocr:latest
@@ -103,12 +103,12 @@ $(VENV):
 # HTML generation
 $(REPORT_HTML): $(REPORT) | $(BUILD_DIR)
 	@echo "Building $@..."
-	$(ADOC) -a revnumber=$(GIT_VERSION) -o $@ $(REPORT)
+	$(ADOC) -a lang=pt -a revnumber=$(GIT_VERSION) -o $@ $(REPORT)
 
 # PDF generation
 $(REPORT_PDF): $(REPORT) | $(BUILD_DIR)
 	@echo "Building $@..."
-	$(ADOC_PDF) -a revnumber=$(GIT_VERSION) -a imagesdir=$(BUILD_DIR) -o $@ $(REPORT)
+	$(ADOC_PDF) -a lang=pt -a revnumber=$(GIT_VERSION) -a imagesdir=$(BUILD_DIR) -o $@ $(REPORT)
 
 # Create build directory
 $(BUILD_DIR):

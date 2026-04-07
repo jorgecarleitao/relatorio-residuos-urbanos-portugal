@@ -50,7 +50,7 @@ jobs:
         uses: actions/upload-artifact@v7
         with:
           name: report-pdf
-          path: ./build/index.pdf
+          path: ./build/relatorio.pdf
           retention-days: 90
 
   deploy:
@@ -234,7 +234,7 @@ jobs:
       - name: Create Release
         uses: softprops/action-gh-release@v1
         with:
-          files: index.pdf
+          files: relatorio.pdf
           body: |
             Relatório de Análise Comparativa do Sector de Gestão de Resíduos Urbanos em Portugal
             
