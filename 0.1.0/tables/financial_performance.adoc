@@ -1,0 +1,15 @@
+[cols="1,1,1,1,1,1,1"]
+|===
+|Empresa |Volume Negócios (M€) |EBITDA (M€) |Resultado Líquido (M€) |Margem EBITDA (%) |Margem Líquida (%) |Dív. Líq./EBITDA (x)
+
+|Valorsul |79,8 |20,7 |8,3 |26,0 |10,4 |0,93
+|Algar |37,1 |7,5 |-1,7 |20,2 |-4,5 |3,43
+|Ersuc |36,6 |8,2 |0,1 |22,2 |0,3 |3,16
+|Amarsul |36,3 |8,7 |0,7 |24,0 |1,9 |3,40
+|Resinorte |31,0 |8,0 |0,0 |25,7 |0,0 |3,20
+|Suldouro |16,3 |4,6 |0,3 |28,0 |2,1 |2,99
+|Resulima |14,3 |3,0 |0,1 |20,9 |0,5 |3,58
+|Valorlis |13,3 |3,3 |0,7 |25,0 |5,2 |3,10
+|Resiestrela |7,1 |1,9 |0,4 |27,0 |5,4 |1,52
+|Valorminho |3,3 |0,8 |0,0 |24,1 |0,9 |3,43
+|===

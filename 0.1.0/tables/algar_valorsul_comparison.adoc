@@ -1,0 +1,15 @@
+[cols="1h,1,1"]
+|===
+|Indicador |ALGAR (Algarve) |Valorsul (Lisboa)
+
+|População servida |481.370 hab |1.600.000 hab
+|RU total |433.404 t |841.863 t
+|Energia produzida |21,3 GWh |372,0 GWh
+|Energia por tonelada |49 kWh/t |442 kWh/t
+|Recicláveis vendidos |~42.265 t |~108.984 t
+|Volume de negócios |37,1 M€ |79,8 M€
+|EBITDA |7,5 M€ (20,2%) |20,7 M€ (26,0%)
+|Resultado líquido |-1,7 M€ (-4,5%) |8,3 M€ (10,4%)
+|Lucro por tonelada |-3,8 €/t |+9,8 €/t
+|Dívida Líq./EBITDA |3,43x |0,93x
+|===
