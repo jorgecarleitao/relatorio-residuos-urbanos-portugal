@@ -47,7 +47,7 @@ OCR_DOCKERFILE = ocr/Dockerfile.ocr
 OCR_DIR = ocr
 
 # Targets
-.PHONY: all html pdf clean help setup figures diagrams tables ocr-build ocr-batch download-2024 download-2025 download-all
+.PHONY: all html pdf clean help setup figures diagrams tables check-spelling lint ocr-build ocr-batch download-2024 download-2025 download-all
 
 all: html
 
@@ -62,6 +62,8 @@ help:
 	@echo "  make figures    - Generate all figures"
 	@echo "  make diagrams   - Copy diagrams to build"
 	@echo "  make tables     - Generate tables from CSV data"
+	@echo "  make check-spelling - Check grammar and spelling (Portuguese)"
+	@echo "  make lint       - Alias for check-spelling"
 	@echo "  make download-2024  - Download PDFs from fontes.csv (2024)"
 	@echo "  make download-2025  - Download PDFs from fontes.csv (2025)"
 	@echo "  make download-all   - Download PDFs for all years"
@@ -85,6 +87,12 @@ diagrams: | $(BUILD_DIR)
 	@mkdir -p $(DIAGRAMS_DIR)
 	@cp -r src/diagrams/*.svg $(DIAGRAMS_DIR)/ 2>/dev/null || true
 	@echo "✓ Diagrams copied"
+
+check-spelling: $(VENV)
+	@echo "Checking grammar and spelling..."
+	@$(PYTHON) src/check_spelling.py
+
+lint: check-spelling
 
 html: figures tables diagrams $(REPORT_HTML)
 	@echo "✓ HTML report generated successfully"
