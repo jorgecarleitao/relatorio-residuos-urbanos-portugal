@@ -1,0 +1,15 @@
+[cols="1,1,1,1,1"]
+|===
+|Empresa |Capital Próprio (M€) |Capital Social (M€) |Resultado Líquido (M€) |ROE (%)
+
+|Valorsul |63,5 |25,2 |8,26 |13%
+|Valorlis |12,1 |2,0 |0,69 |6%
+|Amarsul |22,7 |7,8 |0,69 |3%
+|Resiestrela |13,4 |4,0 |0,38 |3%
+|Suldouro |16,4 |3,4 |0,34 |2%
+|Valorminho |2,3 |0,9 |0,03 |1%
+|Ersuc |29,3 |8,5 |0,12 |0%
+|Resulima |19,4 |2,5 |0,07 |0%
+|Resinorte |39,2 |8,0 |0,01 |0%
+|Algar |16,2 |7,5 |-1,66 |-10%
+|===

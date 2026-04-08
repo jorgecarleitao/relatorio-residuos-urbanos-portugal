@@ -1,0 +1,15 @@
+[cols="1,1,2"]
+|===
+|Sistema |Região |Acionista Maioritário
+
+|Resinorte |Norte |EGF (75.11%)
+|Resiestrela |Cova da Beira |EGF (62.95%)
+|Suldouro |Porto/Aveiro |EGF (60.0%)
+|Algar |Algarve |EGF (56.0%)
+|Valorsul |Lisboa e Oeste |EGF (52.93%)
+|Ersuc |Centro |EGF (51.46%)
+|Amarsul |Península de Setúbal |EGF (51.0%)
+|Resulima |Minho/Lima |EGF (51.0%)
+|Valorminho |Minho |EGF (51.0%)
+|Valorlis |Leiria |EGF (51.0%)
+|===

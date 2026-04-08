@@ -1,0 +1,15 @@
+[cols="1,1,1,1"]
+|===
+|Empresa |Receita (€/t) |EBITDA (€/t) |Lucro (€/t)
+
+|Valorsul |94,7 |24,6 |9,8
+|Valorlis |94,8 |23,7 |4,9
+|Resiestrela |84,8 |22,9 |4,6
+|Suldouro |78,5 |22,0 |1,6
+|Amarsul |71,0 |17,1 |1,3
+|Valorminho |78,7 |19,0 |0,7
+|Resulima |95,4 |19,9 |0,5
+|Ersuc |85,2 |19,0 |0,3
+|Resinorte |72,8 |18,7 |0,0
+|Algar |85,6 |17,3 |-3,8
+|===
