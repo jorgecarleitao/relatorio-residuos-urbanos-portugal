@@ -187,9 +187,6 @@ def write_bar_plot(
     ax.set_ylabel(ylabel)
     ax.set_title(title)
     
-    if threshold_lines and any(line.get('label') for line in threshold_lines):
-        ax.legend()
-    
     ax.grid(axis='y', alpha=0.3, linestyle='--')
     plt.xticks(rotation=45, ha='right')
     plt.tight_layout()
@@ -253,7 +250,7 @@ def generate_ebitda_margins() -> None:
         ylabel='Margem EBITDA (%)',
         color_fn=color_fn,
         threshold_lines=[
-            {'y': 20, 'color': 'green', 'linestyle': '--', 'alpha': 0.5, 'label': '20% (Bom)'}
+            {'y': 20, 'color': 'green', 'linestyle': '--', 'alpha': 0.5}
         ]
     )
 
@@ -335,8 +332,8 @@ def generate_net_debt_ebitda() -> None:
         ylabel='Dívida Líquida / EBITDA (x)',
         color_fn=color_fn,
         threshold_lines=[
-            {'y': 1, 'color': 'red', 'linestyle': '--', 'alpha': 0.6, 'label': '1x'},
-            {'y': 4, 'color': 'red', 'linestyle': '--', 'alpha': 0.6, 'label': '4x'}
+            {'y': 1, 'color': 'red', 'linestyle': '--', 'alpha': 0.6},
+            {'y': 4, 'color': 'red', 'linestyle': '--', 'alpha': 0.6}
         ]
     )
 
@@ -377,7 +374,7 @@ def generate_rentability_per_ton() -> None:
         color_fn=color_fn,
         threshold_lines=[
             {'y': 0, 'color': 'black', 'linestyle': '-', 'alpha': 0.8},
-            {'y': 5, 'color': 'orange', 'linestyle': '--', 'alpha': 0.5, 'label': '5 €/t (Rentabilidade Moderada)'}
+            {'y': 5, 'color': 'orange', 'linestyle': '--', 'alpha': 0.5}
         ]
     )
 
@@ -413,14 +410,13 @@ def generate_roe_vs_debt_scatter() -> None:
     
     # Add reference lines
     ax.axhline(y=0, color='gray', linestyle='-', linewidth=0.5, alpha=0.5)
-    ax.axhline(y=5, color='gray', linestyle='--', linewidth=0.5, alpha=0.5, label='ROE = 5%')
+    ax.axhline(y=5, color='gray', linestyle='--', linewidth=0.5, alpha=0.5)
     ax.axvline(x=0, color='gray', linestyle='-', linewidth=0.5, alpha=0.5)
-    ax.axvline(x=3, color='gray', linestyle='--', linewidth=0.5, alpha=0.5, label='Dívida/EBITDA = 3x')
+    ax.axvline(x=3, color='gray', linestyle='--', linewidth=0.5, alpha=0.5)
     
     ax.set_xlabel('Dívida Líquida / EBITDA (x)', fontsize=12)
     ax.set_ylabel('ROE (%)', fontsize=12)
     ax.set_title('ROE vs Dívida Líquida/EBITDA (2024)', fontsize=14, fontweight='bold')
-    ax.legend(loc='best')
     ax.grid(True, alpha=0.3, linestyle='--')
     
     plt.tight_layout()

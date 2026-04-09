@@ -1,76 +1,55 @@
 = Análise Comparativa do Sector de Gestão de Resíduos Urbanos em Portugal
-:author: Jorge C. Leitão
-:date: 2026-04-07
+Jorge C. Leitão
+2026-04-09
 :url-repo: https://github.com/jorgecarleitao/relatorio-residuos-urbanos-portugal
 :doctype: book
 :lang: pt
 :toc: left
+:toc-title: Índice
+:version-label: Versão
+:chapter-signifier:
 :toclevels: 3
-:sectnums:
-:sectnumlevels: 3
+:!sectnums:
 :icons: font
 :source-highlighter: rouge
 
 [abstract]
 == Sumário Executivo
 
-O processamento de resíduos urbanos em Portugal é um monopólio regulado
-controlado pela Mota-Engil através da Empresa Geral do Fomento (EGF),
-e regulado pela Entidade Reguladora dos Serviços de Águas e Resíduos (ERSAR).
-Os municípios contratam "sistemas multimunicipais", como a ALGAR e VALORSUL,
-detidas maioritariamente pela EGF, que praticam uma tarifa, regulada pela ERSAR,
-do custo por tonelada de resíduos.
+O processamento de resíduos urbanos em Portugal é realizado por sistemas municipais e multimunicipais em monopólio regulado.
+A maioria dos sistemas em alta é controlada pela Mota‑Engil, através da Empresa Geral do Fomento (EGF), e regulada pela ERSAR.
+Os municípios pagam uma tarifa por tonelada definida no regulamento tarifário da ERSAR.
 
-Esta análise de dados financeiros e operacionais de 2024
-sugere que os sistemas multimunicipais apresentam
-diferenças significativas de rentabilidade e sustentabilidade,
-que levam tanto a dividendos excessivos a serem pagos pelos cidadãos
-como a falta de investimento.
+Este relatório analisa relatórios e contas de 2024 de 19 sistemas em alta que servem 9,4 milhões de habitantes em 232 municípios (91% da população continental).
+Os resultados revelam fortes assimetrias de rentabilidade e risco financeiro entre sistemas sob o mesmo modelo regulatório.
 
-Principais conclusões baseadas na análise de dados financeiros e operacionais de 2024:
+Principais conclusões:
 
-* **1. Elevada heterogeneidade na rentabilidade**:
-  A rentabilidade sobre capital próprio (ROE) varia entre -13% (ALGAR) e +13% (VALORSUL/VALORLIS).
+* **Elevada heterogeneidade na rentabilidade**  
+  O ROE varia entre -10% (ALGAR) e +13% (VALORSUL e ECOLEZÍRIA), num setor maduro onde seria expectável convergência em torno do custo de capital.
 
-* **2. Produção de energia é o principal diferenciador**:
-  Produção e venda de energia é o principal fator explicativo nas diferenças de rentabilidade:
-  * VALORSUL: 442 kWh/t produzidos → lucro de 9,8 €/t → ROE de 13%
-  * ALGAR: 49 kWh/t produzidos → resultado negativo de -3,8 €/t → ROE de -10%
-  A diferença de 9x na produção energética correlaciona-se com o diferencial de 13,6 €/t no resultado.
-  Observa-se assimetria de infraestrutura, não de eficiência operacional.
+* **Distribuição de lucros em monopólio**  
+  A VALORSUL cobrou 47,93 €/t, dos quais 9,8 €/t (20% da tarifa) foram distribuídos como dividendos aos acionistas.
 
-* **3. Distribuição de lucros**:
-  A VALORSUL cobrou aos municípios uma tarifa regulada pela ERSAR de 47,93 €/t, dos quais 10 €/t foram distribuídos como dividendos aos acionistas.
-  A distribuição representa aproximadamente 20% da tarifa paga pelos municípios.
+* **Risco financeiro assimétrico**  
+  A maioria dos sistemas apresenta rácios de dívida/EBITDA entre 3,0x e 3,6x, limitando novos investimentos.
+  A VALORSUL (1x) dispõe de margem para investir sem fundos públicos, enquanto ALGAR, TRATOLIXO e AMBILITAL combinam endividamento elevado com resultados fracos.
 
-* **4. Limitações de investimento**:
-  Sistemas sem valorização energética apresentam resultados insuficientes para autofinanciar investimento.
-  O endividamento médio do sector é 3,0-3,6x EBITDA, limitando a capacidade de investimento.
-  A VALORSUL, com apenas 0,93x, tem margem financeira para investir enquanto os restantes dependem de fundos públicos.
-
-* **5. Heterogeneidade de resultados sob regulação**:
-  O modelo tarifário da ERSAR (proveitos permitidos = custos + remuneração de capital) apresenta resultados heterogéneos:
-  sistemas com resultados negativos operam com infraestrutura limitada;
-  sistemas rentáveis distribuem demasiados dividendos.
-
-=== Sobre Este Relatório
-
-Esta análise baseia-se exclusivamente em dados públicos dos relatórios e contas de 2024 de 16 sistemas multimunicipais,
-que no conjunto servem 8,9 milhões de habitantes em 205 municípios (aproximadamente 86% da população de Portugal continental).
-O foco é económico-financeiro.
+* **Heterogeneidade sob o mesmo modelo regulatório**  
+  O modelo de proveitos permitidos gera resultados díspares: alguns sistemas operam com resultados negativos; outros apresentam ROE acima de 10% e distribuem dividendos significativos.
+  Esta coexistência indica que o enquadramento regulatório não alinha tarifas, risco e remuneração de capital.
 
 == Enquadramento
 
 === Estrutura do Sector
 
-A gestão de resíduos urbanos em Portugal funciona como um serviço público em monopólio regulado, organizado em dois níveis:
+A gestão de resíduos urbanos funciona em monopólio regulado, organizado em dois níveis:
 
 Serviço "em Baixa" (Municípios):
 
 * Recolha porta-a-porta e contentores de rua
-* Limpeza urbana e varredura
+* Limpeza urbana
 * Gestão de ecopontos de proximidade
-* Gerido pelos municípios, por vezes externalizado
 
 Serviço "em Alta" (Empresas Multimunicipais):
 
@@ -78,7 +57,6 @@ Serviço "em Alta" (Empresas Multimunicipais):
 * Triagem e valorização material
 * Valorização energética (incineração ou biogás)
 * Deposição final (aterros)
-* Gerido por empresas multimunicipais, maioritariamente EGF (Mota-Engil)
 
 Esta análise foca-se exclusivamente no Serviço "em Alta".
 
@@ -98,105 +76,85 @@ Esta análise foca-se exclusivamente no Serviço "em Alta".
 
 === Sistemas Multimunicipais Analisados
 
-Esta análise cobre 19 sistemas de gestão de resíduos urbanos "em alta", incluindo as 11 concessionárias multimunicipais do grupo EGF e oito sistemas intermunicipais/multimunicipais
-independentes (LIPOR, TRATOLIXO, AMBISOUSA, AMBILITAL, BRAVAL, ECOLEZIRIA, RESIALENTEJO e RSTJ).
-Ficam de fora alguns serviços e empresas municipais com componente de resíduos integrada (água/saneamento/resíduos),
-cuja informação financeira específica para RU não é diretamente comparável.
+Este relatório analisa 19 sistemas em alta: 11 concessionárias EGF e 8 sistemas independentes (LIPOR, TRATOLIXO, AMBISOUSA, AMBILITAL, BRAVAL, ECOLEZIRIA, RESIALENTEJO e RSTJ).
 
-No total, os sistemas analisados servem **9,4 milhões de habitantes** distribuídos por **232 municípios**,
-representando aproximadamente 91% da população de Portugal continental.
+No total, **9,4 milhões de habitantes** em **232 municípios** (91% da população continental).
 
 include::build/tables/sistemas_analisados.adoc[]
 
 === Rentabilidade
 
-O primeiro indicador analisado é a rentabilidade sobre capital próprio (ROE), que compara
-o lucro da empresa num ano com o capital próprio da empresa.
+A rentabilidade sobre capital próprio (ROE) compara o lucro anual com o capital próprio.
 
-Para uma empresa num sector maduro e num monopólio regulado,
-Valores altos sugerem que a regulação pode estar a permitir uma remuneração do capital acima do necessário para assegurar investimento e qualidade,
-transferindo rendas adicionais para o acionista.
-Valores consistentemente baixos, abaixo do custo de capital, indicam que o privado suporta parte do custo do serviço,
-o que pode desincentivar investimento e pôr em causa a sustentabilidade no médio prazo.
-valores negativos indicam insustentabilidade do sistema.
+Num setor maduro em monopólio regulado, ROE elevado sugere remuneração acima do necessário, transferindo rendas para o acionista.
+ROE baixo indica desincentivo ao investimento; ROE negativo indica insustentabilidade.
 
-.Rentabilidade sobre capital próprio dos sistemas multimunicipais analisados. Os sistemas têm enormes diferenças. Algarve em situação insustentável; Lisboa com rentabilidade elevada.
+.Rentabilidade sobre capital próprio dos sistemas multimunicipais analisados. Os sistemas apresentam diferenças muito significativas: o Algarve em situação claramente insustentável; Lisboa e outros sistemas com rentabilidade elevada.
 image::figures/roe.svg[ROE Distribution,width=85%,align=center]
 
 include::build/tables/roe.adoc[]
 
+Observa-se disparidade marcada nos níveis de ROE sob o mesmo enquadramento regulatório.
+Sistemas com baixa rentabilidade têm menor capacidade de investir; sistemas com rentabilidade elevada transferem parte significativa da tarifa como lucro.
+Ambas as situações geram desigualdades regionais.
+
 === Sustentabilidade Económica
 
-O segundo indicador analisado é o rácio da dívida líquida por EBITDA, um indicador padrão da sustentabilidade da
-dívida da empresa.
-Grosso modo, um valor baixo indica que a empresa não está a contrair dívidas para investir,
-enquanto um valor alto indica que a empresa está em risco de ser incapaz de suportar as atuais dívidas.
-Por exemplo, um rácio de 4x indica que a empresa precisa de manter os resultados por 4 anos para conseguir pagar as suas dívidas atuais.
+O rácio dívida líquida/EBITDA mede a sustentabilidade da dívida.
+Valor baixo indica dívida reduzida face aos resultados operacionais; valor alto indica maior exposição ao risco.
+Um rácio de 4x corresponde a quatro anos de EBITDA.
 
-.Racio da dívida por EBITDA. Quase todas as empreas apresentam alguma alavancagem (3x), ainda dentro do razoavel.
+.Rácio da dívida líquida por EBITDA. A maioria das empresas apresenta alguma alavancagem (em torno de 3x), ainda dentro de valores correntes para o sector, mas existem casos com níveis de risco claramente superiores.
 image::figures/net_debt_ebitda.svg[Net Debt EBITDA,width=85%,align=center]
 
 include::build/tables/net_debt_ebitda.adoc[]
 
+Os dados revelam dispersão significativa: vários sistemas com rácios próximos de 3x, outros acima de 5–7x (risco elevado).
+Alguns sistemas dependem de reequilíbrios públicos para manter capacidade de investimento; outros mantêm dívidas baixas.
+
 === Margem EBITDA
 
-O terceiro indicador analisado é a margem EBITDA, que mede a percentagem da receita que se traduz em EBITDA,
-isto é, em resultados antes de juros, impostos, depreciações e amortizações
-Uma margem EBITDA de 20% no contexto das multimunicipais indica, grosso modo,
-que a empresa gera em EBITDA cerca de 20% da tarifa cobrada aos municípios.
+A margem EBITDA mede a percentagem da receita convertida em resultados operacionais.
+Margem de 20% significa que a empresa gera 20% da tarifa como EBITDA.
 
 .Margem EBITDA das multimunicipais em 2024.
 image::figures/ebitda_margins.svg[EBITDA Margins,width=85%,align=center]
 
 include::build/tables/ebitda_margins.adoc[]
 
-Todas as empresas analisadas apresentam margens EBITDA superiores a 20%,
-sinal de uma capacidade consistente de geração de resultados operacionais face à receita.
+17 dos 19 sistemas apresentam margens EBITDA superiores a 20%.
+Quatro sistemas ultrapassam 30%; conjugadas com ROE elevados e distribuição de dividendos, sugerem que a estrutura tarifária gera remunerações acima do necessário.
 
 === Rentabilidade por Tonelada
 
-O terceiro indicador analisado é a rentabilidade por tonelada, que compara a rentabilidade com o número de toneladas
-de resíduos urbanos processados,
-e representa a valorização económica dos resíduos produzidos pelos municípios.
+A rentabilidade por tonelada representa a valorização económica dos resíduos processados.
 
 .Rentabilidade por tonelada dos sistemas multimunicipais analisados. Valorsul com rentabilidade muito superior ao resto do sector; ALGAR em prejuízo.
 image::figures/rentability_per_ton.svg[Rentability Per Ton,width=85%,align=center]
 
 include::build/tables/rentability_per_ton.adoc[]
 
-A análise sugere uma elevada variação da rentabilidade dos resíduos: enquanto a ALGAR perde quase 4€ por tonelada,
-a VALORSUL lucra quase 10€ por tonelada.
-Este indicador explica, em larga medida, a viabilidade económica de cada um dos sistemas multimunicipais.
+A análise revela elevada variação: ALGAR perde 4€/t, VALORSUL lucra 10€/t.
+Este indicador explica a viabilidade económica de cada sistema.
 
 == Conclusões
 
 === De lucros excessivos a insustentabilidade
 
-Em vários sistemas, combinam‑se margens EBITDA elevadas, baixo endividamento e rentabilidades sobre capital próprio
-claramente acima do custo de capital de um monopólio regulado.
-É o caso da VALORSUL, ECOLEZÍRIA, AMBISOUSA ou VALNOR, com ROE na ordem dos 10–13% e rentabilidades por tonelada
-entre 6 € e 10 €/t, num contexto em que as empresas distribuem lucros significativos.
-Isto indica que o modelo tarifário está a permitir a extração de rendas económicas em serviços essenciais em monopólio
-à custa de tarifas mais altas para municípios e munícipes do que o necessário para assegurar
-o investimento e a qualidade do serviço.
+Vários sistemas combinam margens EBITDA elevadas, baixo endividamento e ROE acima do custo de capital.
+VALORSUL, ECOLEZÍRIA, AMBISOUSA e VALNOR apresentam ROE de 10–13% e rentabilidades de 6–10 €/t, distribuindo lucros significativos.
+O modelo tarifário permite extração de rendas à custa de tarifas superiores ao necessário.
 
-Um segundo grupo de sistemas (ERSUC, RESINORTE, RESULIMA, LIPOR, TRATOLIXO, SULDOURO, entre outros) apresenta margens
-EBITDA confortáveis (tipicamente acima de 25%), mas ROE muito próximo de 0% e rácios de dívida líquida/EBITDA em torno de 3–4x.
-Na prática, estas entidades operam em equilíbrio económico, mas com alavancagem relevante e pouca folga para absorver choques
-(subidas de juros, quebras de volumes, atrasos regulatórios).
-A sustentabilidade de médio prazo destes sistemas depende da capacidade regulatória para alinhar tarifas,
-investimento elegível e gestão da dívida, sob pena de empurrar necessidades de reequilíbrio financeiro para os municípios.
+Um segundo grupo (ERSUC, RESINORTE, RESULIMA, LIPOR, TRATOLIXO, SULDOURO) apresenta margens EBITDA acima de 25%, mas ROE próximo de 0% e dívida/EBITDA de 3–4x.
+Operam em equilíbrio económico com alavancagem relevante e pouca margem para absorver choques.
+A sustentabilidade depende da capacidade regulatória para alinhar tarifas, investimento e gestão da dívida.
 
-Por fim, existem sistemas que combinam margens EBITDA fracas, endividamento muito elevado e resultados líquidos negativos,
-como a ALGAR e, sobretudo, a AMBILITAL, com rácios de dívida líquida/EBITDA superiores a 5–9x e prejuízos por tonelada significativos.
-Estes casos são situações de insustentabilidade: não geram meios próprios suficientes para renovar ativos e servir a dívida,
-ficando dependentes de fundos públicos, reequilíbrios tarifários ou transferências extraordinárias dos municípios.
-A coexistência, no mesmo quadro regulatório, de sistemas que distribuem dividendos abundantes e de sistemas estruturalmente
-descapitalizados é um sinal de desajuste profundo do modelo de proveitos permitidos.
+Finalmente, ALGAR e AMBILITAL combinam margens fracas, endividamento superior a 5–9x e prejuízos significativos.
+Situações de insustentabilidade: não geram meios para renovar ativos, dependendo de fundos públicos e reequilíbrios tarifários.
+A coexistência de sistemas que distribuem dividendos e sistemas descapitalizados indica desajuste profundo do modelo regulatório.
 
-O objetivo de um regulador económico em serviços em monopólio não é nivelar resultados à força, mas garantir que a
-remuneração do capital é consistente com o risco do serviço e que os ganhos de eficiência são partilhados com os utilizadores.
-Os dados de 2024 mostram que, no serviço em alta de resíduos urbanos, esse equilíbrio não está hoje assegurado em Portugal.
+Um regulador deve garantir que a remuneração do capital seja consistente com o risco e que ganhos de eficiência sejam partilhados.
+Os dados de 2024 mostram que este equilíbrio não está assegurado.
 
 .Relação entre ROE e Endividamento nos Sistemas Analisados
 image::figures/roe_vs_debt.svg[]
@@ -210,37 +168,27 @@ image::figures/roe_vs_debt.svg[]
 * Margem Liquida: 20%
 * Destino do lucro: 100% dividendos
 
-Esta política de distribuição implica que aproximadamente 20% da tarifa paga pelos municípios em 2024,
-cerca de 9,8 €/t, foi resultado líquido e distribuída como dividendos aos acionistas.
+20% da tarifa (9,8 €/t) foi distribuída como dividendos.
 
-Num serviço de resíduos prestado em monopólio regulado, um ROE de 13% é fortemente indicativo de que:
+Num monopólio regulado, ROE de 13% indica:
 
-1. As tarifas foram fixadas acima do estritamente necessário para cobrir custos eficientes e uma remuneração prudente do capital, OU
-2. Os ganhos de eficiência obtidos face aos pressupostos regulatórios não estão a ser partilhados com os municípios, sendo apropriados pelos acionistas, OU
-3. O modelo de cálculo da remuneração do capital (taxa de retorno e base de ativos regulada) está desajustado face ao risco efetivo da concessão.
+1. Tarifas acima do necessário, OU
+2. Ganhos de eficiência apropriados pelos acionistas, OU
+3. Modelo de remuneração desajustado ao risco.
 
-Em qualquer destes cenários, o resultado é o mesmo: o quadro regulatório permitiu à Valorsul extrair um retorno
-excessivo num serviço em monopólio, o que se traduz num custo tarifário superior ao estritamente necessário
-para os municípios e, em última instância, para os munícipes.footnote:[Se a maior parte da margem EBITDA estivesse a ser consumida por investimento, não observaríamos simultaneamente margens líquidas de 20% e payout de 100%. O facto de isso acontecer mostra que uma parte relevante da margem EBITDA está a ser convertida em lucro distribuído, e não em reinvestimento na infraestrutura.]
+O quadro regulatório permitiu à Valorsul extrair retorno excessivo.footnote:[Margens líquidas de 20% com payout de 100% indicam conversão de margem EBITDA em lucro distribuído, não em reinvestimento.]
 
 == Metodologia
 
-Todos os valores financeiros foram extraídos dos Relatórios & Contas de 2024 das empresas,
-quando necessário convertidos para indicadores por tonelada com base nas quantidades de resíduos
-reportadas nos mesmos documentos.
+Valores extraídos dos Relatórios & Contas de 2024, convertidos para indicadores por tonelada quando necessário.
 
-Os cálculos de ROE, dívida líquida/EBITDA, margens e rentabilidade por tonelada
-foram efetuados com scripts em Python disponibilizados no repositório {url-repo},
-permitindo a reprodução integral das tabelas e figuras deste relatório.
+Cálculos efetuados com scripts Python disponíveis em {url-repo}.
 
 == Agradecimentos
 
-Este relatório não teria sido possível sem a qualidade e transparência dos relatórios anuais disponibilizados pelas empresas do sector.
+Agradecimento à **EGF** e empresas do grupo pela disponibilização de relatórios completos e transparentes em formato legível por computador.
 
-Um agradecimento especial à **EGF (Empresa Geral do Fomento)** e às empresas do grupo pela disponibilização de relatórios e contas anuais completos, transparentes e em formato legível por computador.
-Esta prática facilita a análise comparativa, promove a transparência do sector e serve de exemplo para outras empresas públicas e reguladas.
-
-Agradece-se igualmente à ERSAR pela disponibilização de dados regulatórios e indicadores de qualidade de serviço que complementaram esta análise.
+Agradecimento à ERSAR pelos dados regulatórios que complementaram esta análise.
 
 == Referências
 
@@ -262,8 +210,6 @@ include::build/tables/referencias.adoc[]
   Regime jurídico do sector dos resíduos urbanos
 
 ---
-
-_Relatório elaborado em 7 de abril de 2026, baseado em dados financeiros e operacionais de 2024._
 
 NOTE: Este relatório é de acesso aberto.
 O código-fonte, os dados e as instruções para reproduzir a análise estão disponíveis em {url-repo}[GitHub].
