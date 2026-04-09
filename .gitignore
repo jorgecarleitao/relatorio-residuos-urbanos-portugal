@@ -2,3 +2,4 @@ build
 venv
 .ocr-built
 *.pdf
+__pycache__

@@ -47,7 +47,7 @@ OCR_DOCKERFILE = ocr/Dockerfile.ocr
 OCR_DIR = ocr
 
 # Targets
-.PHONY: all html pdf clean help setup figures diagrams tables check-spelling lint ocr-build ocr-batch download-2024 download-2025 download-all
+.PHONY: all html pdf clean help setup generate diagrams check-spelling lint ocr-build ocr download-2024 download-2025 download-all
 
 all: html
 
@@ -59,28 +59,22 @@ help:
 	@echo "  make pdf        - Generate PDF report"
 	@echo "  make all        - Generate HTML report"
 	@echo "  make setup      - Setup Python environment"
-	@echo "  make figures    - Generate all figures"
+	@echo "  make generate   - Generate all figures and tables"
 	@echo "  make diagrams   - Copy diagrams to build"
-	@echo "  make tables     - Generate tables from CSV data"
 	@echo "  make check-spelling - Check grammar and spelling (Portuguese)"
 	@echo "  make lint       - Alias for check-spelling"
 	@echo "  make download-2024  - Download PDFs from fontes.csv (2024)"
 	@echo "  make download-2025  - Download PDFs from fontes.csv (2025)"
 	@echo "  make download-all   - Download PDFs for all years"
 	@echo "  make ocr-build  - Build OCR Docker image"
-	@echo "  make ocr-batch  - Process all PDFs in data/ with OCR"
+	@echo "  make ocr  - Process all PDFs in data/ with OCR"
 	@echo "  make clean      - Remove generated files"
 	@echo "  make help       - Show this help message"
 
 setup: $(VENV)
 
-figures: $(VENV)
-	@echo "Generating figures..."
-	@$(PYTHON) src/figures.py
-
-tables: $(VENV)
-	@echo "Generating tables..."
-	@$(PYTHON) src/tables.py
+generate: $(VENV)
+	@$(PYTHON) src/generate.py
 
 diagrams: | $(BUILD_DIR)
 	@echo "Copying diagrams..."
@@ -94,10 +88,10 @@ check-spelling: $(VENV)
 
 lint: check-spelling
 
-html: figures tables diagrams $(REPORT_HTML)
+html: generate diagrams $(REPORT_HTML)
 	@echo "✓ HTML report generated successfully"
 
-pdf: figures tables diagrams $(REPORT_PDF)
+pdf: generate diagrams $(REPORT_PDF)
 	@echo "✓ PDF report generated successfully"
 
 # Python virtual environment setup
@@ -143,7 +137,7 @@ download-all: download-2024 download-2025
 
 ocr-build: .ocr-built
 
-ocr-batch: .ocr-built download-all
+ocr: .ocr-built download-all
 	@echo "Processing all PDFs with OCR..."
 	@chmod +x $(OCR_DIR)/batch_ocr.sh
 	@./$(OCR_DIR)/batch_ocr.sh

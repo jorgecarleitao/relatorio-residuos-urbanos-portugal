@@ -34,8 +34,8 @@ Principais conclusões baseadas na análise de dados financeiros e operacionais 
 
 * **2. Produção de energia é o principal diferenciador**:
   Produção e venda de energia é o principal fator explicativo nas diferenças de rentabilidade:
-  * VALORSUL: 442 kWh/t produzidos → lucro de 9,8 €/t → ROE de 33%
-  * ALGAR: 49 kWh/t produzidos → resultado negativo de -3,8 €/t → ROE de -22%
+  * VALORSUL: 442 kWh/t produzidos → lucro de 9,8 €/t → ROE de 13%
+  * ALGAR: 49 kWh/t produzidos → resultado negativo de -3,8 €/t → ROE de -10%
   A diferença de 9x na produção energética correlaciona-se com o diferencial de 13,6 €/t no resultado.
   Observa-se assimetria de infraestrutura, não de eficiência operacional.
 
@@ -55,8 +55,8 @@ Principais conclusões baseadas na análise de dados financeiros e operacionais 
 
 === Sobre Este Relatório
 
-Esta análise baseia-se exclusivamente em dados públicos dos relatórios e contas de 2024 de 10 sistemas multimunicipais:
-VALORSUL, ALGAR, ERSUC, RESINORTE, AMARSUL, SULDOURO, VALORLIS, RESIESTRELA, RESULIMA e VALORMINHO.
+Esta análise baseia-se exclusivamente em dados públicos dos relatórios e contas de 2024 de 15 sistemas multimunicipais,
+que no conjunto servem 8,6 milhões de habitantes em 199 municípios (aproximadamente 83% da população de Portugal continental).
 O foco é económico-financeiro.
 
 == Enquadramento
@@ -98,6 +98,14 @@ Esta análise foca-se exclusivamente no Serviço "em Alta".
 
 === Sistemas Multimunicipais Analisados
 
+Esta análise cobre 15 sistemas de gestão de resíduos urbanos "em alta", incluindo as 11 concessionárias multimunicipais do grupo EGF e quatro sistemas intermunicipais/multimunicipais
+independentes (LIPOR, TRATOLIXO, AMBISOUSA e AMBILITAL).
+Ficam de fora alguns serviços e empresas municipais com componente de resíduos integrada (água/saneamento/resíduos),
+cuja informação financeira específica para RU não é diretamente comparável.
+
+No total, os sistemas analisados servem **8,6 milhões de habitantes** distribuídos por **199 municípios**,
+representando aproximadamente 83% da população de Portugal continental.
+
 include::build/tables/sistemas_analisados.adoc[]
 
 === Rentabilidade
@@ -113,7 +121,7 @@ o que pode desincentivar investimento e pôr em causa a sustentabilidade no méd
 valores negativos indicam insustentabilidade do sistema.
 
 .Rentabilidade sobre capital próprio dos sistemas multimunicipais analisados. Os sistemas têm enormes diferenças. Algarve em situação insustentável; Lisboa com rentabilidade elevada.
-image::figures/roe_distribution.svg[ROE Distribution,width=85%,align=center]
+image::figures/roe.svg[ROE Distribution,width=85%,align=center]
 
 include::build/tables/roe.adoc[]
 
@@ -126,7 +134,9 @@ enquanto um valor alto indica que a empresa está em risco de ser incapaz de sup
 Por exemplo, um rácio de 4x indica que a empresa precisa de manter os resultados por 4 anos para conseguir pagar as suas dívidas atuais.
 
 .Racio da dívida por EBITDA. Quase todas as empreas apresentam alguma alavancagem (3x), ainda dentro do razoavel.
-image::figures/net_debt_ebitda.svg[ROE Distribution,width=85%,align=center]
+image::figures/net_debt_ebitda.svg[Net Debt EBITDA,width=85%,align=center]
+
+include::build/tables/net_debt_ebitda.adoc[]
 
 === Margem EBITDA
 
@@ -136,7 +146,9 @@ Uma margem EBITDA de 20% no contexto das multimunicipais indica, grosso modo,
 que a empresa gera em EBITDA cerca de 20% da tarifa cobrada aos municípios.
 
 .Margem EBITDA das multimunicipais em 2024.
-image::figures/ebitda_margins.svg[ROE Distribution,width=85%,align=center]
+image::figures/ebitda_margins.svg[EBITDA Margins,width=85%,align=center]
+
+include::build/tables/ebitda_margins.adoc[]
 
 Todas as empresas analisadas apresentam margens EBITDA superiores a 20%,
 sinal de uma capacidade consistente de geração de resultados operacionais face à receita.
@@ -180,6 +192,16 @@ Em qualquer destes cenários, o resultado é o mesmo: o quadro regulatório perm
 excessivo num serviço em monopólio, o que se traduz num custo tarifário superior ao estritamente necessário
 para os municípios e, em última instância, para os munícipes.footnote:[Se a maior parte da margem EBITDA estivesse a ser consumida por investimento, não observaríamos simultaneamente margens líquidas de 20% e payout de 100%. O facto de isso acontecer mostra que uma parte relevante da margem EBITDA está a ser convertida em lucro distribuído, e não em reinvestimento na infraestrutura.]
 
+== Metodologia
+
+Todos os valores financeiros foram extraídos dos Relatórios & Contas de 2024 das empresas,
+quando necessário convertidos para indicadores por tonelada com base nas quantidades de resíduos
+reportadas nos mesmos documentos.
+
+Os cálculos de ROE, dívida líquida/EBITDA, margens e rentabilidade por tonelada
+foram efetuados com scripts em Python disponibilizados no repositório {url-repo},
+permitindo a reprodução integral das tabelas e figuras deste relatório.
+
 == Agradecimentos
 
 Este relatório não teria sido possível sem a qualidade e transparência dos relatórios anuais disponibilizados pelas empresas do sector.
@@ -193,45 +215,7 @@ Agradece-se igualmente à ERSAR pela disponibilização de dados regulatórios e
 
 === Relatórios e Contas das Empresas (2024)
 
-* ALGAR - Valorização e Tratamento de Resíduos Sólidos, S.A. +
-  Website: https://www.algar.com.pt +
-  Relatório & Contas 2024: https://www.algar.com.pt/media/bxhj2k0g/algar_rc2024.pdf
-
-* AMARSUL - Valorização e Tratamento de Resíduos Sólidos, S.A. +
-  Website: https://www.amarsul.pt +
-  Relatório & Contas 2024: https://www.amarsul.pt/media/sj5p3dgv/amarsul_rc.pdf
-
-* ERSUC - Resíduos Sólidos do Centro, S.A. +
-  Website: https://www.ersuc.pt +
-  Relatório & Contas 2024: https://www.ersuc.pt/media/kbkdkvg5/ersuc_rc_2024_.pdf
-
-* RESIESTRELA - Tratamento e Valorização de Resíduos Sólidos, S.A. +
-  Website: https://www.resiestrela.pt +
-  Relatório & Contas 2024: https://www.resiestrela.pt/media/lktlbn4s/resiestrela_rc.pdf
-
-* RESINORTE - Valorização e Tratamento de Resíduos Sólidos, S.A. +
-  Website: https://www.resinorte.pt +
-  Relatório & Contas 2024: https://www.resinorte.pt/media/xb4jdolu/resinorte_rc.pdf
-
-* RESULIMA - Valorização e Tratamento de Resíduos Sólidos, S.A. +
-  Website: https://www.resulima.pt +
-  Relatório & Contas 2024: https://www.resulima.pt/media/cpmhgd1b/scan_28032025_170219_1-1.pdf
-
-* SULDOURO - Valorização e Tratamento de Resíduos Sólidos, S.A. +
-  Website: https://www.suldouro.pt +
-  Relatório & Contas 2024: https://www.suldouro.pt/media/h3xocb1k/suldouro_rc_2024.pdf
-
-* VALORMINHO - Valorização e Tratamento de Resíduos Sólidos, S.A. +
-  Website: https://www.valorminho.pt +
-  Relatório & Contas 2024: https://www.valorminho.pt/media/r2nhgebj/rc-2024-assinado.pdf
-
-* VALORLIS - Valorização e Tratamento de Resíduos Sólidos, S.A. +
-  Website: https://www.valorlis.pt +
-  Relatório & Contas 2024: https://www.valorlis.pt/media/0hhkidhp/valorlis_rc.pdf
-
-* VALORSUL - Valorização e Tratamento de Resíduos Sólidos, S.A. +
-  Website: https://www.valorsul.pt +
-  Relatório & Contas 2024: https://www.valorsul.pt/media/fn3ic3xc/valorsul_rc-2024.pdf
+include::build/tables/referencias.adoc[]
 
 === Fontes Regulatórias e Legais
 
