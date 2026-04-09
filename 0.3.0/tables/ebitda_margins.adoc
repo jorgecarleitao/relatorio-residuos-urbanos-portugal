@@ -1,0 +1,24 @@
+[cols="1,>1"]
+|===
+|Empresa |Margem EBITDA (%)
+
+|Resialentejo |42,2
+|Tratolixo |36,3
+|Lipor |35,9
+|Ambisousa |33,1
+|Braval |28,4
+|Suldouro |28,0
+|Resiestrela |27,0
+|Valnor |26,3
+|Valorsul |26,0
+|Resinorte |25,7
+|Valorlis |25,0
+|Valorminho |24,1
+|Amarsul |24,0
+|Ecoleziria |23,9
+|Ersuc |22,2
+|Resulima |20,9
+|Algar |20,2
+|Rstj |14,6
+|Ambilital |11,9
+|===

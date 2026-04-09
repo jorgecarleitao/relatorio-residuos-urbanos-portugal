@@ -1,0 +1,24 @@
+[cols="1,>1"]
+|===
+|Empresa |Rentabilidade por Tonelada (€/t)
+
+|Valorsul |9,8
+|Ambisousa |9,5
+|Ecoleziria |8,1
+|Valnor |6,5
+|Valorlis |4,9
+|Resiestrela |4,6
+|Braval |2,6
+|Suldouro |1,6
+|Amarsul |1,3
+|Valorminho |0,7
+|Resulima |0,5
+|Ersuc |0,3
+|Rstj |0,1
+|Resinorte |0,0
+|Tratolixo |0,0
+|Lipor |0,0
+|Resialentejo |0,4
+|Algar |-3,8
+|Ambilital |-8,0
+|===
