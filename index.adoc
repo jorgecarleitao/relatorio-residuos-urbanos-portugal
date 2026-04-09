@@ -55,8 +55,8 @@ Principais conclusões baseadas na análise de dados financeiros e operacionais 
 
 === Sobre Este Relatório
 
-Esta análise baseia-se exclusivamente em dados públicos dos relatórios e contas de 2024 de 15 sistemas multimunicipais,
-que no conjunto servem 8,6 milhões de habitantes em 199 municípios (aproximadamente 83% da população de Portugal continental).
+Esta análise baseia-se exclusivamente em dados públicos dos relatórios e contas de 2024 de 16 sistemas multimunicipais,
+que no conjunto servem 8,9 milhões de habitantes em 205 municípios (aproximadamente 86% da população de Portugal continental).
 O foco é económico-financeiro.
 
 == Enquadramento
@@ -98,13 +98,13 @@ Esta análise foca-se exclusivamente no Serviço "em Alta".
 
 === Sistemas Multimunicipais Analisados
 
-Esta análise cobre 15 sistemas de gestão de resíduos urbanos "em alta", incluindo as 11 concessionárias multimunicipais do grupo EGF e quatro sistemas intermunicipais/multimunicipais
-independentes (LIPOR, TRATOLIXO, AMBISOUSA e AMBILITAL).
+Esta análise cobre 19 sistemas de gestão de resíduos urbanos "em alta", incluindo as 11 concessionárias multimunicipais do grupo EGF e oito sistemas intermunicipais/multimunicipais
+independentes (LIPOR, TRATOLIXO, AMBISOUSA, AMBILITAL, BRAVAL, ECOLEZIRIA, RESIALENTEJO e RSTJ).
 Ficam de fora alguns serviços e empresas municipais com componente de resíduos integrada (água/saneamento/resíduos),
 cuja informação financeira específica para RU não é diretamente comparável.
 
-No total, os sistemas analisados servem **8,6 milhões de habitantes** distribuídos por **199 municípios**,
-representando aproximadamente 83% da população de Portugal continental.
+No total, os sistemas analisados servem **9,4 milhões de habitantes** distribuídos por **232 municípios**,
+representando aproximadamente 91% da população de Portugal continental.
 
 include::build/tables/sistemas_analisados.adoc[]
 
@@ -169,6 +169,37 @@ a VALORSUL lucra quase 10€ por tonelada.
 Este indicador explica, em larga medida, a viabilidade económica de cada um dos sistemas multimunicipais.
 
 == Conclusões
+
+=== De lucros excessivos a insustentabilidade
+
+Em vários sistemas, combinam‑se margens EBITDA elevadas, baixo endividamento e rentabilidades sobre capital próprio
+claramente acima do custo de capital de um monopólio regulado.
+É o caso da VALORSUL, ECOLEZÍRIA, AMBISOUSA ou VALNOR, com ROE na ordem dos 10–13% e rentabilidades por tonelada
+entre 6 € e 10 €/t, num contexto em que as empresas distribuem lucros significativos.
+Isto indica que o modelo tarifário está a permitir a extração de rendas económicas em serviços essenciais em monopólio
+à custa de tarifas mais altas para municípios e munícipes do que o necessário para assegurar
+o investimento e a qualidade do serviço.
+
+Um segundo grupo de sistemas (ERSUC, RESINORTE, RESULIMA, LIPOR, TRATOLIXO, SULDOURO, entre outros) apresenta margens
+EBITDA confortáveis (tipicamente acima de 25%), mas ROE muito próximo de 0% e rácios de dívida líquida/EBITDA em torno de 3–4x.
+Na prática, estas entidades operam em equilíbrio económico, mas com alavancagem relevante e pouca folga para absorver choques
+(subidas de juros, quebras de volumes, atrasos regulatórios).
+A sustentabilidade de médio prazo destes sistemas depende da capacidade regulatória para alinhar tarifas,
+investimento elegível e gestão da dívida, sob pena de empurrar necessidades de reequilíbrio financeiro para os municípios.
+
+Por fim, existem sistemas que combinam margens EBITDA fracas, endividamento muito elevado e resultados líquidos negativos,
+como a ALGAR e, sobretudo, a AMBILITAL, com rácios de dívida líquida/EBITDA superiores a 5–9x e prejuízos por tonelada significativos.
+Estes casos são situações de insustentabilidade: não geram meios próprios suficientes para renovar ativos e servir a dívida,
+ficando dependentes de fundos públicos, reequilíbrios tarifários ou transferências extraordinárias dos municípios.
+A coexistência, no mesmo quadro regulatório, de sistemas que distribuem dividendos abundantes e de sistemas estruturalmente
+descapitalizados é um sinal de desajuste profundo do modelo de proveitos permitidos.
+
+O objetivo de um regulador económico em serviços em monopólio não é nivelar resultados à força, mas garantir que a
+remuneração do capital é consistente com o risco do serviço e que os ganhos de eficiência são partilhados com os utilizadores.
+Os dados de 2024 mostram que, no serviço em alta de resíduos urbanos, esse equilíbrio não está hoje assegurado em Portugal.
+
+.Relação entre ROE e Endividamento nos Sistemas Analisados
+image::figures/roe_vs_debt.svg[]
 
 === Em Lisboa, os munícipes estão a subsidiar os acionistas do monopólio
 

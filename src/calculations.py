@@ -31,22 +31,20 @@ def load_regions() -> pl.DataFrame:
 
 def calculate_sistemas_analisados() -> pl.DataFrame:
     """Calculate systems analysis data."""
-    capital = pl.read_csv(DATA_DIR / 'capital_social.csv')
+    operacao = pl.read_csv(DATA_DIR / 'empresa_operacao.csv')
     regions = load_regions()
     
     # Join and format
-    df = capital.join(regions, on='Empresa', how='left')
-    df = df.with_columns([
-        (pl.lit('EGF (') + pl.col('EGF (%)').cast(pl.Utf8) + pl.lit('%)')).alias('Acionista')
-    ])
+    df = operacao.join(regions, left_on='empresa', right_on='Empresa', how='left')
     
-    # Sort before selecting
-    df = df.sort('EGF (%)', descending=True)
+    # Sort by population descending
+    df = df.sort('populacao_servida', descending=True)
     
     return df.select([
-        'Empresa',
+        pl.col('empresa').alias('Empresa'),
         'Região',
-        'Acionista'
+        pl.col('municipios_servidos').alias('Municípios'),
+        pl.col('populacao_servida').alias('População')
     ])
 
 
@@ -107,6 +105,25 @@ def calculate_rentability_per_ton() -> pl.DataFrame:
         'Empresa',
         'Lucro_por_Ton'
     ]).sort('Lucro_por_Ton', descending=True)
+
+
+def calculate_roe_vs_debt() -> pl.DataFrame:
+    """Calculate ROE vs Net Debt/EBITDA for scatter plot."""
+    finance = pl.read_csv(DATA_DIR / 'indicadores_financeiros.csv')
+    
+    # Calculate ROE
+    df = finance.with_columns([
+        pl.when(pl.col('Capital Próprio (€)') > 0)
+        .then((pl.col('Resultado Líquido (€)') / pl.col('Capital Próprio (€)')) * 100)
+        .otherwise(0.0)
+        .alias('ROE')
+    ])
+    
+    return df.select([
+        'Empresa',
+        'ROE',
+        pl.col('Endividamento Líquido / EBITDA (x)').alias('Debt_EBITDA')
+    ])
 
 
 def load_fontes() -> pl.DataFrame:

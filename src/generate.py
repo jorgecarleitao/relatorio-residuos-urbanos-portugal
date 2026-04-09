@@ -14,6 +14,7 @@ from calculations import (
     calculate_roe,
     calculate_net_debt_ebitda,
     calculate_rentability_per_ton,
+    calculate_roe_vs_debt,
     load_fontes
 )
 
@@ -40,7 +41,7 @@ FIGURES_DIR.mkdir(parents=True, exist_ok=True)
 
 def format_number(value: Union[str, int, float, None], decimals: Optional[int] = None) -> str:
     """Format numeric values for display."""
-    if not value or value == 'N/D':
+    if value is None or value == 'N/D' or value == '':
         return 'N/D'
     
     try:
@@ -68,7 +69,7 @@ def format_number(value: Union[str, int, float, None], decimals: Optional[int] =
             return f"{int(formatted):,}".replace(',', '.')
             
     except (ValueError, AttributeError):
-        return str(value) if value else 'N/D'
+        return str(value) if value is not None else 'N/D'
 
 
 def write_table(
@@ -211,13 +212,14 @@ def generate_sistemas_analisados() -> None:
     write_table(
         'sistemas_analisados',
         df,
-        headers=['Sistema', 'Região', 'Acionista Maioritário'],
+        headers=['Sistema', 'Região', 'Municípios', 'População (hab)'],
         column_specs=[
             {'col': 'Empresa', 'title_case': True},
             {'col': 'Região'},
-            {'col': 'Acionista'}
+            {'col': 'Municípios', 'format': 'int'},
+            {'col': 'População', 'format': 'thousands'}
         ],
-        col_align='1,1,2'
+        col_align='1,1,>1,>1'
     )
 
 
@@ -380,6 +382,56 @@ def generate_rentability_per_ton() -> None:
     )
 
 
+def generate_roe_vs_debt_scatter() -> None:
+    """Generate scatter plot of ROE vs Net Debt/EBITDA."""
+    df = calculate_roe_vs_debt()
+    
+    fig, ax = plt.subplots(figsize=(10, 8))
+    
+    companies = df['Empresa'].to_list()
+    debt_ebitda = df['Debt_EBITDA'].to_list()
+    roe = df['ROE'].to_list()
+    
+    # Color code by quadrants
+    colors = []
+    for d, r in zip(debt_ebitda, roe):
+        if r >= 5 and d <= 2:  # High ROE, Low Debt - Green (good)
+            colors.append('green')
+        elif r < 0 or d > 5:  # Negative ROE or Very High Debt - Red (bad)
+            colors.append('red')
+        else:  # Medium - Orange
+            colors.append('orange')
+    
+    # Plot points
+    ax.scatter(debt_ebitda, roe, c=colors, s=100, alpha=0.6, edgecolors='black')
+    
+    # Add company labels
+    for i, company in enumerate(companies):
+        ax.annotate(company.title(), (debt_ebitda[i], roe[i]), 
+                   xytext=(5, 5), textcoords='offset points', 
+                   fontsize=8, alpha=0.8)
+    
+    # Add reference lines
+    ax.axhline(y=0, color='gray', linestyle='-', linewidth=0.5, alpha=0.5)
+    ax.axhline(y=5, color='gray', linestyle='--', linewidth=0.5, alpha=0.5, label='ROE = 5%')
+    ax.axvline(x=0, color='gray', linestyle='-', linewidth=0.5, alpha=0.5)
+    ax.axvline(x=3, color='gray', linestyle='--', linewidth=0.5, alpha=0.5, label='Dívida/EBITDA = 3x')
+    
+    ax.set_xlabel('Dívida Líquida / EBITDA (x)', fontsize=12)
+    ax.set_ylabel('ROE (%)', fontsize=12)
+    ax.set_title('ROE vs Dívida Líquida/EBITDA (2024)', fontsize=14, fontweight='bold')
+    ax.legend(loc='best')
+    ax.grid(True, alpha=0.3, linestyle='--')
+    
+    plt.tight_layout()
+    
+    # Write to file
+    output_path = FIGURES_DIR / 'roe_vs_debt.svg'
+    fig.savefig(output_path, format='svg', bbox_inches='tight')
+    plt.close(fig)
+    print(f"✓ Figure: {output_path}")
+
+
 def generate_referencias() -> None:
     """Generate references table from fontes.csv (no figure)."""
     df = load_fontes()
@@ -419,6 +471,7 @@ def main() -> None:
     generate_roe()
     generate_net_debt_ebitda()
     generate_rentability_per_ton()
+    generate_roe_vs_debt_scatter()
     generate_referencias()
     
     print("\n✓ All tables and figures generated successfully!")
