@@ -1,0 +1,24 @@
+[cols="1,1,>1,>1"]
+|===
+|Sistema |Região |Municípios |População (hab)
+
+|Valorsul |Lisboa e Oeste |19 |1.600.000
+|Lipor |Grande Porto |8 |1.000.000
+|Ersuc |Centro |36 |947.519
+|Resinorte |Norte |35 |904.000
+|Tratolixo |Lisboa/Cascais-Sintra |4 |880.969
+|Amarsul |Península de Setúbal |9 |807.902
+|Algar |Algarve |16 |474.300
+|Suldouro |Porto/Aveiro |2 |444.591
+|Ambisousa |Vale do Sousa |6 |328.605
+|Resulima |Minho/Lima |6 |313.183
+|Valorlis |Leiria |6 |311.000
+|Braval |Braga |6 |298.451
+|Rstj |Médio Tejo |12 |271.172
+|Valnor |Alto Alentejo |25 |242.952
+|Resiestrela |Cova da Beira |14 |180.568
+|Ecoleziria |Lezíria do Tejo |7 |136.426
+|Ambilital |Alentejo Litoral |7 |115.435
+|Resialentejo |Baixo Alentejo |8 |86.505
+|Valorminho |Minho |6 |73.902
+|===

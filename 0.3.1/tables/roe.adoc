@@ -1,0 +1,24 @@
+[cols="1,>1"]
+|===
+|Empresa |ROE (%)
+
+|Valorsul |13,0
+|Ecoleziria |11,8
+|Ambisousa |7,6
+|Valorlis |5,7
+|Braval |3,8
+|Valnor |3,4
+|Amarsul |3,0
+|Resiestrela |2,9
+|Suldouro |2,1
+|Valorminho |1,4
+|Ersuc |0,4
+|Resulima |0,4
+|Rstj |0,3
+|Resinorte |0,0
+|Tratolixo |0,0
+|Lipor |0,0
+|Resialentejo |0,2
+|Ambilital |-3,7
+|Algar |-10,2
+|===

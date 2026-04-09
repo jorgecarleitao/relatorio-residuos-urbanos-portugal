@@ -1,0 +1,27 @@
+[cols="1,1"]
+|===
+|Sistema |Relatório & Contas 2024
+
+|ALGAR |link:https://www.algar.com.pt/media/bxhj2k0g/algar_rc2024.pdf[PDF]
+|AMARSUL |link:https://www.amarsul.pt/media/sj5p3dgv/amarsul_rc.pdf[PDF]
+|AMBILITAL |link:https://ambilital.pt/media/fgnbba5l/relat%C3%B3rio-e-contas-anuais-2024.pdf[PDF]
+|AMBISOUSA |link:https://www.ambisousa.pt/fotos/editor2/relatorio/2024/rc_2024site.pdf[PDF]
+|BRAVAL |link:https://braval.pt/wp-content/uploads/2025/informacaoempresarial/relatorioecontas/rec2024.pdf[PDF]
+|ECOLEZIRIA |link:https://ecoleziria.pt/novosite2019/wp-content/uploads/2025/07/Relatorio-e-contas-2024.pdf[PDF]
+|ERSUC |link:https://www.ersuc.pt/media/kbkdkvg5/ersuc_rc_2024_.pdf[PDF]
+|GESAMB |link:None[PDF]
+|LIPOR |link:https://www.lipor.pt/fotos/gca/lipor_relatoyrio_integrado_2024_final_v4_8148231956852911b6ccf7.pdf[PDF]
+|PLANALTO BEIRAO |link:None[PDF]
+|RESIALENTEJO |link:https://resialentejo.pt/wp-content/uploads/2025/06/Relatorio_Contas_2024_ass.pdf[PDF]
+|RESIDUOS NORDESTE |link:None[PDF]
+|RESIESTRELA |link:https://www.resiestrela.pt/media/lktlbn4s/resiestrela_rc.pdf[PDF]
+|RESINORTE |link:https://www.resinorte.pt/media/xb4jdolu/resinorte_rc.pdf[PDF]
+|RESULIMA |link:https://www.resulima.pt/media/cpmhgd1b/scan_28032025_170219_1-1.pdf[PDF]
+|RSTJ |link:https://rstj.pt/wp-content/uploads/2025/04/Relatorio-e-Contas.pdf[PDF]
+|SULDOURO |link:https://www.suldouro.pt/media/h3xocb1k/suldouro_rc_2024.pdf[PDF]
+|TRATOLIXO |link:https://www.tratolixo.pt/media/v34n4gul/rc24_producao_site.pdf[PDF]
+|VALNOR |link:https://www.valnor.pt/media/1jjcxy3k/rc-valnor-2024_assin.pdf[PDF]
+|VALORLIS |link:https://www.valorlis.pt/media/0hhkidhp/valorlis_rc.pdf[PDF]
+|VALORMINHO |link:https://www.valorminho.pt/media/r2nhgebj/rc-2024-assinado.pdf[PDF]
+|VALORSUL |link:https://www.valorsul.pt/media/fn3ic3xc/valorsul_rc-2024.pdf[PDF]
+|===
