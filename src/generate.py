@@ -9,6 +9,7 @@ from typing import Dict, List, Optional, Union
 import polars as pl
 import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
+from matplotlib.patches import Rectangle
 from calculations import (
     calculate_sistemas_analisados,
     calculate_ebitda_margins,
@@ -484,12 +485,14 @@ def generate_rentability_per_ton() -> None:
 
 
 def _scatter_color(roe: float, debt_ebitda: float) -> str:
-    if roe >= 5 and debt_ebitda <= 2:
+    roe_good = 0 <= roe < 10
+    debt_good = 1 <= debt_ebitda <= 4
+    if roe_good and debt_good:
         return 'green'
-    elif roe < 0 or debt_ebitda > 5:
-        return 'red'
-    else:
+    elif roe_good or debt_good:
         return 'orange'
+    else:
+        return 'red'
 
 
 def generate_roe_vs_debt_scatter() -> None:
@@ -515,7 +518,7 @@ def generate_roe_vs_debt_scatter() -> None:
         
         # Arrow from 2024 to 2025
         ax.annotate('', xy=(x2, y2), xytext=(x1, y1),
-                    arrowprops=dict(arrowstyle='->', color='gray', lw=1.2, alpha=0.5),
+                    arrowprops=dict(arrowstyle='->', color='gray', lw=1.2, alpha=0.7),
                     zorder=4)
         
         # Label at 2025 position
@@ -532,16 +535,33 @@ def generate_roe_vs_debt_scatter() -> None:
                    xytext=(5, 5), textcoords='offset points',
                    fontsize=8, alpha=0.8)
     
-    # Reference lines
-    ax.axhline(y=0, color='gray', linestyle='-', linewidth=0.5, alpha=0.5)
-    ax.axhline(y=5, color='gray', linestyle='--', linewidth=0.5, alpha=0.5)
-    ax.axvline(x=0, color='gray', linestyle='-', linewidth=0.5, alpha=0.5)
-    ax.axvline(x=3, color='gray', linestyle='--', linewidth=0.5, alpha=0.5)
-    
     ax.set_xlabel('Dívida Líquida / EBITDA (x)', fontsize=12)
     ax.set_ylabel('ROE (%)', fontsize=12)
     ax.set_title('ROE vs Dívida Líquida/EBITDA (2024 - 2025)', fontsize=14, fontweight='bold')
     ax.grid(True, alpha=0.3, linestyle='--')
+    
+    # Background bands (consistent with ROE and Net Debt/EBITDA bar plot thresholds)
+    x_min, x_max = ax.get_xlim()
+    y_min, y_max = ax.get_ylim()
+    
+    # Green center: ROE [0, 10], Debt [1, 4]
+    ax.add_patch(Rectangle((1, 0), 3, 10, facecolor='green', alpha=0.12, zorder=0))
+    
+    # Orange arms: one metric good, the other bad
+    ax.add_patch(Rectangle((1, 10), 3, y_max - 10, facecolor='orange', alpha=0.12, zorder=0))   # top
+    ax.add_patch(Rectangle((1, y_min), 3, -y_min, facecolor='orange', alpha=0.12, zorder=0))     # bottom
+    ax.add_patch(Rectangle((x_min, 0), 1 - x_min, 10, facecolor='orange', alpha=0.12, zorder=0)) # left
+    ax.add_patch(Rectangle((4, 0), x_max - 4, 10, facecolor='orange', alpha=0.12, zorder=0))     # right
+    
+    # Red corners: both metrics bad
+    ax.add_patch(Rectangle((x_min, 10), 1 - x_min, y_max - 10, facecolor='red', alpha=0.12, zorder=0))
+    ax.add_patch(Rectangle((4, 10), x_max - 4, y_max - 10, facecolor='red', alpha=0.12, zorder=0))
+    ax.add_patch(Rectangle((x_min, y_min), 1 - x_min, -y_min, facecolor='red', alpha=0.12, zorder=0))
+    ax.add_patch(Rectangle((4, y_min), x_max - 4, -y_min, facecolor='red', alpha=0.12, zorder=0))
+    
+    # Reference lines
+    ax.axhline(y=0, color='black', linestyle='-', linewidth=0.8, alpha=0.8)
+    ax.axvline(x=0, color='black', linestyle='-', linewidth=0.8, alpha=0.8)
     
     # Legend for marker shapes
     legend_elements = [
