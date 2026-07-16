@@ -139,12 +139,29 @@ include::build/tables/rentability_per_ton.adoc[]
 A análise revela elevada variação: entre -4€/t e +14€/t, com VALORSUL a liderar a rentabilidade por tonelada.
 Este indicador explica a viabilidade económica de cada sistema.
 
+=== Distribuição de Lucros
+
+O rácio de distribuição de dividendos sobre a receita tarifária mede a percentagem do valor pago pelos municípios que é distribuído como dividendos aos acionistas.
+Este indicador responde à pergunta: de cada euro que o município paga em tarifa, quanto vai para o acionista?
+
+O cálculo usa a tarifa regulada e as toneladas processadas para estimar a receita tarifária municipal, excluindo receitas de valorização energética e recicláveis.
+
+.Dividendos como percentagem da receita tarifária municipal. VALORSUL destaca-se com 20% a 25% da tarifa paga pelos municípios a ser distribuída como dividendos.
+include::build/tables/dividend_per_tariff.adoc[]
+
+A VALORSUL lidera destacada: 20,5% da tarifa paga pelos municípios de Lisboa e Oeste foi para dividendos em 2024, subindo para 24,9% em 2025.
+Nenhum outro sistema se aproxima deste valor — o segundo maior (AMBILITAL em 2025) distribui 9,0%.
+A maioria dos sistemas com dividendos situa-se entre 3% e 7% da receita tarifária.
+
+Este indicador revela que o problema não é apenas a elevada taxa de distribuição de lucros (que é comum no setor), mas sim a dimensão do lucro gerado por tonelada face à tarifa regulada.
+
 == Conclusões
 
 === De lucros excessivos a insustentabilidade
 
 Vários sistemas combinam margens EBITDA elevadas, baixo endividamento e ROE acima do custo de capital.
-VALORSUL (ROE 13–15%), AMBISOUSA (ROE 7,6%) e VALNOR apresentam rentabilidades de 6–14 €/t, distribuindo lucros significativos.
+VALORSUL (ROE 13–15%) destaca-se com 21% a 25% da tarifa municipal distribuída como dividendos — o triplo dos restantes sistemas.
+AMBISOUSA (ROE 7,6%) e VALNOR apresentam rentabilidades de 6–14 €/t.
 O modelo tarifário permite extração de rendas à custa de tarifas superiores ao necessário.
 
 Um segundo grupo (ERSUC, RESINORTE, RESULIMA, TRATOLIXO, SULDOURO) apresenta margens EBITDA entre 18% e 30%, com ROE entre -6% e 3,7% e dívida/EBITDA abaixo de 3x.
@@ -167,15 +184,19 @@ image::figures/roe_vs_debt.svg[]
 |===
 |Indicador |2024 |2025
 
-|Tarifa regulada |47,93 €/t |47,93 €/t
-|Lucro gerado |8,26 M€ (9,80 €/t) |12,0 M€ (14,0 €/t)
+|Tarifa regulada |47,93 €/t |56,37 €/t
+|Lucro gerado |8,26 M€ (9,80 €/t) |9,76 M€ (14,0 €/t)
 |ROE |13% |14,9%
-|Margem EBITDA |51% |23,1%
-|Margem Líquida |20% |29%
+|Margem EBITDA |26,0% |23,1%
+|Margem Líquida |10,4% |9,6%
+|Dividendos / Receita Tarifária |20,5% |24,9%
 |Destino do lucro |100% dividendos |100% dividendos
 |===
 
-20% a 29% da tarifa foi distribuída como dividendos.
+20,5% a 24,9% da tarifa paga pelos municípios foi distribuída como dividendos.
+
+A VALORSUL não é única a distribuir a totalidade do lucro, mas é única na escala: enquanto os restantes sistemas distribuem 3% a 9% da receita tarifária como dividendos, a VALORSUL distribui 21% a 25%.
+A diferença está na rentabilidade por tonelada: a VALORSUL gera 9,8 a 14,0 €/t de lucro, muito acima dos restantes sistemas, permitindo transferir um quarto da tarifa para os acionistas.
 
 Num monopólio regulado, ROE de 13–15% indica:
 
@@ -183,7 +204,7 @@ Num monopólio regulado, ROE de 13–15% indica:
 2. Ganhos de eficiência apropriados pelos acionistas, OU
 3. Modelo de remuneração desajustado ao risco.
 
-O quadro regulatório permitiu à Valorsul extrair retorno excessivo em ambos os anos.footnote:[Margens líquidas de 20–29% com payout de 100% indicam conversão da receita em lucro distribuído, não em reinvestimento.]
+O quadro regulatório permitiu à Valorsul extrair retorno excessivo em ambos os anos.footnote:[21–25% da tarifa municipal é distribuída como dividendos, indicando conversão de receita tarifária em lucro para o acionista.]
 
 == Metodologia
 

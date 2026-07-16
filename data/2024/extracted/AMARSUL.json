@@ -1,7 +1,7 @@
 {
   "empresa": "AMARSUL",
   "ano": 2024,
-  "regiao": "Pen\u00ednsula de Set\u00fabal",
+  "regiao": "Península de Setúbal",
   "indicadores": {
     "vendas": 36260189.0,
     "ebitda": 8715650.0,
@@ -9,7 +9,9 @@
     "resultado_antes_impostos": 1413540.0,
     "resultado_liquido": 689071.0,
     "total_ativo": 103116790.0,
-    "capital_proprio": 22660066.0
+    "capital_proprio": 22660066.0,
+    "dividendos": 0,
+    "tarifa_regulada": 77.04
   },
   "waste": {
     "total_ru_recebidos": 510913.0,

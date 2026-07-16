@@ -9,7 +9,9 @@
     "resultado_antes_impostos": -15619.0,
     "resultado_liquido": -21875.0,
     "total_ativo": 17925363.0,
-    "capital_proprio": 8991286.0
+    "capital_proprio": 8991286.0,
+    "dividendos": null,
+    "tarifa_regulada": 68.0
   },
   "waste": {
     "total_ru_recebidos": 52359.0,

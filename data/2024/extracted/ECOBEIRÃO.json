@@ -1,37 +1,39 @@
 {
-    "empresa": "ECOBEIRÃO",
-    "ano": 2024,
-    "regiao": "Planalto Beirão",
-    "indicadores": {
-        "vendas": 12548817,
-        "ebitda": 2922069,
-        "ebit": 302636,
-        "resultado_antes_impostos": 247817,
-        "resultado_liquido": 376171,
-        "total_ativo": 26412337,
-        "capital_proprio": 12825694
-    },
-    "waste": {
-        "total_ru_recebidos": null,
-        "ru_indiferenciados_municipais": null,
-        "ru_indiferenciados_outros": null,
-        "recolha_seletiva_multimaterial": null,
-        "total_recolha_seletiva": null,
-        "energia_vendida_gwh": null
-    },
-    "operations": {
-        "municipios_servidos": 11,
-        "populacao_servida": 368566
-    },
-    "debt": {
-        "endividamento_liquido": -80274
-    },
-    "capital": {
-        "capital_social": 50000,
-        "egf_percent": null
-    },
-    "revenue": {
-        "receita_energia": null,
-        "receita_reciclaveis": null
-    }
+  "empresa": "ECOBEIRÃO",
+  "ano": 2024,
+  "regiao": "Planalto Beirão",
+  "indicadores": {
+    "vendas": 12548817,
+    "ebitda": 2922069,
+    "ebit": 302636,
+    "resultado_antes_impostos": 247817,
+    "resultado_liquido": 376171,
+    "total_ativo": 26412337,
+    "capital_proprio": 12825694,
+    "dividendos": null,
+    "tarifa_regulada": null
+  },
+  "waste": {
+    "total_ru_recebidos": null,
+    "ru_indiferenciados_municipais": null,
+    "ru_indiferenciados_outros": null,
+    "recolha_seletiva_multimaterial": null,
+    "total_recolha_seletiva": null,
+    "energia_vendida_gwh": null
+  },
+  "operations": {
+    "municipios_servidos": 11,
+    "populacao_servida": 368566
+  },
+  "debt": {
+    "endividamento_liquido": -80274
+  },
+  "capital": {
+    "capital_social": 50000,
+    "egf_percent": null
+  },
+  "revenue": {
+    "receita_energia": null,
+    "receita_reciclaveis": null
+  }
 }

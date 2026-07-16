@@ -1,7 +1,7 @@
 {
   "empresa": "ECOLEZIRIA",
   "ano": 2024,
-  "regiao": "Lez\u00edria do Tejo",
+  "regiao": "Lezíria do Tejo",
   "indicadores": {
     "vendas": 5153449.0,
     "ebitda": 1230596.0,
@@ -9,7 +9,9 @@
     "resultado_antes_impostos": 730351.0,
     "resultado_liquido": 479854.0,
     "total_ativo": 9194077.0,
-    "capital_proprio": 4079069.0
+    "capital_proprio": 4079069.0,
+    "dividendos": 0,
+    "tarifa_regulada": 49.44
   },
   "waste": {
     "total_ru_recebidos": 59536.0,

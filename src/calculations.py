@@ -111,6 +111,35 @@ def calculate_net_debt_ebitda(year: str = '2024') -> pl.DataFrame:
     return result
 
 
+def calculate_dividend_per_tariff(year: str = '2024') -> pl.DataFrame:
+    """Calculate dividends as % of municipality fee revenue.
+    
+    Uses: dividendos / (tarifa_regulada * total_ru_recebidos) * 100
+    This measures what % of what municipalities pay ends up as dividends.
+    """
+    df = _load_companies(year)
+
+    result = df.with_columns([
+        (pl.col('tarifa_regulada') * pl.col('total_ru_recebidos')).alias('municipio_receita'),
+    ]).with_columns([
+        pl.when(
+            pl.col('municipio_receita').is_not_null() & 
+            (pl.col('municipio_receita') > 0) &
+            pl.col('dividendos').is_not_null()
+        )
+        .then((pl.col('dividendos') / pl.col('municipio_receita') * 100))
+        .otherwise(None)
+        .alias('Dividendos / Tarifa (%)')
+    ]).filter(
+        pl.col('Dividendos / Tarifa (%)').is_not_null()
+    ).select([
+        pl.col('empresa').alias('Empresa'),
+        'Dividendos / Tarifa (%)'
+    ]).sort('Dividendos / Tarifa (%)', descending=True)
+
+    return result
+
+
 def calculate_rentability_per_ton(year: str = '2024') -> pl.DataFrame:
     """Calculate profitability per ton of waste."""
     df = _load_companies(year)

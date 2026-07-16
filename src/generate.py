@@ -16,6 +16,7 @@ from calculations import (
     calculate_roe,
     calculate_net_debt_ebitda,
     calculate_rentability_per_ton,
+    calculate_dividend_per_tariff,
     calculate_roe_vs_debt,
     calculate_total_coverage,
     load_fontes
@@ -495,6 +496,33 @@ def _scatter_color(roe: float, debt_ebitda: float) -> str:
         return 'red'
 
 
+def generate_dividend_per_tariff() -> None:
+    """Generate dividend as % of municipality tariff table."""
+    df_2025 = calculate_dividend_per_tariff(year='2025')
+    df_2024 = calculate_dividend_per_tariff(year='2024')
+
+    col_metric = 'Dividendos / Tarifa (%)'
+    tbl = df_2025.join(df_2024, on='Empresa', how='full', suffix='_2024')
+    tbl = tbl.with_columns(pl.col('Empresa').fill_null(pl.col('Empresa_2024')))
+    tbl = tbl.rename({col_metric: '2025'})
+    tbl = tbl.select([
+        pl.col('Empresa'),
+        pl.col('2025'),
+        pl.col(f'{col_metric}_2024').alias('2024')
+    ]).sort('2025', descending=True)
+    write_table(
+        'dividend_per_tariff',
+        tbl,
+        headers=['Empresa', '2025', '2024'],
+        column_specs=[
+            {'col': 'Empresa', 'title_case': True},
+            {'col': '2025', 'decimals': 1},
+            {'col': '2024', 'decimals': 1}
+        ],
+        col_align='1,1,1'
+    )
+
+
 def generate_roe_vs_debt_scatter() -> None:
     """Generate scatter plot of ROE vs Net Debt/EBITDA with 2-year arrows."""
     df_2024 = calculate_roe_vs_debt(year='2024')
@@ -656,6 +684,7 @@ def main() -> None:
     generate_roe()
     generate_net_debt_ebitda()
     generate_rentability_per_ton()
+    generate_dividend_per_tariff()
     generate_roe_vs_debt_scatter()
     generate_referencias()
     

@@ -1,7 +1,7 @@
 {
   "empresa": "RESULIMA",
   "ano": 2025,
-  "regiao": "Vale do Lima e Baixo C\u00e1vado",
+  "regiao": "Vale do Lima e Baixo Cávado",
   "indicadores": {
     "vendas": 18970833.0,
     "ebitda": 5204084.0,
@@ -9,7 +9,9 @@
     "resultado_antes_impostos": 1828576.0,
     "resultado_liquido": 150756.64,
     "total_ativo": 72102890.0,
-    "capital_proprio": 16959625.0
+    "capital_proprio": 16959625.0,
+    "dividendos": 149119.97,
+    "tarifa_regulada": 68.07
   },
   "waste": {
     "total_ru_recebidos": 152683.0,

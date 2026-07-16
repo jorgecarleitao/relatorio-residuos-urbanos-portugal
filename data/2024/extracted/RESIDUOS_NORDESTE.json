@@ -9,12 +9,14 @@
     "resultado_antes_impostos": 219948.85,
     "resultado_liquido": 188823.23,
     "total_ativo": 22230681.71,
-    "capital_proprio": 14673970.32
+    "capital_proprio": 14673970.32,
+    "dividendos": 0,
+    "tarifa_regulada": null
   },
   "waste": {
     "total_ru_recebidos": 57488.98,
     "ru_indiferenciados_municipais": 54718.36,
-    "ru_indiferenciados_outros": 410.10,
+    "ru_indiferenciados_outros": 410.1,
     "recolha_seletiva_multimaterial": 2770.52,
     "total_recolha_seletiva": 2770.52,
     "energia_vendida_gwh": null
