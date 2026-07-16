@@ -28,14 +28,14 @@ Os resultados revelam fortes assimetrias de rentabilidade e risco financeiro ent
 Principais conclusões:
 
 * **Elevada heterogeneidade na rentabilidade**  
-  O ROE varia entre -10% (ALGAR) e +13% (VALORSUL e ECOLEZÍRIA), num setor maduro onde seria expectável convergência em torno do custo de capital.
+  O ROE varia entre -10% e +16%, num setor maduro onde seria expectável convergência em torno do custo de capital.
 
 * **Distribuição de lucros em monopólio**  
-  Em 2024, a VALORSUL cobrou 47,93 €/t, dos quais 9,8 €/t (20% da tarifa) foram distribuídos como dividendos aos acionistas.
+  Em 2024 e 2025, a VALORSUL cobrou 47,93 €/t e gerou lucros entre 9,8 €/t e 14,0 €/t, dos quais 15% a 20% da tarifa foram distribuídos como dividendos aos acionistas.
 
 * **Risco financeiro assimétrico**  
-  A maioria dos sistemas apresenta rácios de dívida/EBITDA entre 3,0x e 3,6x, limitando novos investimentos.
-  A VALORSUL (1x) dispõe de margem para investir sem fundos públicos, enquanto ALGAR, TRATOLIXO e AMBILITAL combinam endividamento elevado com resultados fracos.
+  Os rácios de dívida/EBITDA variam entre 0x e 3,9x, com vários sistemas a apresentar dívida líquida reduzida em 2025.
+  A VALORSUL, AMBISOUSA e LIPOR dispõem de margem para investir sem fundos públicos, enquanto AMARSUL, RSTJ e VALORLIS apresentam rácios acima de 3x.
 
 * **Heterogeneidade sob o mesmo modelo regulatório**  
   O modelo de proveitos permitidos gera resultados díspares: alguns sistemas operam com resultados negativos; outros apresentam ROE acima de 10% e distribuem dividendos significativos.
@@ -91,7 +91,7 @@ A rentabilidade sobre capital próprio (ROE) compara o lucro anual com o capital
 Num setor maduro em monopólio regulado, ROE elevado sugere remuneração acima do necessário, transferindo rendas para o acionista.
 ROE baixo indica desincentivo ao investimento; ROE negativo indica insustentabilidade.
 
-.Rentabilidade sobre capital próprio dos sistemas multimunicipais analisados. Os sistemas apresentam diferenças muito significativas: o Algarve em situação claramente insustentável; Lisboa e outros sistemas com rentabilidade elevada.
+.Rentabilidade sobre capital próprio dos sistemas multimunicipais analisados. Os sistemas apresentam diferenças muito significativas: o Algarve recuperou de ROE negativo em 2024 para positivo em 2025; Lisboa e outros sistemas mantêm rentabilidade elevada.
 image::figures/roe.svg[ROE Distribution,width=85%,align=center]
 
 include::build/tables/roe.adoc[]
@@ -106,12 +106,12 @@ O rácio dívida líquida/EBITDA mede a sustentabilidade da dívida.
 Valor baixo indica dívida reduzida face aos resultados operacionais; valor alto indica maior exposição ao risco.
 Um rácio de 4x corresponde a quatro anos de EBITDA.
 
-.Rácio da dívida líquida por EBITDA. A maioria das empresas apresenta alguma alavancagem (em torno de 3x), ainda dentro de valores correntes para o sector, mas existem casos com níveis de risco claramente superiores.
+.Rácio da dívida líquida por EBITDA. Vários sistemas reduziram a alavancagem em 2025, mas persistem casos com rácios acima de 3x.
 image::figures/net_debt_ebitda.svg[Net Debt EBITDA,width=85%,align=center]
 
 include::build/tables/net_debt_ebitda.adoc[]
 
-Os dados revelam dispersão significativa: vários sistemas com rácios próximos de 3x, outros acima de 5–7x (risco elevado).
+Os dados revelam dispersão significativa: vários sistemas reduziram o rácio em 2025 para valores abaixo de 2x; outros mantêm-se acima de 3x.
 Alguns sistemas dependem de reequilíbrios públicos para manter capacidade de investimento; outros mantêm dívidas baixas.
 
 === Margem EBITDA
@@ -124,19 +124,19 @@ image::figures/ebitda_margins.svg[EBITDA Margins,width=85%,align=center]
 
 include::build/tables/ebitda_margins.adoc[]
 
-17 dos 19 sistemas apresentam margens EBITDA superiores a 20%.
+A maioria dos sistemas apresenta margens EBITDA superiores a 20%.
 Quatro sistemas ultrapassam 30%; conjugadas com ROE elevados e distribuição de dividendos, sugerem que a estrutura tarifária gera remunerações acima do necessário.
 
 === Rentabilidade por Tonelada
 
 A rentabilidade por tonelada representa a valorização económica dos resíduos processados.
 
-.Rentabilidade por tonelada dos sistemas multimunicipais analisados. Valorsul com rentabilidade muito superior ao resto do sector; ALGAR em prejuízo.
+.Rentabilidade por tonelada dos sistemas multimunicipais analisados. Valorsul com rentabilidade muito superior ao resto do sector; ALGAR recuperou de prejuízo em 2024 para lucro em 2025.
 image::figures/rentability_per_ton.svg[Rentability Per Ton,width=85%,align=center]
 
 include::build/tables/rentability_per_ton.adoc[]
 
-A análise revela elevada variação: ALGAR perde 4€/t, VALORSUL lucra 10€/t.
+A análise revela elevada variação: entre -4€/t e +14€/t, com VALORSUL a liderar a rentabilidade por tonelada.
 Este indicador explica a viabilidade económica de cada sistema.
 
 == Conclusões
@@ -144,16 +144,15 @@ Este indicador explica a viabilidade económica de cada sistema.
 === De lucros excessivos a insustentabilidade
 
 Vários sistemas combinam margens EBITDA elevadas, baixo endividamento e ROE acima do custo de capital.
-VALORSUL, ECOLEZÍRIA, AMBISOUSA e VALNOR apresentam ROE de 10–13% e rentabilidades de 6–10 €/t, distribuindo lucros significativos.
+VALORSUL (ROE 13–15%), AMBISOUSA (ROE 7,6%) e VALNOR apresentam rentabilidades de 6–14 €/t, distribuindo lucros significativos.
 O modelo tarifário permite extração de rendas à custa de tarifas superiores ao necessário.
 
-Um segundo grupo (ERSUC, RESINORTE, RESULIMA, LIPOR, TRATOLIXO, SULDOURO) apresenta margens EBITDA acima de 25%, mas ROE próximo de 0% e dívida/EBITDA de 3–4x.
-Operam em equilíbrio económico com alavancagem relevante e pouca margem para absorver choques.
-A sustentabilidade depende da capacidade regulatória para alinhar tarifas, investimento e gestão da dívida.
+Um segundo grupo (ERSUC, RESINORTE, RESULIMA, TRATOLIXO, SULDOURO) apresenta margens EBITDA entre 18% e 30%, com ROE entre -6% e 3,7% e dívida/EBITDA abaixo de 3x.
+Operam com rentabilidade reduzida sobre o capital investido, limitando a capacidade de reinvestimento sem recurso a nova dívida.
 
-Finalmente, ALGAR e AMBILITAL combinam margens fracas, endividamento superior a 5–9x e prejuízos significativos.
-Situações de insustentabilidade: não geram meios para renovar ativos, dependendo de fundos públicos e reequilíbrios tarifários.
-A coexistência de sistemas que distribuem dividendos e sistemas descapitalizados indica desajuste profundo do modelo regulatório.
+Finalmente, ALGAR e AMBILITAL, que em 2024 apresentavam prejuízos e endividamento elevado, recuperaram em 2025 — ALGAR para ROE de 15,8% e AMBILITAL para margens EBITDA de 50%.
+Apesar da melhoria, a volatilidade interanual revela fragilidade estrutural nestes sistemas.
+A coexistência de sistemas que distribuem dividendos e sistemas com resultados voláteis indica desajuste profundo do modelo regulatório.
 
 Um regulador deve garantir que a remuneração do capital seja consistente com o risco e que ganhos de eficiência sejam partilhados.
 Os dados de 2024 e 2025 mostram que este equilíbrio não está assegurado.
@@ -163,22 +162,28 @@ image::figures/roe_vs_debt.svg[]
 
 === Em Lisboa, os munícipes estão a subsidiar os acionistas do monopólio
 
-* Tarifa regulada em 2024: 47,93 €/t
-* Lucro gerado: 8,26 M€ (9,80 €/t)
-* ROE: 13%
-* Margem EBITDA: 51%
-* Margem Liquida: 20%
-* Destino do lucro: 100% dividendos
+.Valores da VALORSUL (2024 e 2025)
+[cols="1,1,1"]
+|===
+|Indicador |2024 |2025
 
-20% da tarifa (9,8 €/t) foi distribuída como dividendos.
+|Tarifa regulada |47,93 €/t |47,93 €/t
+|Lucro gerado |8,26 M€ (9,80 €/t) |12,0 M€ (14,0 €/t)
+|ROE |13% |14,9%
+|Margem EBITDA |51% |23,1%
+|Margem Líquida |20% |29%
+|Destino do lucro |100% dividendos |100% dividendos
+|===
 
-Num monopólio regulado, ROE de 13% indica:
+20% a 29% da tarifa foi distribuída como dividendos.
+
+Num monopólio regulado, ROE de 13–15% indica:
 
 1. Tarifas acima do necessário, OU
 2. Ganhos de eficiência apropriados pelos acionistas, OU
 3. Modelo de remuneração desajustado ao risco.
 
-O quadro regulatório permitiu à Valorsul extrair retorno excessivo.footnote:[Margens líquidas de 20% com payout de 100% indicam conversão de margem EBITDA em lucro distribuído, não em reinvestimento.]
+O quadro regulatório permitiu à Valorsul extrair retorno excessivo em ambos os anos.footnote:[Margens líquidas de 20–29% com payout de 100% indicam conversão da receita em lucro distribuído, não em reinvestimento.]
 
 == Metodologia
 
@@ -194,7 +199,7 @@ Agradecimento à ERSAR pelos dados regulatórios que complementaram esta anális
 
 == Referências
 
-=== Relatórios e Contas das Empresas (2024)
+=== Relatórios e Contas das Empresas (2024 e 2025)
 
 include::build/tables/referencias.adoc[]
 
