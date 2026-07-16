@@ -1,0 +1,37 @@
+{
+  "empresa": "RESIALENTEJO",
+  "ano": 2025,
+  "regiao": "Baixo Alentejo",
+  "indicadores": {
+    "vendas": 1455476.0,
+    "ebitda": 2924672.0,
+    "ebit": 169520.0,
+    "resultado_antes_impostos": 237846.11,
+    "resultado_liquido": 175547.0,
+    "total_ativo": 17073570.0,
+    "capital_proprio": 6800000.0
+  },
+  "waste": {
+    "total_ru_recebidos": 44585.9,
+    "ru_indiferenciados_municipais": 39820.5,
+    "ru_indiferenciados_outros": 4765.4,
+    "recolha_seletiva_multimaterial": 6422.0,
+    "total_recolha_seletiva": 6422.0,
+    "energia_vendida_gwh": null
+  },
+  "operations": {
+    "municipios_servidos": 8,
+    "populacao_servida": 86505
+  },
+  "debt": {
+    "endividamento_liquido": 7489946.0
+  },
+  "capital": {
+    "capital_social": 6800000.0,
+    "egf_percent": null
+  },
+  "revenue": {
+    "receita_energia": 0.0,
+    "receita_reciclaveis": 3686054.0
+  }
+}

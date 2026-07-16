@@ -1,0 +1,37 @@
+{
+  "empresa": "LIPOR",
+  "ano": 2024,
+  "regiao": "Grande Porto",
+  "indicadores": {
+    "vendas": 48200453.0,
+    "ebitda": 17294565.0,
+    "ebit": -4428467.0,
+    "resultado_antes_impostos": -4643504.0,
+    "resultado_liquido": 0.0,
+    "total_ativo": 111197906.0,
+    "capital_proprio": 93387973.0
+  },
+  "waste": {
+    "total_ru_recebidos": 554196.0,
+    "ru_indiferenciados_municipais": 385000.0,
+    "ru_indiferenciados_outros": 4784.0,
+    "recolha_seletiva_multimaterial": 89289.0,
+    "total_recolha_seletiva": 148010.0,
+    "energia_vendida_gwh": 185.044
+  },
+  "operations": {
+    "municipios_servidos": 8,
+    "populacao_servida": 1000000
+  },
+  "debt": {
+    "endividamento_liquido": 0.0
+  },
+  "capital": {
+    "capital_social": 52291466.0,
+    "egf_percent": 100.0
+  },
+  "revenue": {
+    "receita_energia": 13000000.0,
+    "receita_reciclaveis": 10330000.0
+  }
+}

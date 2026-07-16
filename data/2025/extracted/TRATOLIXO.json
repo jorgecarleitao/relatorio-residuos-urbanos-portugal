@@ -1,0 +1,37 @@
+{
+  "empresa": "TRATOLIXO",
+  "ano": 2025,
+  "regiao": "AMTRES (Cascais, Mafra, Oeiras, Sintra)",
+  "indicadores": {
+    "vendas": 68797882.0,
+    "ebitda": 15470365.0,
+    "ebit": 8570939.0,
+    "resultado_antes_impostos": 7528545.0,
+    "resultado_liquido": 1189305.51,
+    "total_ativo": 180013629.0,
+    "capital_proprio": 93432694.0
+  },
+  "waste": {
+    "total_ru_recebidos": 500528.0,
+    "ru_indiferenciados_municipais": null,
+    "ru_indiferenciados_outros": null,
+    "recolha_seletiva_multimaterial": null,
+    "total_recolha_seletiva": null,
+    "energia_vendida_gwh": null
+  },
+  "operations": {
+    "municipios_servidos": 4,
+    "populacao_servida": 892400
+  },
+  "debt": {
+    "endividamento_liquido": 8517109.0
+  },
+  "capital": {
+    "capital_social": 24938370.0,
+    "egf_percent": 0.0
+  },
+  "revenue": {
+    "receita_energia": null,
+    "receita_reciclaveis": 17600000.0
+  }
+}

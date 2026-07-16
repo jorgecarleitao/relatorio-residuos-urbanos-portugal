@@ -1,0 +1,37 @@
+{
+  "empresa": "ALGAR",
+  "ano": 2024,
+  "regiao": "Algarve",
+  "indicadores": {
+    "vendas": 37092081.0,
+    "ebitda": 7485055.0,
+    "ebit": 947355.0,
+    "resultado_antes_impostos": -1909045.0,
+    "resultado_liquido": -1658874.0,
+    "total_ativo": 89912608.0,
+    "capital_proprio": 16192743.0
+  },
+  "waste": {
+    "total_ru_recebidos": 433404.0,
+    "ru_indiferenciados_municipais": 319582.0,
+    "ru_indiferenciados_outros": 20299.0,
+    "recolha_seletiva_multimaterial": 45715.0,
+    "total_recolha_seletiva": 45715.0,
+    "energia_vendida_gwh": 21.313
+  },
+  "operations": {
+    "municipios_servidos": 16,
+    "populacao_servida": 474300
+  },
+  "debt": {
+    "endividamento_liquido": 25663650.0
+  },
+  "capital": {
+    "capital_social": 7500000.0,
+    "egf_percent": 56.0
+  },
+  "revenue": {
+    "receita_energia": 2280294.0,
+    "receita_reciclaveis": 7497479.0
+  }
+}

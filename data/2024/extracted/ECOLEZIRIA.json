@@ -1,0 +1,36 @@
+{
+  "empresa": "ECOLEZIRIA",
+  "ano": 2024,
+  "regiao": "Lez\u00edria do Tejo",
+  "indicadores": {
+    "vendas": 5153449.0,
+    "ebitda": 1230596.0,
+    "ebit": 731867.0,
+    "resultado_antes_impostos": 730351.0,
+    "resultado_liquido": 479854.0,
+    "total_ativo": 9194077.0,
+    "capital_proprio": 4079069.0
+  },
+  "waste": {
+    "total_ru_recebidos": 59536.0,
+    "ru_indiferenciados_municipais": 56783.0,
+    "recolha_seletiva_multimaterial": 1532.0,
+    "total_recolha_seletiva": 4406.0,
+    "energia_vendida_gwh": 0.0
+  },
+  "operations": {
+    "municipios_servidos": 7,
+    "populacao_servida": 136426
+  },
+  "debt": {
+    "endividamento_liquido": -3780899.0
+  },
+  "capital": {
+    "capital_social": 1700000.0,
+    "egf_percent": 0.0
+  },
+  "revenue": {
+    "receita_energia": 70875.0,
+    "receita_reciclaveis": 1133169.0
+  }
+}

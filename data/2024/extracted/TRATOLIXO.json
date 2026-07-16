@@ -1,0 +1,36 @@
+{
+  "empresa": "TRATOLIXO",
+  "ano": 2024,
+  "regiao": "Lisboa/Cascais-Sintra",
+  "indicadores": {
+    "vendas": 36663663.0,
+    "ebitda": 13300000.0,
+    "ebit": 5428257.0,
+    "resultado_antes_impostos": 0.0,
+    "resultado_liquido": 53.0,
+    "total_ativo": 175566840.0,
+    "capital_proprio": 28050825.0
+  },
+  "waste": {
+    "total_ru_recebidos": 493371.0,
+    "ru_indiferenciados_municipais": 316519.0,
+    "recolha_seletiva_multimaterial": 45667.0,
+    "total_recolha_seletiva": 117241.0,
+    "energia_vendida_gwh": 19.531
+  },
+  "operations": {
+    "municipios_servidos": 4,
+    "populacao_servida": 880969
+  },
+  "debt": {
+    "endividamento_liquido": 102758409.0
+  },
+  "capital": {
+    "capital_social": 7010000.0,
+    "egf_percent": 100.0
+  },
+  "revenue": {
+    "receita_energia": 1500000.0,
+    "receita_reciclaveis": 10700000.0
+  }
+}

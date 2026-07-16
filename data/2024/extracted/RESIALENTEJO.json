@@ -1,0 +1,36 @@
+{
+  "empresa": "RESIALENTEJO",
+  "ano": 2024,
+  "regiao": "Baixo Alentejo",
+  "indicadores": {
+    "vendas": 4790594.0,
+    "ebitda": 2019954.0,
+    "ebit": 185019.0,
+    "resultado_antes_impostos": -15619.0,
+    "resultado_liquido": -21875.0,
+    "total_ativo": 17925363.0,
+    "capital_proprio": 8991286.0
+  },
+  "waste": {
+    "total_ru_recebidos": 52359.0,
+    "ru_indiferenciados_municipais": 40610.0,
+    "recolha_seletiva_multimaterial": 7763.0,
+    "total_recolha_seletiva": 11749.0,
+    "energia_vendida_gwh": 0.0
+  },
+  "operations": {
+    "municipios_servidos": 8,
+    "populacao_servida": 86505
+  },
+  "debt": {
+    "endividamento_liquido": 4919325.0
+  },
+  "capital": {
+    "capital_social": 5800000.0,
+    "egf_percent": 0.0
+  },
+  "revenue": {
+    "receita_energia": 0.0,
+    "receita_reciclaveis": 2247118.0
+  }
+}

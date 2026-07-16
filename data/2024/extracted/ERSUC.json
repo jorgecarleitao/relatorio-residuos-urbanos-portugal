@@ -1,0 +1,37 @@
+{
+  "empresa": "ERSUC",
+  "ano": 2024,
+  "regiao": "Centro",
+  "indicadores": {
+    "vendas": 36640335.0,
+    "ebitda": 8150967.0,
+    "ebit": 2281639.0,
+    "resultado_antes_impostos": 257767.0,
+    "resultado_liquido": 117325.0,
+    "total_ativo": 99121406.0,
+    "capital_proprio": 29306572.0
+  },
+  "waste": {
+    "total_ru_recebidos": 429859.0,
+    "ru_indiferenciados_municipais": 356584.0,
+    "ru_indiferenciados_outros": 6841.0,
+    "recolha_seletiva_multimaterial": 66434.0,
+    "total_recolha_seletiva": 66434.0,
+    "energia_vendida_gwh": 30.119
+  },
+  "operations": {
+    "municipios_servidos": 36,
+    "populacao_servida": 947519
+  },
+  "debt": {
+    "endividamento_liquido": 25723963.0
+  },
+  "capital": {
+    "capital_social": 8500000.0,
+    "egf_percent": 51.46
+  },
+  "revenue": {
+    "receita_energia": 3983884.0,
+    "receita_reciclaveis": 10051664.0
+  }
+}

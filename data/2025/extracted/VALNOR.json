@@ -1,0 +1,37 @@
+{
+  "empresa": "VALNOR",
+  "ano": 2025,
+  "regiao": "Norte Alentejano e Centro Interior",
+  "indicadores": {
+    "vendas": 12757249.0,
+    "ebitda": 3389901.0,
+    "ebit": 1437679.0,
+    "resultado_antes_impostos": 1195323.0,
+    "resultado_liquido": 1013975.0,
+    "total_ativo": 48971008.0,
+    "capital_proprio": 24203739.0
+  },
+  "waste": {
+    "total_ru_recebidos": 112632.0,
+    "ru_indiferenciados_municipais": null,
+    "ru_indiferenciados_outros": null,
+    "recolha_seletiva_multimaterial": null,
+    "total_recolha_seletiva": null,
+    "energia_vendida_gwh": null
+  },
+  "operations": {
+    "municipios_servidos": 26,
+    "populacao_servida": null
+  },
+  "debt": {
+    "endividamento_liquido": 1870972.0
+  },
+  "capital": {
+    "capital_social": 10000000.0,
+    "egf_percent": 53.33
+  },
+  "revenue": {
+    "receita_energia": null,
+    "receita_reciclaveis": null
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "empresa": "AMBISOUSA",
+  "ano": 2024,
+  "regiao": "Vale do Sousa",
+  "indicadores": {
+    "vendas": 8943110.0,
+    "ebitda": 2958303.0,
+    "ebit": 1906631.0,
+    "resultado_antes_impostos": 1808074.0,
+    "resultado_liquido": 1425076.0,
+    "total_ativo": 35958709.0,
+    "capital_proprio": 18728410.0
+  },
+  "waste": {
+    "total_ru_recebidos": 149813.0,
+    "ru_indiferenciados_municipais": 135023.0,
+    "recolha_seletiva_multimaterial": 14595.0,
+    "total_recolha_seletiva": 14595.0,
+    "energia_vendida_gwh": 4.222
+  },
+  "operations": {
+    "municipios_servidos": 6,
+    "populacao_servida": 328605
+  },
+  "debt": {
+    "endividamento_liquido": 924883.0
+  },
+  "capital": {
+    "capital_social": 600000.0,
+    "egf_percent": 100.0
+  },
+  "revenue": {
+    "receita_energia": 339157.0,
+    "receita_reciclaveis": 2961734.0
+  }
+}

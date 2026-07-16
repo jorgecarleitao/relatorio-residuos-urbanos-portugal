@@ -1,0 +1,37 @@
+{
+  "empresa": "AMARSUL",
+  "ano": 2024,
+  "regiao": "Pen\u00ednsula de Set\u00fabal",
+  "indicadores": {
+    "vendas": 36260189.0,
+    "ebitda": 8715650.0,
+    "ebit": 3990821.0,
+    "resultado_antes_impostos": 1413540.0,
+    "resultado_liquido": 689071.0,
+    "total_ativo": 103116790.0,
+    "capital_proprio": 22660066.0
+  },
+  "waste": {
+    "total_ru_recebidos": 510913.0,
+    "ru_indiferenciados_municipais": 405280.0,
+    "ru_indiferenciados_outros": 1955.0,
+    "recolha_seletiva_multimaterial": 45718.0,
+    "total_recolha_seletiva": 72167.0,
+    "energia_vendida_gwh": 21.003
+  },
+  "operations": {
+    "municipios_servidos": 9,
+    "populacao_servida": 807902
+  },
+  "debt": {
+    "endividamento_liquido": 29885000.0
+  },
+  "capital": {
+    "capital_social": 7750000.0,
+    "egf_percent": 51.0
+  },
+  "revenue": {
+    "receita_energia": 2622265.0,
+    "receita_reciclaveis": 8880070.0
+  }
+}

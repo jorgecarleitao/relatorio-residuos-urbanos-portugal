@@ -1,0 +1,40 @@
+{
+  "empresa": "RESULIMA",
+  "ano": 2025,
+  "regiao": "Vale do Lima e Baixo C\u00e1vado",
+  "indicadores": {
+    "vendas": 18970833.0,
+    "ebitda": 5204084.0,
+    "ebit": 2544066.0,
+    "resultado_antes_impostos": 1828576.0,
+    "resultado_liquido": 150756.64,
+    "total_ativo": 72102890.0,
+    "capital_proprio": 16959625.0
+  },
+  "waste": {
+    "total_ru_recebidos": 152683.0,
+    "ru_indiferenciados_municipais": 125488.0,
+    "ru_indiferenciados_outros": 506.0,
+    "recolha_seletiva_multimaterial": 19846.0,
+    "recolha_seletiva_volumosos": 4199.0,
+    "recolha_seletiva_biorresiduos": 8803.0,
+    "recolha_seletiva_outros_fluxos_ru": 4136.0,
+    "total_recolha_seletiva": 36984.0,
+    "energia_vendida_gwh": 6.359
+  },
+  "operations": {
+    "municipios_servidos": 6,
+    "populacao_servida": 313000
+  },
+  "debt": {
+    "endividamento_liquido": 13639958.0
+  },
+  "capital": {
+    "capital_social": 2500000.0,
+    "egf_percent": 51.0
+  },
+  "revenue": {
+    "receita_energia": 989947.0,
+    "receita_reciclaveis": 2855695.0
+  }
+}

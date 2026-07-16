@@ -1,0 +1,39 @@
+{
+  "empresa": "VALORSUL",
+  "ano": 2025,
+  "regiao": "Lisboa e Oeste",
+  "indicadores": {
+    "vendas": 101349228.0,
+    "ebitda": 23408944.0,
+    "ebit": 13222508.0,
+    "resultado_antes_impostos": 11496125.0,
+    "resultado_liquido": 9760053.0,
+    "total_ativo": 153697277.0,
+    "capital_proprio": 65409406.0
+  },
+  "waste": {
+    "total_ru_recebidos": 696282.0,
+    "ru_indiferenciados_municipais": 693216.0,
+    "ru_indiferenciados_outros": 3066.0,
+    "recolha_seletiva_multimaterial": 112083.0,
+    "recolha_seletiva_biorresiduos": null,
+    "recolha_seletiva_outros_fluxos_ru": null,
+    "total_recolha_seletiva": 112083.0,
+    "energia_vendida_gwh": 345.0
+  },
+  "operations": {
+    "municipios_servidos": 19,
+    "populacao_servida": 1700000
+  },
+  "debt": {
+    "endividamento_liquido": 13065307.0
+  },
+  "capital": {
+    "capital_social": 25200000.0,
+    "egf_percent": 52.93
+  },
+  "revenue": {
+    "receita_energia": null,
+    "receita_reciclaveis": null
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "empresa": "VALORLIS",
+  "ano": 2024,
+  "regiao": "Leiria",
+  "indicadores": {
+    "vendas": 13300616.0,
+    "ebitda": 3321349.0,
+    "ebit": 1574178.0,
+    "resultado_antes_impostos": 832198.0,
+    "resultado_liquido": 688976.0,
+    "total_ativo": 37397328.0,
+    "capital_proprio": 12051885.0
+  },
+  "waste": {
+    "total_ru_recebidos": 140364.0,
+    "ru_indiferenciados_municipais": 117507.0,
+    "ru_indiferenciados_outros": 0.0,
+    "recolha_seletiva_multimaterial": 18310.0,
+    "total_recolha_seletiva": 22858.0,
+    "energia_vendida_gwh": 10.329
+  },
+  "operations": {
+    "municipios_servidos": 6,
+    "populacao_servida": 311000
+  },
+  "debt": {
+    "endividamento_liquido": 10426133.0
+  },
+  "capital": {
+    "capital_social": 2000000.0,
+    "egf_percent": 51.0
+  },
+  "revenue": {
+    "receita_energia": 1422557.0,
+    "receita_reciclaveis": 4724839.0
+  }
+}

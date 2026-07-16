@@ -1,0 +1,32 @@
+{
+  "empresa": "RSTJ",
+  "ano": 2024,
+  "regiao": "M\u00e9dio Tejo",
+  "indicadores": {
+    "vendas": 11374232.0,
+    "ebitda": 1659016.0,
+    "ebit": 243597.0,
+    "resultado_antes_impostos": 44773.0,
+    "resultado_liquido": 12777.0,
+    "total_ativo": 14674554.0,
+    "capital_proprio": 4337961.0
+  },
+  "waste": {
+    "total_ru_recebidos": 127451.0,
+    "energia_vendida_gwh": 0.0
+  },
+  "operations": {
+    "municipios_servidos": 12,
+    "populacao_servida": 271172
+  },
+  "debt": {
+    "endividamento_liquido": 2833970.0
+  },
+  "capital": {
+    "capital_social": 50000.0,
+    "egf_percent": 0.0
+  },
+  "revenue": {
+    "receita_energia": 0.0
+  }
+}

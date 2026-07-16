@@ -1,0 +1,37 @@
+{
+  "empresa": "RESIDUOS_NORDESTE",
+  "ano": 2024,
+  "regiao": "Nordeste Transmontano",
+  "indicadores": {
+    "vendas": 9597562.39,
+    "ebitda": 2077990.93,
+    "ebit": 1847853.53,
+    "resultado_antes_impostos": 219948.85,
+    "resultado_liquido": 188823.23,
+    "total_ativo": 22230681.71,
+    "capital_proprio": 14673970.32
+  },
+  "waste": {
+    "total_ru_recebidos": 57488.98,
+    "ru_indiferenciados_municipais": 54718.36,
+    "ru_indiferenciados_outros": 410.10,
+    "recolha_seletiva_multimaterial": 2770.52,
+    "total_recolha_seletiva": 2770.52,
+    "energia_vendida_gwh": null
+  },
+  "operations": {
+    "municipios_servidos": 13,
+    "populacao_servida": 143777
+  },
+  "debt": {
+    "endividamento_liquido": 0.0
+  },
+  "capital": {
+    "capital_social": 50000.0,
+    "egf_percent": null
+  },
+  "revenue": {
+    "receita_energia": 0.0,
+    "receita_reciclaveis": null
+  }
+}

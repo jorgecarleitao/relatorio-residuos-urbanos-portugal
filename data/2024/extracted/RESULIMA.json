@@ -1,0 +1,37 @@
+{
+  "empresa": "RESULIMA",
+  "ano": 2024,
+  "regiao": "Minho/Lima",
+  "indicadores": {
+    "vendas": 14251388.0,
+    "ebitda": 2974108.0,
+    "ebit": 920162.0,
+    "resultado_antes_impostos": 140112.0,
+    "resultado_liquido": 72314.0,
+    "total_ativo": 53027975.0,
+    "capital_proprio": 19421808.0
+  },
+  "waste": {
+    "total_ru_recebidos": 149391.0,
+    "ru_indiferenciados_municipais": 124779.0,
+    "ru_indiferenciados_outros": 535.0,
+    "recolha_seletiva_multimaterial": 19619.0,
+    "total_recolha_seletiva": 24077.0,
+    "energia_vendida_gwh": 8.207
+  },
+  "operations": {
+    "municipios_servidos": 6,
+    "populacao_servida": 313183
+  },
+  "debt": {
+    "endividamento_liquido": 10652000.0
+  },
+  "capital": {
+    "capital_social": 2500000.0,
+    "egf_percent": 51.0
+  },
+  "revenue": {
+    "receita_energia": 1043718.0,
+    "receita_reciclaveis": 4068634.0
+  }
+}

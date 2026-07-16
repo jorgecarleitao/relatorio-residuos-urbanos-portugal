@@ -1,0 +1,36 @@
+{
+  "empresa": "BRAVAL",
+  "ano": 2024,
+  "regiao": "Braga",
+  "indicadores": {
+    "vendas": 7625813.0,
+    "ebitda": 2169525.0,
+    "ebit": 484420.0,
+    "resultado_antes_impostos": 411950.0,
+    "resultado_liquido": 313384.0,
+    "total_ativo": 18355694.0,
+    "capital_proprio": 8354865.0
+  },
+  "waste": {
+    "total_ru_recebidos": 119460.0,
+    "ru_indiferenciados_municipais": 65486.0,
+    "recolha_seletiva_multimaterial": 7297.0,
+    "total_recolha_seletiva": 18876.0,
+    "energia_vendida_gwh": 6.5
+  },
+  "operations": {
+    "municipios_servidos": 6,
+    "populacao_servida": 298451
+  },
+  "debt": {
+    "endividamento_liquido": -126043.0
+  },
+  "capital": {
+    "capital_social": 1750000.0,
+    "egf_percent": 0.0
+  },
+  "revenue": {
+    "receita_energia": 331099.0,
+    "receita_reciclaveis": 3201660.0
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "empresa": "SULDOURO",
+  "ano": 2024,
+  "regiao": "Porto/Aveiro",
+  "indicadores": {
+    "vendas": 16312051.0,
+    "ebitda": 4571397.0,
+    "ebit": 1517269.0,
+    "resultado_antes_impostos": 725327.0,
+    "resultado_liquido": 337941.0,
+    "total_ativo": 50512988.0,
+    "capital_proprio": 16437714.0
+  },
+  "waste": {
+    "total_ru_recebidos": 207909.0,
+    "ru_indiferenciados_municipais": 176910.0,
+    "ru_indiferenciados_outros": 0.0,
+    "recolha_seletiva_multimaterial": 30999.0,
+    "total_recolha_seletiva": 31229.0,
+    "energia_vendida_gwh": 17.487
+  },
+  "operations": {
+    "municipios_servidos": 2,
+    "populacao_servida": 444591
+  },
+  "debt": {
+    "endividamento_liquido": 13136000.0
+  },
+  "capital": {
+    "capital_social": 3400000.0,
+    "egf_percent": 60.0
+  },
+  "revenue": {
+    "receita_energia": 1829176.0,
+    "receita_reciclaveis": 4780213.0
+  }
+}

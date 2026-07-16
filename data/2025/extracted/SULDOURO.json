@@ -1,0 +1,37 @@
+{
+  "empresa": "SULDOURO",
+  "ano": 2025,
+  "regiao": "Sul do Douro",
+  "indicadores": {
+    "vendas": 18856435.0,
+    "ebitda": 5072572.0,
+    "ebit": 1867020.0,
+    "resultado_antes_impostos": 1110667.0,
+    "resultado_liquido": 541871.0,
+    "total_ativo": 56822402.0,
+    "capital_proprio": 16538447.0
+  },
+  "waste": {
+    "total_ru_recebidos": 178556.0,
+    "ru_indiferenciados_municipais": 178556.0,
+    "ru_indiferenciados_outros": 0.0,
+    "recolha_seletiva_multimaterial": 33368.0,
+    "total_recolha_seletiva": 33368.0,
+    "energia_vendida_gwh": 17.732
+  },
+  "operations": {
+    "municipios_servidos": 2,
+    "populacao_servida": 452306
+  },
+  "debt": {
+    "endividamento_liquido": 8904000.0
+  },
+  "capital": {
+    "capital_social": 3400000.0,
+    "egf_percent": 60.0
+  },
+  "revenue": {
+    "receita_energia": null,
+    "receita_reciclaveis": null
+  }
+}

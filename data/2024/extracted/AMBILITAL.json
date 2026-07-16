@@ -1,0 +1,36 @@
+{
+  "empresa": "AMBILITAL",
+  "ano": 2024,
+  "regiao": "Alentejo Litoral",
+  "indicadores": {
+    "vendas": 5672351.0,
+    "ebitda": -687324.0,
+    "ebit": -687324.0,
+    "resultado_antes_impostos": 140232.0,
+    "resultado_liquido": -584185.0,
+    "total_ativo": 25788341.0,
+    "capital_proprio": 15954549.0
+  },
+  "waste": {
+    "total_ru_recebidos": 72883.0,
+    "ru_indiferenciados_municipais": 59547.0,
+    "recolha_seletiva_multimaterial": 6444.0,
+    "total_recolha_seletiva": 8925.0,
+    "energia_vendida_gwh": 0.0
+  },
+  "operations": {
+    "municipios_servidos": 7,
+    "populacao_servida": 115435
+  },
+  "debt": {
+    "endividamento_liquido": 6197713.0
+  },
+  "capital": {
+    "capital_social": 3600000.0,
+    "egf_percent": 51.0
+  },
+  "revenue": {
+    "receita_energia": 0.0,
+    "receita_reciclaveis": 1818644.0
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "empresa": "RESINORTE",
+  "ano": 2025,
+  "regiao": "Norte Central",
+  "indicadores": {
+    "vendas": 35989607.0,
+    "ebitda": 10591775.0,
+    "ebit": 3693619.0,
+    "resultado_antes_impostos": 2246613.0,
+    "resultado_liquido": 1438764.0,
+    "total_ativo": 115527563.0,
+    "capital_proprio": 39135713.0
+  },
+  "waste": {
+    "total_ru_recebidos": 340505.0,
+    "ru_indiferenciados_municipais": 340270.0,
+    "ru_indiferenciados_outros": 235.0,
+    "recolha_seletiva_multimaterial": 57357.0,
+    "recolha_seletiva_volumosos": 9403.0,
+    "recolha_seletiva_biorresiduos": 15594.0,
+    "recolha_seletiva_outros_fluxos_ru": 5775.0,
+    "recolha_seletiva_rnu": 1757.0,
+    "total_recolha_seletiva": 89886.0,
+    "energia_vendida_gwh": 14.679
+  },
+  "operations": {
+    "municipios_servidos": 35,
+    "populacao_servida": 905575
+  },
+  "debt": {
+    "endividamento_liquido": 13063211.0
+  },
+  "capital": {
+    "capital_social": 8000000.0,
+    "egf_percent": 75.11
+  },
+  "revenue": {
+    "receita_energia": null,
+    "receita_reciclaveis": null
+  }
+}
