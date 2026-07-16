@@ -73,8 +73,8 @@ jobs:
             git clone --branch gh-pages https://github.com/${{ github.repository }}.git gh-pages || {
               mkdir -p gh-pages
               cd gh-pages
-              git init
-              git checkout -b gh-pages
+              git init --initial-branch=gh-pages
+              git commit --allow-empty -m "Initial commit"
             }
           fi
       
