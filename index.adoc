@@ -1,6 +1,6 @@
 = Análise Comparativa do Sector de Gestão de Resíduos Urbanos em Portugal
 Jorge C. Leitão
-2026-07-15
+{localdate}
 :url-repo: https://github.com/jorgecarleitao/relatorio-residuos-urbanos-portugal
 :doctype: book
 :lang: pt
@@ -17,29 +17,31 @@ Jorge C. Leitão
 == Sumário Executivo
 
 O processamento de resíduos urbanos em Portugal é realizado por sistemas municipais e multimunicipais em monopólio regulado.
-A maioria dos sistemas em alta é controlada pela Mota‑Engil, através da Empresa Geral do Fomento (EGF), e regulada pela ERSAR.
-Os municípios pagam uma tarifa por tonelada definida no regulamento tarifário da ERSAR.
+No segmento em alta, a atividade é assegurada por entidades com tarifas definidas no quadro regulatório aplicável e sujeitas a supervisão da ERSAR.
+Partindo dessas tarifas e dos resultados efetivamente observados, este relatório analisa como diferentes sistemas convertem receita regulada em rentabilidade, endividamento e distribuição de lucros.
 
 include::build/tables/coverage-attributes.adoc[]
 
 Este relatório analisa relatórios e contas de 2024-2025 de {total_systems} sistemas em alta que servem {total_population_text} em {total_municipalities} municípios ({coverage_pct}% da população continental).
-Os resultados revelam fortes assimetrias de rentabilidade e risco financeiro entre sistemas sob o mesmo modelo regulatório.
+Os resultados revelam fortes assimetrias de rentabilidade e risco financeiro entre sistemas sujeitos ao mesmo enquadramento geral.
 
 Principais conclusões:
 
 * **Elevada heterogeneidade na rentabilidade**  
-  O ROE varia entre -10% e +16%, num setor maduro onde seria expectável convergência em torno do custo de capital.
+  O ROE varia entre -10% e +16%.
+  Num sector maduro e regulado, esta amplitude revela que sistemas sujeitos ao mesmo enquadramento apresentam resultados económicos muito distintos.
 
-* **Distribuição de lucros em monopólio**  
+* **Distribuição de lucros em monopólio regulado**  
   Em 2024 e 2025, a VALORSUL cobrou 47,93 €/t e 56,37 €/t e gerou lucros entre 9,8 €/t e 14,0 €/t, dos quais 21% a 25% da tarifa foram distribuídos como dividendos aos acionistas.
+  Nenhum outro sistema se aproxima desta escala de distribuição sobre a receita tarifária.
 
 * **Risco financeiro assimétrico**  
-  Os rácios de dívida/EBITDA variam entre 0x e 3,9x, com vários sistemas a apresentar dívida líquida reduzida em 2025.
-  A VALORSUL, AMBISOUSA e LIPOR dispõem de margem para investir sem fundos públicos, enquanto AMARSUL, RSTJ e VALORLIS apresentam rácios acima de 3x.
+  Os rácios de dívida líquida/EBITDA variam entre 0x e 3,9x, com vários sistemas a apresentar dívida líquida reduzida em 2025.
+  A VALORSUL, AMBISOUSA e LIPOR apresentam margem financeira mais confortável, enquanto AMARSUL, RSTJ e VALORLIS registam rácios acima de 3x.
 
-* **Heterogeneidade sob o mesmo modelo regulatório**  
-  O modelo de proveitos permitidos gera resultados díspares: alguns sistemas operam com resultados negativos; outros apresentam ROE acima de 10% e distribuem dividendos significativos.
-  Esta coexistência indica que o enquadramento regulatório não alinha tarifas, risco e remuneração de capital.
+* **Desalinhamento de resultados sob o mesmo enquadramento**  
+  Alguns sistemas operam com resultados negativos ou voláteis; outros apresentam ROE acima de 10% e distribuem dividendos significativos.
+  Esta coexistência sugere que o enquadramento regulatório não assegura de forma homogénea o alinhamento entre tarifa, risco financeiro e remuneração do capital.
 
 == Enquadramento
 
@@ -60,19 +62,23 @@ Serviço "em Alta" (Empresas Multimunicipais):
 * Valorização energética (incineração ou biogás)
 * Deposição final (aterros)
 
-Esta análise foca-se exclusivamente no Serviço "em Alta".
+Esta análise foca-se exclusivamente no serviço "em Alta".
 
 === Enquadramento Regulatório
 
-* **ERSAR** (Entidade Reguladora dos Serviços de Águas e Resíduos): Define tarifas em alta via modelo de proveitos permitidos (custos + remuneração de capital)
-* **APA** (Agência Portuguesa do Ambiente): Define PERSU 2030 e Taxa de Gestão de Resíduos (TGR)
-* **Decreto-Lei n.º 96/2014**: Enquadra as concessões aos sistemas multimunicipais
+* **ERSAR** (Entidade Reguladora dos Serviços de Águas e Resíduos): enquadra e fixa tarifas em alta no quadro do regulamento tarifário aplicável
+* **APA** (Agência Portuguesa do Ambiente): define PERSU 2030 e Taxa de Gestão de Resíduos (TGR)
+* **Decreto-Lei n.º 96/2014**: enquadra as concessões aos sistemas multimunicipais
+
+Para efeitos desta análise, a tarifa regulada é tratada como o preço anual efetivamente definido para o serviço.
+O objeto do relatório não é reconstituir o cálculo tarifário, mas analisar os resultados económicos observados que decorrem da aplicação dessas tarifas.
 
 === A quem se destina
 
 * Os municípios, que usufruem e pagam os serviços das multimunicipais
-* A ERSAR, que regula as multimunicipais
-* Em menor escala, a APA, pela interação entre fatores económicos e ambientais
+* A ERSAR, enquanto entidade reguladora
+* A APA, pela interação entre fatores económicos e ambientais
+* Todos os decisores públicos interessados na relação entre tarifas reguladas, resultados empresariais e interesse municipal
 
 == Análises
 
@@ -88,36 +94,35 @@ include::build/tables/sistemas_analisados.adoc[]
 
 A rentabilidade sobre capital próprio (ROE) compara o lucro anual com o capital próprio.
 
-Num setor maduro em monopólio regulado, ROE elevado sugere remuneração acima do necessário, transferindo rendas para o acionista.
-ROE baixo indica desincentivo ao investimento; ROE negativo indica insustentabilidade.
+Num sector maduro em monopólio regulado, diferenças persistentes de ROE entre sistemas sujeitos ao mesmo enquadramento merecem escrutínio.
+ROE baixo pode indicar fraca capacidade de autofinanciamento; ROE negativo indica fragilidade económica; ROE elevado indica forte capacidade de conversão da tarifa em resultado líquido.
 
 .Rentabilidade sobre capital próprio dos sistemas multimunicipais analisados. Os sistemas apresentam diferenças muito significativas: o Algarve recuperou de ROE negativo em 2024 para positivo em 2025; Lisboa e outros sistemas mantêm rentabilidade elevada.
 image::figures/roe.svg[ROE Distribution,width=85%,align=center]
 
 include::build/tables/roe.adoc[]
 
-Observa-se disparidade marcada nos níveis de ROE sob o mesmo enquadramento regulatório.
-Sistemas com baixa rentabilidade têm menor capacidade de investir; sistemas com rentabilidade elevada transferem parte significativa da tarifa como lucro.
-Ambas as situações geram desigualdades regionais.
+Observa-se disparidade marcada nos níveis de ROE sob o mesmo enquadramento geral.
+Sistemas com baixa rentabilidade têm menor capacidade para financiar investimento com meios próprios; sistemas com rentabilidade elevada conseguem transformar uma parcela maior da tarifa regulada em resultado líquido.
+Ambas as situações levantam questões de equidade e coerência regulatória entre territórios.
 
 === Sustentabilidade Económica
 
-O rácio dívida líquida/EBITDA mede a sustentabilidade da dívida.
-Valor baixo indica dívida reduzida face aos resultados operacionais; valor alto indica maior exposição ao risco.
-Um rácio de 4x corresponde a quatro anos de EBITDA.
+O rácio dívida líquida/EBITDA mede o peso da dívida face aos resultados operacionais.
+Valor baixo indica posição financeira mais confortável; valor alto indica maior exposição a risco e menor margem de manobra.
 
-.Rácio da dívida líquida por EBITDA. Vários sistemas reduziram a alavancagem em 2025, mas persistem casos com rácios acima de 3x.
+.Rácio da dívida líquida por EBITDA. Vários sistemas reduziram a alavancagem em 2025 para valores sustentáveis, e em 2025 todos os sistemas tiveram um rácio inferior a 4x.
 image::figures/net_debt_ebitda.svg[Net Debt EBITDA,width=85%,align=center]
 
 include::build/tables/net_debt_ebitda.adoc[]
 
 Os dados revelam dispersão significativa: vários sistemas reduziram o rácio em 2025 para valores abaixo de 2x; outros mantêm-se acima de 3x.
-Alguns sistemas dependem de reequilíbrios públicos para manter capacidade de investimento; outros mantêm dívidas baixas.
+Isto significa que, perante o mesmo enquadramento tarifário, alguns sistemas dispõem de maior folga financeira enquanto outros permanecem mais condicionados.
 
 === Margem EBITDA
 
 A margem EBITDA mede a percentagem da receita convertida em resultados operacionais.
-Margem de 20% significa que a empresa gera 20% da tarifa como EBITDA.
+Uma margem de 20% significa que a empresa gera 20% da receita como EBITDA.
 
 .Margem EBITDA das multimunicipais em 2024 e 2025.
 image::figures/ebitda_margins.svg[EBITDA Margins,width=85%,align=center]
@@ -125,59 +130,60 @@ image::figures/ebitda_margins.svg[EBITDA Margins,width=85%,align=center]
 include::build/tables/ebitda_margins.adoc[]
 
 A maioria dos sistemas apresenta margens EBITDA superiores a 20%.
-Quatro sistemas ultrapassam 30%; conjugadas com ROE elevados e distribuição de dividendos, sugerem que a estrutura tarifária gera remunerações acima do necessário.
+Em vários casos, margens elevadas coexistem com baixo endividamento e distribuição de dividendos, o que reforça a leitura de forte capacidade de geração de caixa em parte do sector.
 
 === Rentabilidade por Tonelada
 
-A rentabilidade por tonelada representa a valorização económica dos resíduos processados.
+A rentabilidade por tonelada mede o lucro líquido obtido por tonelada de resíduo processado.
+Este indicador permite relacionar o resultado económico com a unidade física central do serviço prestado.
 
-.Rentabilidade por tonelada dos sistemas multimunicipais analisados. Valorsul com rentabilidade muito superior ao resto do sector; ALGAR recuperou de prejuízo em 2024 para lucro em 2025.
+.Rentabilidade por tonelada dos sistemas multimunicipais analisados. VALORSUL com rentabilidade muito superior ao resto do sector; ALGAR recuperou de prejuízo em 2024 para lucro em 2025.
 image::figures/rentability_per_ton.svg[Rentability Per Ton,width=85%,align=center]
 
 include::build/tables/rentability_per_ton.adoc[]
 
-A análise revela elevada variação: entre -4€/t e +14€/t, com VALORSUL a liderar a rentabilidade por tonelada.
-Este indicador explica a viabilidade económica de cada sistema.
+A análise revela elevada variação: entre -4 €/t e +14 €/t, com a VALORSUL entre os casos de maior rentabilidade por tonelada.
+Quando comparado com a tarifa regulada e com a política de dividendos, este indicador ajuda a identificar que sistemas convertem uma parcela mais elevada da receita municipal em lucro.
 
 === Distribuição de Lucros
 
-O rácio de distribuição de dividendos sobre a receita tarifária mede a percentagem do valor pago pelos municípios que é distribuído como dividendos aos acionistas.
-Este indicador responde à pergunta: de cada euro que o município paga em tarifa, quanto vai para o acionista?
-
-O cálculo usa a tarifa regulada e as toneladas processadas para estimar a receita tarifária municipal, excluindo receitas de valorização energética e recicláveis.
+O rácio de distribuição de dividendos sobre a receita tarifária estima que percentagem da receita das tarifas municipais, após cobertura dos custos e demais encargos, é convertida em dividendos.
+Em termos simples: de cada euro pago em tarifa pelos municípios, que parte vai diretamente para os acionistas?
 
 .Dividendos como percentagem da receita tarifária municipal. VALORSUL destaca-se com 20% a 25% da tarifa paga pelos municípios a ser distribuída como dividendos.
+image::figures/dividend_per_tariff.svg[Dividend per Tariff,width=85%,align=center]
 include::build/tables/dividend_per_tariff.adoc[]
 
-A VALORSUL lidera destacada: 20,5% da tarifa paga pelos municípios de Lisboa e Oeste foi para dividendos em 2024, subindo para 24,9% em 2025.
+A VALORSUL destaca-se: 20,5% da tarifa paga pelos municípios de Lisboa e Oeste foi para dividendos em 2024, subindo para 24,9% em 2025.
 Nenhum outro sistema se aproxima deste valor — o segundo maior (AMBILITAL em 2025) distribui 9,0%.
-A maioria dos sistemas com dividendos situa-se entre 3% e 7% da receita tarifária.
+Na maioria dos sistemas com dividendos, o valor situa-se entre 3% e 7% da receita tarifária.
 
-Este indicador revela que o problema não é apenas a elevada taxa de distribuição de lucros (que é comum no setor), mas sim a dimensão do lucro gerado por tonelada face à tarifa regulada.
+Este indicador mostra que a diferença não está apenas no facto de existirem dividendos, mas na escala a que a tarifa municipal é convertida em remuneração do acionista.
 
 == Conclusões
 
-=== De lucros excessivos a insustentabilidade
+=== De assimetrias de rentabilidade a fragilidade financeira
 
-Vários sistemas combinam margens EBITDA elevadas, baixo endividamento e ROE acima do custo de capital.
-VALORSUL (ROE 13–15%) destaca-se com 21% a 25% da tarifa municipal distribuída como dividendos — o triplo dos restantes sistemas.
-AMBISOUSA (ROE 7,6%) e VALNOR apresentam rentabilidades de 6–14 €/t.
-O modelo tarifário permite extração de rendas à custa de tarifas superiores ao necessário.
+Os dados de 2024 e 2025 mostram um sector com resultados muito distintos entre sistemas sujeitos ao mesmo enquadramento geral.
+Há sistemas com margens elevadas, baixo endividamento e capacidade de distribuir dividendos significativos, enquanto outros apresentam resultados negativos, maior alavancagem ou forte volatilidade anual.
 
-Um segundo grupo (ERSUC, RESINORTE, RESULIMA, TRATOLIXO, SULDOURO) apresenta margens EBITDA entre 18% e 30%, com ROE entre -6% e 3,7% e dívida/EBITDA abaixo de 3x.
-Operam com rentabilidade reduzida sobre o capital investido, limitando a capacidade de reinvestimento sem recurso a nova dívida.
+A VALORSUL destaca-se com ROE de 13% a 14,9% e com 21% a 25% da tarifa municipal distribuída como dividendos.
+AMBISOUSA e VALNOR também apresentam níveis robustos de rentabilidade por tonelada e situação financeira relativamente confortável.
+No extremo oposto, sistemas como ERSUC, AMARSUL, RSTJ ou VALORLIS revelam maior pressão financeira ou menor rentabilidade.
 
-Finalmente, ALGAR e AMBILITAL, que em 2024 apresentavam prejuízos e endividamento elevado, recuperaram em 2025 — ALGAR para ROE de 15,8% e AMBILITAL para margens EBITDA de 50%.
-Apesar da melhoria, a volatilidade interanual revela fragilidade estrutural nestes sistemas.
-A coexistência de sistemas que distribuem dividendos e sistemas com resultados voláteis indica desajuste profundo do modelo regulatório.
+Um segundo grupo, incluindo ERSUC, RESINORTE, RESULIMA, TRATOLIXO e SULDOURO, apresenta margens EBITDA relevantes mas rentabilidade líquida mais reduzida.
+Isto sugere que margens operacionais semelhantes não se traduzem necessariamente no mesmo retorno para o capital próprio nem na mesma capacidade de distribuição.
 
-Um regulador deve garantir que a remuneração do capital seja consistente com o risco e que ganhos de eficiência sejam partilhados.
-Os dados de 2024 e 2025 mostram que este equilíbrio não está assegurado.
+ALGAR e AMBILITAL recuperaram em 2025 após um 2024 mais fraco.
+Ainda assim, a volatilidade interanual observada em alguns sistemas reforça a ideia de que os resultados do sector permanecem longe de um padrão estável e homogéneo.
+
+A principal conclusão política é simples: mesmo aceitando a tarifa regulada como dado, os resultados observados mostram que a sua conversão em lucro, robustez financeira e dividendos não ocorre de forma equilibrada entre sistemas.
+Isso justifica escrutínio público sobre a coerência distributiva e territorial do modelo em vigor.
 
 .Relação entre ROE e Endividamento nos Sistemas Analisados
 image::figures/roe_vs_debt.svg[]
 
-=== Em Lisboa, os munícipes estão a subsidiar os acionistas do monopólio
+=== Em Lisboa, uma parcela invulgarmente elevada da tarifa municipal é transferida para os acionistas
 
 .Valores da VALORSUL (2024 e 2025)
 [cols="1,1,1"]
@@ -186,31 +192,72 @@ image::figures/roe_vs_debt.svg[]
 
 |Tarifa regulada |47,93 €/t |56,37 €/t
 |Lucro gerado |8,26 M€ (9,80 €/t) |9,76 M€ (14,0 €/t)
-|ROE |13% |14,9%
+|ROE |13,0% |14,9%
 |Margem EBITDA |26,0% |23,1%
 |Margem Líquida |10,4% |9,6%
 |Dividendos / Receita Tarifária |20,5% |24,9%
 |Destino do lucro |100% dividendos |100% dividendos
 |===
 
-20,5% a 24,9% da tarifa paga pelos municípios foi distribuída como dividendos.
+Entre 20,5% e 24,9% da tarifa paga pelos municípios foi distribuída como dividendos.
+Este valor é excecional no universo analisado.
 
-A VALORSUL não é única a distribuir a totalidade do lucro, mas é única na escala: enquanto os restantes sistemas distribuem 3% a 9% da receita tarifária como dividendos, a VALORSUL distribui 21% a 25%.
-A diferença está na rentabilidade por tonelada: a VALORSUL gera 9,8 a 14,0 €/t de lucro, muito acima dos restantes sistemas, permitindo transferir um quarto da tarifa para os acionistas.
+A VALORSUL não é única a distribuir a totalidade do lucro, mas distingue-se claramente pela escala.
+Enquanto os restantes sistemas distribuem, em regra, entre 3% e 9% da receita tarifária, a VALORSUL distribui entre 21% e 25%.
 
-Num monopólio regulado, ROE de 13–15% indica:
+A diferença está na combinação entre tarifa, lucro por tonelada e política de distribuição.
+A VALORSUL gera 9,8 €/t a 14,0 €/t de lucro, muito acima da maioria dos restantes sistemas, o que lhe permite transferir cerca de um quarto da tarifa municipal para os acionistas.
 
-1. Tarifas acima do necessário, OU
-2. Ganhos de eficiência apropriados pelos acionistas, OU
-3. Modelo de remuneração desajustado ao risco.
+Num monopólio regulado, este resultado não prova por si só erro no cálculo tarifário.
+Mas mostra que, na prática, a tarifa aprovada está a permitir uma conversão da receita municipal em dividendos muito superior à observada no resto do sector.
 
-O quadro regulatório permitiu à Valorsul extrair retorno excessivo em ambos os anos.footnote:[21–25% da tarifa municipal é distribuída como dividendos, indicando conversão de receita tarifária em lucro para o acionista.]
+Por isso, a questão central não é reconstituir toda a fórmula regulatória, mas avaliar politicamente os resultados que ela produz.
+Nesse teste empírico, a VALORSUL surge como o caso mais expressivo de transferência de receita tarifária municipal para remuneração acionista.footnote:[Entre 20,5% e 24,9% da receita tarifária municipal estimada foi distribuída como dividendos em 2024 e 2025.]
 
 == Metodologia
 
-Valores extraídos dos Relatórios & Contas de 2024 e 2025, convertidos para indicadores por tonelada quando necessário.
+O processamento foi feito em três passos: relatórios fonte, extração de dados, e cálculo de indicadores.
 
-Cálculos efetuados com scripts Python disponíveis em {url-repo}.
+=== 1. Relatórios Fonte
+
+Os dados provêm dos Relatórios & Contas de 2024 e 2025 de cada sistema multimunicipal, complementados pelas tarifas reguladas publicadas pela ERSAR.
+
+=== 2. Extração de Dados
+
+Para cada sistema e ano, foram extraídos os seguintes valores: proveitos operacionais, EBITDA, resultado líquido, capital próprio, dívida líquida, toneladas processadas, dividendos distribuídos e tarifa regulada anual.
+
+Os relatórios originais em PDF foram convertidos para texto através de ferramentas de OCR. A extração estruturada dos valores foi realizada com recurso a modelos de linguagem (Perplexity).
+
+=== 3. Cálculos e Fórmulas
+
+Os indicadores foram calculados a partir dos valores extraídos, de acordo com as seguintes fórmulas:
+
+[cols="1,2,2"]
+|===
+|Indicador |Fórmula |Descrição
+
+|ROE
+|Resultado Líquido / Capital Próprio
+|Rentabilidade sobre o capital investido pelos acionistas
+
+|Margem EBITDA
+|EBITDA / Proveitos Operacionais
+|Percentagem da receita convertida em resultado operacional
+
+|Dívida Líquida / EBITDA
+|Dívida Líquida / EBITDA
+|Grau de alavancagem financeira
+
+|Rentabilidade por Tonelada
+|Resultado Líquido / Toneladas Processadas
+|Lucro gerado por tonelada de resíduo
+
+|Dividendos / Receita Tarifária
+|Dividendos / (Tarifa Regulada × Toneladas)
+|Percentagem da tarifa municipal distribuída como dividendos
+|===
+
+A tarifa regulada anual é tratada nesta análise como dado institucional observado. O objetivo não é reproduzir o processo de fixação tarifária, mas comparar os resultados económicos, financeiros e distributivos que resultam da sua aplicação.
 
 == Agradecimentos
 
@@ -241,4 +288,3 @@ include::build/tables/referencias.adoc[]
 
 NOTE: Este relatório é de acesso aberto.
 O código-fonte, os dados e as instruções para reproduzir a análise estão disponíveis em {url-repo}[GitHub].
-Contribuições são bem-vindas.

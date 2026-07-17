@@ -3,13 +3,13 @@
   "ano": 2025,
   "regiao": "Baixo Alentejo",
   "indicadores": {
-    "vendas": 1455476.0,
-    "ebitda": 2924672.0,
+    "vendas": 6602169.0,
+    "ebitda": 2431208.0,
     "ebit": 169520.0,
     "resultado_antes_impostos": 237846.11,
-    "resultado_liquido": 175547.0,
-    "total_ativo": 17073570.0,
-    "capital_proprio": 6800000.0,
+    "resultado_liquido": 170107.95,
+    "total_ativo": 33222617.0,
+    "capital_proprio": 17505442.0,
     "dividendos": null,
     "tarifa_regulada": 69.63
   },

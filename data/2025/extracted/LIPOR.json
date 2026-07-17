@@ -3,22 +3,22 @@
   "ano": 2025,
   "regiao": "Grande Porto",
   "indicadores": {
-    "vendas": 58400000.0,
+    "vendas": 58431295.7,
     "ebitda": 14788084.6,
     "ebit": 9177170.6,
     "resultado_antes_impostos": 9304357.5,
     "resultado_liquido": 8525100.6,
-    "total_ativo": 111985089.0,
+    "total_ativo": 122222345.6,
     "capital_proprio": 101184993.8,
     "dividendos": 0,
     "tarifa_regulada": null
   },
   "waste": {
-    "total_ru_recebidos": 500000.0,
-    "ru_indiferenciados_municipais": 380000.0,
-    "ru_indiferenciados_outros": 20000.0,
-    "recolha_seletiva_multimaterial": 30000.0,
-    "total_recolha_seletiva": 70000.0,
+    "total_ru_recebidos": 544847.0,
+    "ru_indiferenciados_municipais": 377261.0,
+    "ru_indiferenciados_outros": 16650.0,
+    "recolha_seletiva_multimaterial": 92405.0,
+    "total_recolha_seletiva": 150936.0,
     "energia_vendida_gwh": 170.0
   },
   "operations": {
@@ -26,7 +26,7 @@
     "populacao_servida": 1000000
   },
   "debt": {
-    "endividamento_liquido": 12055349.0
+    "endividamento_liquido": 0.0
   },
   "capital": {
     "capital_social": 52291466.3,

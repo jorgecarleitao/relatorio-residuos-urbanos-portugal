@@ -3,13 +3,13 @@
   "ano": 2025,
   "regiao": "AMTRES (Cascais, Mafra, Oeiras, Sintra)",
   "indicadores": {
-    "vendas": 68797882.0,
-    "ebitda": 15470365.0,
-    "ebit": 8570939.0,
-    "resultado_antes_impostos": 7528545.0,
-    "resultado_liquido": 1189305.51,
-    "total_ativo": 180013629.0,
-    "capital_proprio": 93432694.0,
+    "vendas": 43310753,
+    "ebitda": 12878293,
+    "ebit": 4866906.0,
+    "resultado_antes_impostos": 1537347.0,
+    "resultado_liquido": 1189306,
+    "total_ativo": 180013629,
+    "capital_proprio": 30406281,
     "dividendos": null,
     "tarifa_regulada": null
   },
@@ -26,10 +26,10 @@
     "populacao_servida": 892400
   },
   "debt": {
-    "endividamento_liquido": 8517109.0
+    "endividamento_liquido": 90578489.0
   },
   "capital": {
-    "capital_social": 24938370.0,
+    "capital_social": 7010000.0,
     "egf_percent": 0.0
   },
   "revenue": {

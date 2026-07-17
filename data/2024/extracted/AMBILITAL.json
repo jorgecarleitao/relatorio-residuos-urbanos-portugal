@@ -3,14 +3,14 @@
   "ano": 2024,
   "regiao": "Alentejo Litoral",
   "indicadores": {
-    "vendas": 5672351.0,
-    "ebitda": -687324.0,
-    "ebit": -687324.0,
-    "resultado_antes_impostos": 140232.0,
-    "resultado_liquido": -584185.0,
-    "total_ativo": 25788341.0,
-    "capital_proprio": 15954549.0,
-    "dividendos": 0,
+    "vendas": 5672351,
+    "ebitda": 2109226,
+    "ebit": -687324,
+    "resultado_antes_impostos": -724417,
+    "resultado_liquido": -584185,
+    "total_ativo": 25788341,
+    "capital_proprio": 15954549,
+    "dividendos": 289406,
     "tarifa_regulada": 60.0
   },
   "waste": {
@@ -25,10 +25,10 @@
     "populacao_servida": 115435
   },
   "debt": {
-    "endividamento_liquido": 6197713.0
+    "endividamento_liquido": 6197713
   },
   "capital": {
-    "capital_social": 3600000.0,
+    "capital_social": 3600000,
     "egf_percent": 51.0
   },
   "revenue": {

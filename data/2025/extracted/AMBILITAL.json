@@ -4,13 +4,13 @@
   "regiao": "Alentejo Litoral (AMAGRA)",
   "indicadores": {
     "vendas": 8414421.1,
-    "ebitda": 4205684.0,
-    "ebit": 3383110.3,
-    "resultado_antes_impostos": 530609.0,
+    "ebitda": 4005684,
+    "ebit": 652574,
+    "resultado_antes_impostos": 530609,
     "resultado_liquido": 399115.5,
-    "total_ativo": 30247134.0,
-    "capital_proprio": 8401671.7,
-    "dividendos": 399115.46,
+    "total_ativo": 30475811,
+    "capital_proprio": 15353548,
+    "dividendos": 0,
     "tarifa_regulada": 60.0
   },
   "waste": {
@@ -33,7 +33,7 @@
     "egf_percent": null
   },
   "revenue": {
-    "receita_energia": 1200000.0,
+    "receita_energia": 0.0,
     "receita_reciclaveis": 3410000.0
   }
 }

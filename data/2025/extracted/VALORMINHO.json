@@ -3,13 +3,13 @@
   "ano": 2025,
   "regiao": "Minho (norte litoral)",
   "indicadores": {
-    "vendas": 13625000.0,
-    "ebitda": 5013000.0,
-    "ebit": 1206000.0,
+    "vendas": 5013275.0,
+    "ebitda": 1205803.0,
+    "ebit": 424817.0,
     "resultado_antes_impostos": 1009000.0,
     "resultado_liquido": 133000.0,
-    "total_ativo": 13625000.0,
-    "capital_proprio": 9000000.0,
+    "total_ativo": 13624128.0,
+    "capital_proprio": 2273079.0,
     "dividendos": 126010.0,
     "tarifa_regulada": 70.8
   },
@@ -31,11 +31,11 @@
     "endividamento_liquido": 4455000.0
   },
   "capital": {
-    "capital_social": 9000000.0,
+    "capital_social": 900000.0,
     "egf_percent": 51.0
   },
   "revenue": {
-    "receita_energia": null,
-    "receita_reciclaveis": null
+    "receita_energia": 102796.0,
+    "receita_reciclaveis": 1921980.0
   }
 }

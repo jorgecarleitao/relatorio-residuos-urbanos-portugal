@@ -522,6 +522,21 @@ def generate_dividend_per_tariff() -> None:
         col_align='1,1,1'
     )
 
+    def color_fn(v):
+        return 'red' if v > 10 else 'green'
+
+    write_bar_plot_2years(
+        'dividend_per_tariff',
+        df_2025, df_2024,
+        x_col='Empresa',
+        y_col='Dividendos / Tarifa (%)',
+        title_latest='Dividendos como % da Receita Tarifária em 2025',
+        title_prior='Dividendos como % da Receita Tarifária em 2024',
+        xlabel='Empresa',
+        ylabel='Dividendos / Tarifa (%)',
+        color_fn=color_fn,
+    )
+
 
 def generate_roe_vs_debt_scatter() -> None:
     """Generate scatter plot of ROE vs Net Debt/EBITDA with 2-year arrows."""

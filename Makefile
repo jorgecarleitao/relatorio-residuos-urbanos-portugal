@@ -23,7 +23,6 @@ endif
 # Build directory
 BUILD_DIR = build
 FIGURES_DIR = $(BUILD_DIR)/figures
-DIAGRAMS_DIR = $(BUILD_DIR)/diagrams
 TABLES_DIR = $(BUILD_DIR)/tables
 
 # Python environment
@@ -47,7 +46,7 @@ OCR_DOCKERFILE = ocr/Dockerfile.ocr
 OCR_DIR = ocr
 
 # Targets
-.PHONY: all html pdf clean help setup generate diagrams check-spelling lint ocr-build ocr download-2024 download-2025 download-all
+.PHONY: all html pdf clean help setup generate check-spelling lint ocr-build ocr download-2024 download-2025 download-all
 
 all: html
 
@@ -60,7 +59,6 @@ help:
 	@echo "  make all        - Generate HTML report"
 	@echo "  make setup      - Setup Python environment"
 	@echo "  make generate   - Generate all figures and tables"
-	@echo "  make diagrams   - Copy diagrams to build"
 	@echo "  make check-spelling - Check grammar and spelling (Portuguese)"
 	@echo "  make lint       - Alias for check-spelling"
 	@echo "  make download-2024  - Download PDFs from fontes.csv (2024)"
@@ -76,22 +74,16 @@ setup: $(VENV)
 generate: $(VENV)
 	@$(PYTHON) src/generate.py
 
-diagrams: | $(BUILD_DIR)
-	@echo "Copying diagrams..."
-	@mkdir -p $(DIAGRAMS_DIR)
-	@cp -r src/diagrams/*.svg $(DIAGRAMS_DIR)/ 2>/dev/null || true
-	@echo "✓ Diagrams copied"
-
 check-spelling: $(VENV)
 	@echo "Checking grammar and spelling..."
 	@$(PYTHON) src/check_spelling.py
 
 lint: check-spelling
 
-html: generate diagrams $(REPORT_HTML)
+html: generate $(REPORT_HTML)
 	@echo "✓ HTML report generated successfully"
 
-pdf: generate diagrams $(REPORT_PDF)
+pdf: generate $(REPORT_PDF)
 	@echo "✓ PDF report generated successfully"
 
 # Python virtual environment setup

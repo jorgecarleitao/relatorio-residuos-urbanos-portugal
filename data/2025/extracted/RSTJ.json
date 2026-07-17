@@ -4,10 +4,10 @@
   "regiao": "Tejo",
   "indicadores": {
     "vendas": 13115101.91,
-    "ebitda": 2090593.0,
+    "ebitda": 1808369.0,
     "ebit": 438578.08,
-    "resultado_antes_impostos": 402922.53,
-    "resultado_liquido": 222384.7,
+    "resultado_antes_impostos": 438578.0,
+    "resultado_liquido": 222385.0,
     "total_ativo": 15531502.38,
     "capital_proprio": 4412776.53,
     "dividendos": null,
