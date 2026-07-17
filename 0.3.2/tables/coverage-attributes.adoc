@@ -1,0 +1,4 @@
+:total_systems: 21
+:total_population_text: 9,9 milhões de habitantes
+:total_municipalities: 256
+:coverage_pct: 96

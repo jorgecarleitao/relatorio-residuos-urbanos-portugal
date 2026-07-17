@@ -1,0 +1,25 @@
+[cols="1,1,1"]
+|===
+|Empresa |2025 |2024
+
+|Ecoleziria |N/D |8,1
+|Rstj |N/D |0,1
+|Lipor |15,6 |0,0
+|Valorsul |14,0 |9,8
+|Ambisousa |9,5 |9,5
+|Valnor |9,0 |6,5
+|Algar |6,5 |-3,8
+|Ambilital |5,4 |-8,0
+|Valorlis |4,9 |4,9
+|Resiestrela |4,6 |4,6
+|Resinorte |4,2 |0,0
+|Valorminho |3,9 |0,7
+|Resialentejo |3,8 |0,4
+|Amarsul |3,2 |1,3
+|Suldouro |3,0 |1,6
+|Braval |2,6 |2,6
+|Tratolixo |2,4 |0,0
+|Resulima |1,0 |0,5
+|Residuos_Nordeste |0,1 |3,3
+|Ersuc |-1,4 |0,3
+|===
