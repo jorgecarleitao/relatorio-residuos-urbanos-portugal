@@ -114,13 +114,14 @@ def calculate_net_debt_ebitda(year: str = '2024') -> pl.DataFrame:
 def calculate_dividend_per_tariff(year: str = '2024') -> pl.DataFrame:
     """Calculate dividends as % of municipality fee revenue.
     
-    Uses: dividendos / (tarifa_regulada * total_ru_recebidos) * 100
+    Uses: dividendos / (tarifa_regulada * ru_indiferenciados_municipais) * 100
+    Only undifferentiated municipal waste is tariffed; selective collection is excluded.
     This measures what % of what municipalities pay ends up as dividends.
     """
     df = _load_companies(year)
 
     result = df.with_columns([
-        (pl.col('tarifa_regulada') * pl.col('total_ru_recebidos')).alias('municipio_receita'),
+        (pl.col('tarifa_regulada') * pl.col('ru_indiferenciados_municipais')).alias('municipio_receita'),
     ]).with_columns([
         pl.when(
             pl.col('municipio_receita').is_not_null() & 

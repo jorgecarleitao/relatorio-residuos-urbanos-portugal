@@ -32,7 +32,7 @@ Principais conclusões:
   Num sector maduro e regulado, esta amplitude revela que sistemas sujeitos ao mesmo enquadramento apresentam resultados económicos muito distintos.
 
 * **Distribuição de lucros em monopólio regulado**  
-  Em 2024 e 2025, a VALORSUL cobrou 47,93 €/t e 56,37 €/t e gerou lucros entre 9,8 €/t e 14,0 €/t, dos quais 21% a 25% da tarifa foram distribuídos como dividendos aos acionistas.
+  Em 2024 e 2025, a VALORSUL cobrou 47,93 €/t e 56,37 €/t e gerou lucros entre 9,8 €/t e 14,0 €/t, dos quais 25,0% a 25,5% da tarifa foram distribuídos como dividendos aos acionistas.
   Nenhum outro sistema se aproxima desta escala de distribuição sobre a receita tarifária.
 
 * **Risco financeiro assimétrico**  
@@ -84,7 +84,7 @@ O objeto do relatório não é reconstituir o cálculo tarifário, mas analisar 
 
 === Sistemas Multimunicipais Analisados
 
-Este relatório analisa {total_systems} sistemas em alta: 11 concessionárias EGF e 8 sistemas independentes (LIPOR, TRATOLIXO, AMBISOUSA, AMBILITAL, BRAVAL, ECOLEZIRIA, RESIALENTEJO e RSTJ).
+Este relatório analisa {total_systems} sistemas em alta: 13 concessionárias EGF e 8 sistemas independentes (LIPOR, TRATOLIXO, AMBISOUSA, AMBILITAL, BRAVAL, ECOLEZIRIA, RESIALENTEJO e RSTJ).
 
 No total, **{total_population_text}** em **{total_municipalities} municípios** ({coverage_pct}% da população continental).
 
@@ -111,7 +111,7 @@ Ambas as situações levantam questões de equidade e coerência regulatória en
 O rácio dívida líquida/EBITDA mede o peso da dívida face aos resultados operacionais.
 Valor baixo indica posição financeira mais confortável; valor alto indica maior exposição a risco e menor margem de manobra.
 
-.Rácio da dívida líquida por EBITDA. Vários sistemas reduziram a alavancagem em 2025 para valores sustentáveis, e em 2025 todos os sistemas tiveram um rácio inferior a 4x.
+.Rácio da dívida líquida por EBITDA. Vários sistemas reduziram a alavancagem em 2025 para valores sustentáveis, e em 2025 a maioria dos sistemas teve um rácio inferior a 4x.
 image::figures/net_debt_ebitda.svg[Net Debt EBITDA,width=85%,align=center]
 
 include::build/tables/net_debt_ebitda.adoc[]
@@ -150,11 +150,11 @@ Quando comparado com a tarifa regulada e com a política de dividendos, este ind
 O rácio de distribuição de dividendos sobre a receita tarifária estima que percentagem da receita das tarifas municipais, após cobertura dos custos e demais encargos, é convertida em dividendos.
 Em termos simples: de cada euro pago em tarifa pelos municípios, que parte vai diretamente para os acionistas?
 
-.Dividendos como percentagem da receita tarifária municipal. VALORSUL destaca-se com 20% a 25% da tarifa paga pelos municípios a ser distribuída como dividendos.
+.Dividendos como percentagem da receita tarifária municipal.
 image::figures/dividend_per_tariff.svg[Dividend per Tariff,width=85%,align=center]
 include::build/tables/dividend_per_tariff.adoc[]
 
-A VALORSUL destaca-se: 20,5% da tarifa paga pelos municípios de Lisboa e Oeste foi para dividendos em 2024, subindo para 24,9% em 2025.
+A VALORSUL destaca-se: 25,5% da tarifa paga pelos municípios de Lisboa e Oeste foi para dividendos em 2024, e 25,0% em 2025.
 Nenhum outro sistema se aproxima deste valor — o segundo maior (AMBILITAL em 2025) distribui 9,0%.
 Na maioria dos sistemas com dividendos, o valor situa-se entre 3% e 7% da receita tarifária.
 
@@ -167,7 +167,7 @@ Este indicador mostra que a diferença não está apenas no facto de existirem d
 Os dados de 2024 e 2025 mostram um sector com resultados muito distintos entre sistemas sujeitos ao mesmo enquadramento geral.
 Há sistemas com margens elevadas, baixo endividamento e capacidade de distribuir dividendos significativos, enquanto outros apresentam resultados negativos, maior alavancagem ou forte volatilidade anual.
 
-A VALORSUL destaca-se com ROE de 13% a 14,9% e com 21% a 25% da tarifa municipal distribuída como dividendos.
+A VALORSUL destaca-se com ROE de 13% a 14,9% e com 25,5% da tarifa municipal distribuída como dividendos.
 AMBISOUSA e VALNOR também apresentam níveis robustos de rentabilidade por tonelada e situação financeira relativamente confortável.
 No extremo oposto, sistemas como ERSUC, AMARSUL, RSTJ ou VALORLIS revelam maior pressão financeira ou menor rentabilidade.
 
@@ -195,15 +195,15 @@ image::figures/roe_vs_debt.svg[]
 |ROE |13,0% |14,9%
 |Margem EBITDA |26,0% |23,1%
 |Margem Líquida |10,4% |9,6%
-|Dividendos / Receita Tarifária |20,5% |24,9%
+|Dividendos / Receita Tarifária |25,5% |25,0%
 |Destino do lucro |100% dividendos |100% dividendos
 |===
 
-Entre 20,5% e 24,9% da tarifa paga pelos municípios foi distribuída como dividendos.
+Entre 25,5% e 25,0% da tarifa paga pelos municípios foi distribuída como dividendos.
 Este valor é excecional no universo analisado.
 
 A VALORSUL não é única a distribuir a totalidade do lucro, mas distingue-se claramente pela escala.
-Enquanto os restantes sistemas distribuem, em regra, entre 3% e 9% da receita tarifária, a VALORSUL distribui entre 21% e 25%.
+Enquanto os restantes sistemas distribuem, em regra, entre 3% e 9% da receita tarifária, a VALORSUL distribui entre 25% e 25,5%.
 
 A diferença está na combinação entre tarifa, lucro por tonelada e política de distribuição.
 A VALORSUL gera 9,8 €/t a 14,0 €/t de lucro, muito acima da maioria dos restantes sistemas, o que lhe permite transferir cerca de um quarto da tarifa municipal para os acionistas.
@@ -212,7 +212,7 @@ Num monopólio regulado, este resultado não prova por si só erro no cálculo t
 Mas mostra que, na prática, a tarifa aprovada está a permitir uma conversão da receita municipal em dividendos muito superior à observada no resto do sector.
 
 Por isso, a questão central não é reconstituir toda a fórmula regulatória, mas avaliar politicamente os resultados que ela produz.
-Nesse teste empírico, a VALORSUL surge como o caso mais expressivo de transferência de receita tarifária municipal para remuneração acionista.footnote:[Entre 20,5% e 24,9% da receita tarifária municipal estimada foi distribuída como dividendos em 2024 e 2025.]
+Nesse teste empírico, a VALORSUL surge como o caso mais expressivo de transferência de receita tarifária municipal para remuneração acionista.footnote:[Entre 25,5% e 25,0% da receita tarifária municipal estimada foi distribuída como dividendos em 2024 e 2025.]
 
 == Metodologia
 
@@ -253,7 +253,7 @@ Os indicadores foram calculados a partir dos valores extraídos, de acordo com a
 |Lucro gerado por tonelada de resíduo
 
 |Dividendos / Receita Tarifária
-|Dividendos / (Tarifa Regulada × Toneladas)
+|Dividendos / (Tarifa Regulada × Toneladas RU Indiferenciados Municipais)
 |Percentagem da tarifa municipal distribuída como dividendos
 |===
 
