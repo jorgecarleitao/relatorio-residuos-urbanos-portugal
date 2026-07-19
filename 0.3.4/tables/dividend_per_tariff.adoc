@@ -1,0 +1,18 @@
+[cols="1,1,1"]
+|===
+|Empresa |2025 |2024
+
+|Valorlis |N/D |8,8
+|Resiestrela |N/D |7,1
+|Ecoleziria |N/D |0,0
+|Valorsul |25,0 |25,5
+|Algar |11,9 |0,0
+|Valnor |7,1 |7,4
+|Resinorte |6,1 |0,0
+|Valorminho |5,2 |0,0
+|Suldouro |3,8 |2,4
+|Amarsul |3,8 |0,0
+|Resulima |1,7 |0,8
+|Ambilital |0,0 |8,1
+|Ersuc |0,0 |0,4
+|===
