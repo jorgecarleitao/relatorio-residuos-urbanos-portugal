@@ -15,10 +15,10 @@
   },
   "waste": {
     "total_ru_recebidos": 539739.0,
-    "ru_indiferenciados_municipais": 457264.0,
-    "ru_indiferenciados_outros": 44183.0,
+    "ru_indiferenciados_municipais": 413081,
+    "ru_indiferenciados_outros": 1959.0,
     "recolha_seletiva_multimaterial": 47609.0,
-    "total_recolha_seletiva": 52375.0,
+    "total_recolha_seletiva": 82475.0,
     "energia_vendida_gwh": 24.118
   },
   "operations": {
